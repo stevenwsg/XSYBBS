@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.wsg.xsybbs">
+
+
+    <!--bugly权限-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS"
+        tools:ignore="ProtectedPermissions" />
+
+    <!--Bmob权限-->
+    <!--保持CPU 运转，屏幕和键盘灯有可能是关闭的,用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!--获取sd卡写的权限，用于文件上传和下载-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+
+
+
+
+
+
+    <application
+        android:name=".application.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+
+
+        <!--闪屏页-->
+        <activity android:name=".activity.SplashActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+
+        <!--登录页面-->
+        <activity android:name=".activity.user.LoginActivity" android:label="@string/login"></activity>
+        <!--注册界面-->
+        <activity android:name=".activity.user.RegisterActivity" android:label="@string/register"></activity>
+        <!--忘记密码界面-->
+        <activity android:name=".activity.user.ForgetPasswordActivity" android:label="@string/forget_password"></activity>
+        <!--修改密码页面-->
+        <activity android:name=".activity.user.ModifyPasswordActivity" android:label="@string/text_editor_password"></activity>
+        <!--游客浏览-->
+        <activity android:name=".activity.TouristLogin" android:label="@string/tourist_login"></activity>
+        <!--意见反馈-->
+        <activity android:name=".activity.usercenter.FeedBackActivity" android:label="@string/back_t"></activity>
+        <!--个人详细信息-->
+        <activity android:name=".activity.PersionalDealActivity"></activity>
+        <!--版本更新-->
+        <activity android:name=".activity.usercenter.UpDateActivity" android:label="@string/text_update"></activity>
+        <!--关于-->
+        <activity android:name=".activity.usercenter.AboutActivity" android:label="@string/tex_about"></activity>
+        <!--我的帖子-->
+        <activity android:name=".activity.usercenter.MyNoteActivity" android:label="@string/text_mynote"></activity>
+        <!--我的消息界面-->
+        <activity android:name=".activity.usercenter.MyMessageActivity" android:label="@string/text_my_message"></activity>
+        <!--选择头像界面-->
+        <activity android:name=".activity.usercenter.ChooseProfileActivity" android:label="@string/text_choose_profile"></activity>
+        <!--编辑个人资料界面-->
+        <activity android:name=".activity.usercenter.ModifyPersionalInformationActivity" android:label="@string/edit_information"></activity>
+
+        <!--bmob更新activity-->
+        <activity
+            android:name="cn.bmob.v3.update.UpdateDialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+
+
+
+        <!--主界面-->
+        <activity android:name=".MainActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:launchMode="singleTask">
+        </activity>
+
+
+
+        <!--Bmob自动更新兼容到 Android 7.0-->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.wsg.xsybbs"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+
+    </application>
+
+</manifest>

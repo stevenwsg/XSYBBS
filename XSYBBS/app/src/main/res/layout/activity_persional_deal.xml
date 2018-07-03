@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/show_profile"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="50dp"
+            android:src="@mipmap/logo"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="50dp" />
+
+
+        <TextView
+            android:paddingLeft="30dp"
+            android:layout_toRightOf="@id/show_profile"
+            android:id="@+id/show_name"
+            android:text="蓝莲花"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" />
+
+        <ImageView
+            android:paddingLeft="20dp"
+            android:layout_toRightOf="@id/show_name"
+            android:layout_width="wrap_content"
+            android:src="@drawable/male"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:paddingLeft="30dp"
+            android:text="没有什么能够阻挡，你对自由的向往。"
+            android:textSize="16sp"
+            android:layout_toRightOf="@id/show_profile"
+            android:layout_below="@+id/show_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        >
+
+        <Button
+            android:id="@+id/btn_add_friend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/button_bg"
+            android:text="@string/add_friend"
+            android:layout_alignParentLeft="true" />
+
+        <Button
+
+            android:id="@+id/btn_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/button_bg"
+            android:text="@string/send_message"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

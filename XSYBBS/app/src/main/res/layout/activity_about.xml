@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@mipmap/logo"
+            app:civ_border_color="@android:color/white"
+            app:civ_border_width="2dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/app_name"
+            android:textSize="30sp"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:paddingLeft="20dp"
+            android:layout_width="match_parent"
+            android:text="功能简介"
+            android:textSize="30sp"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:alpha="0.5"
+            android:background="@color/colorPrimary"/>
+
+        <TextView
+            android:paddingLeft="20dp"
+            android:layout_width="match_parent"
+            android:text="官网"
+            android:textSize="30sp"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:alpha="0.5"
+            android:background="@color/colorPrimary"/>
+
+
+        <TextView
+            android:paddingLeft="20dp"
+            android:layout_width="match_parent"
+            android:text="帮助"
+            android:textSize="30sp"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:alpha="0.5"
+            android:background="@color/colorPrimary"/>
+
+        <TextView
+            android:paddingLeft="20dp"
+            android:layout_width="wrap_content"
+            android:text="@string/about"
+            android:textSize="20sp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+
+
+
+    <RelativeLayout
+        android:gravity="center|bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/about_service"
+            android:layout_width="wrap_content"
+            android:text="服务条款"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_toRightOf="@id/about_service"
+            android:id="@+id/about_view"
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:alpha="0.5"
+            android:background="@color/colorPrimary"/>
+
+
+        <TextView
+         android:layout_toRightOf="@+id/about_view"
+            android:layout_width="wrap_content"
+            android:text="隐私政策"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_height="wrap_content" />
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
