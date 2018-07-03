@@ -2,6 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 27
+    buildToolsVersion "27.0.3"
     defaultConfig {
         applicationId "com.wsg.xsybbs"
         minSdkVersion 15
@@ -16,33 +17,24 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    productFlavors {
-    }
-    buildToolsVersion '27.0.0'
-
-
-    useLibrary 'org.apache.http.legacy'
 }
 
 dependencies {
-    implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation 'com.android.support:appcompat-v7:27.1.1'
-    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'com.android.support.test:runner:1.0.2'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:26.0.0-alpha1'
+
     //圆形头像
-    implementation 'de.hdodenhof:circleimageview:2.2.0'
-    //bugly crash收集
+    compile 'de.hdodenhof:circleimageview:2.2.0'
+
     compile 'com.tencent.bugly:crashreport:latest.release'
     //其中latest.release指代最新Bugly SDK版本号，也可以指定明确的版本号，例如2.2.0
     //Bmob文件存储
-    compile('cn.bmob.android:bmob-sdk:3.6.3') {
-        exclude group: 'com.squareup.okhttp3', module: 'okhttp'
-        exclude group: 'io.reactivex:rxandroid'
-        exclude group: 'io.reactivex:rxjava'
-        exclude group: 'com.squareup.okio'
-    }
-    //聊天
-    compile 'com.hyphenate:hyphenate-sdk:3.3.0'
+    compile 'cn.bmob.android:bmob-sdk:3.6.3'
+
+
 }
