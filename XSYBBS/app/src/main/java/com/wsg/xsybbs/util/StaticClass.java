@@ -18,6 +18,14 @@ public class StaticClass {
     //登录失败
     public static final int LOGIN_FAILED = 1005;
 
+    //登录成功
+    public static final int NOTE_SUCESS = 1006;
+    //登录失败
+    public static final int NOTE_FAILED = 1007;
+
+    //登录失败
+    public static final int Login_BAN = 1008;
+
 
 
     //判断程序是否登录过

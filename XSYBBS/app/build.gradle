@@ -1,21 +1,29 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 27
-    buildToolsVersion "27.0.3"
+    compileSdkVersion 26
+    buildToolsVersion '26.0.0'
+
+    packagingOptions {
+        exclude 'META-INF/rxjava.properties'
+    }
+
     defaultConfig {
         applicationId "com.wsg.xsybbs"
-        minSdkVersion 15
-        targetSdkVersion 27
+        minSdkVersion 16
+        targetSdkVersion 26
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        useJack=true
     }
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+    }
+    productFlavors {
     }
 }
 
@@ -26,15 +34,28 @@ dependencies {
     })
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:26.0.0-alpha1'
-
+    compile 'com.android.support:appcompat-v7:'
+    compile 'com.android.support:design:25.3.1'
     //圆形头像
     compile 'de.hdodenhof:circleimageview:2.2.0'
-
     compile 'com.tencent.bugly:crashreport:latest.release'
     //其中latest.release指代最新Bugly SDK版本号，也可以指定明确的版本号，例如2.2.0
     //Bmob文件存储
-    compile 'cn.bmob.android:bmob-sdk:3.6.3'
+    //Bmob
+    compile 'cn.bmob.android:bmob-sdk:3.5.5'
+
+    //Toasty  美化的toast
+    compile 'com.github.GrenderG:Toasty:1.2.5'
+    //首页banner轮播图
+    compile 'com.youth.banner:banner:1.4.10'
+    //图片选择器
+    compile 'me.thewyp:avatar:1.0.4'
+
+    //6.0+权限申请
+    compile 'me.weyye.hipermission:library:1.0.7'
 
 
+
+
+    compile project(':easeui')
 }

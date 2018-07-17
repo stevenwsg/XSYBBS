@@ -12,6 +12,7 @@ import com.wsg.xsybbs.base.BaseActivity;
 import com.wsg.xsybbs.util.UtilTools;
 
 import cn.bmob.v3.update.BmobUpdateAgent;
+import es.dmoral.toasty.Toasty;
 
 /**
  * Created by wsg
@@ -50,7 +51,7 @@ public class UpDateActivity extends BaseActivity implements View.OnClickListener
                 //检查更新
                 BmobUpdateAgent.setUpdateOnlyWifi(false);
                 BmobUpdateAgent.update(this);
-                Toast.makeText(this,"暂时没新版本，敬请期待哦~",Toast.LENGTH_LONG).show();
+                Toasty.success(this, "暂时没新版本，敬请期待哦~", Toast.LENGTH_SHORT, true).show();
                 break;
         }
     }

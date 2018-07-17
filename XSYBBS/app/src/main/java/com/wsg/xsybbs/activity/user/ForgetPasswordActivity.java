@@ -14,6 +14,7 @@ import com.wsg.xsybbs.bean.User;
 
 import cn.bmob.v3.exception.BmobException;
 import cn.bmob.v3.listener.UpdateListener;
+import es.dmoral.toasty.Toasty;
 
 /**
  * Created by wsg
@@ -51,12 +52,10 @@ public class ForgetPasswordActivity extends BaseActivity implements View.OnClick
                         @Override
                         public void done(BmobException e) {
                             if(e==null){
-                                Toast.makeText(ForgetPasswordActivity.this,
-                                        "重置密码请求成功，请到" + email + "邮箱进行密码重置操作" + email, Toast.LENGTH_SHORT).show();
+                                Toasty.success(ForgetPasswordActivity.this, "重置密码请求成功，请到" + email + "邮箱进行密码重置操作" + email, Toast.LENGTH_SHORT, true).show();
                                 finish();
                             }else{
-                                Toast.makeText(ForgetPasswordActivity.this,
-                                        R.string.text_email_send_no, Toast.LENGTH_SHORT).show();
+                                Toasty.error(ForgetPasswordActivity.this, getString(R.string.text_email_send_no), Toast.LENGTH_SHORT, true).show();
 
                             }
                         }
@@ -64,7 +63,7 @@ public class ForgetPasswordActivity extends BaseActivity implements View.OnClick
 
 
                 }else{
-                    Toast.makeText(ForgetPasswordActivity.this,R.string.text_tost_empty,Toast.LENGTH_SHORT).show();
+                    Toasty.info(ForgetPasswordActivity.this, getString(R.string.text_tost_empty), Toast.LENGTH_SHORT, true).show();
                 }
                 break;
         }

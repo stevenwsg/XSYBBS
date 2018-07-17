@@ -1,7 +1,12 @@
 package com.wsg.xsybbs.application;
 
 import android.app.Application;
+import android.os.Build;
+import android.os.StrictMode;
+import android.support.annotation.RequiresApi;
 
+import com.hyphenate.chat.EMOptions;
+import com.hyphenate.easeui.EaseUI;
 import com.tencent.bugly.crashreport.CrashReport;
 import com.wsg.xsybbs.util.StaticClass;
 import cn.bmob.v3.Bmob;
@@ -13,6 +18,7 @@ import cn.bmob.v3.update.BmobUpdateAgent;
  * function:   全局application的封装
  */
 public class MyApplication extends Application {
+    @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN_MR2)
     @Override
     public void onCreate() {
         super.onCreate();
@@ -28,6 +34,26 @@ public class MyApplication extends Application {
         BmobUpdateAgent.setUpdateOnlyWifi(false);
         //开启更新
         BmobUpdateAgent.update(this);
+
+
+        EMOptions options = new EMOptions();
+       // 默认添加好友时，是不需要验证的，改成需要验证
+        options.setAcceptInvitationAlways(true);
+        EaseUI.getInstance().init(this, options);
+
+
+
+
+        //7.0+
+        StrictMode.VmPolicy.Builder builder = new StrictMode.VmPolicy.Builder();
+        StrictMode.setVmPolicy(builder.build());
+        builder.detectFileUriExposure();
+
+
+
+
+
+
 
 
 

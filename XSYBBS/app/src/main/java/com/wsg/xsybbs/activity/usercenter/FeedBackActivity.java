@@ -16,6 +16,7 @@ import com.wsg.xsybbs.bean.User;
 import cn.bmob.v3.BmobUser;
 import cn.bmob.v3.exception.BmobException;
 import cn.bmob.v3.listener.SaveListener;
+import es.dmoral.toasty.Toasty;
 
 /**
  * Created by wsg
@@ -60,10 +61,10 @@ public class FeedBackActivity extends BaseActivity implements View.OnClickListen
                         public void done(String s, BmobException e) {
 
                             if(e==null){
-                                Toast.makeText(getApplicationContext(),"反馈成功~~~",Toast.LENGTH_SHORT).show();
+                                Toasty.success(FeedBackActivity.this, "反馈成功~~~", Toast.LENGTH_SHORT, true).show();
                                 finish();
                             }else{
-                                Toast.makeText(FeedBackActivity.this,"反馈失败~~~",Toast.LENGTH_SHORT).show();
+                                Toasty.error(FeedBackActivity.this, "反馈失败~~~,请检查网络", Toast.LENGTH_SHORT, true).show();
                             }
 
                         }
@@ -73,7 +74,7 @@ public class FeedBackActivity extends BaseActivity implements View.OnClickListen
 
 
                 }else{
-                    Toast.makeText(FeedBackActivity.this,R.string.text_tost_empty,Toast.LENGTH_SHORT).show();
+                    Toasty.info(FeedBackActivity.this, getString(R.string.text_tost_empty), Toast.LENGTH_SHORT, true).show();
                 }
 
 

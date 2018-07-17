@@ -1,14 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
 
     <TextView
-        android:layout_width="wrap_content"
-        android:text="我的帖子"
+        android:id="@+id/tv_mynote"
+        android:layout_width="match_parent"
+        android:text="亲，你暂时还没发布帖子"
+        android:gravity="center"
         android:textSize="30sp"
-        android:layout_centerInParent="true"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
 
-</RelativeLayout>
+        />
+
+    <ListView
+        android:id="@+id/lv_my_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+
+
+</LinearLayout>

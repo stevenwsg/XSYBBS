@@ -6,25 +6,22 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 
+import com.hyphenate.chat.EMClient;
 import com.wsg.xsybbs.R;
 import com.wsg.xsybbs.activity.usercenter.AboutActivity;
-import com.wsg.xsybbs.activity.usercenter.ChooseProfileActivity;
 import com.wsg.xsybbs.activity.usercenter.FeedBackActivity;
 import com.wsg.xsybbs.activity.user.LoginActivity;
-import com.wsg.xsybbs.activity.usercenter.ModifyPersionalInformationActivity;
+import com.wsg.xsybbs.activity.user.ModifyPersionalInformationActivity;
 import com.wsg.xsybbs.activity.usercenter.MyMessageActivity;
 import com.wsg.xsybbs.activity.usercenter.MyNoteActivity;
 import com.wsg.xsybbs.activity.usercenter.UpDateActivity;
 import com.wsg.xsybbs.bean.User;
-import com.wsg.xsybbs.view.CustomDialog;
+import com.wsg.xsybbs.util.UtilTools;
 
 import cn.bmob.v3.BmobUser;
 import de.hdodenhof.circleimageview.CircleImageView;
@@ -56,6 +53,7 @@ public class MineFragment extends Fragment implements View.OnClickListener {
     private TextView tv_feedback;
     private TextView tv_update;
     private TextView tv_signout;
+
 
 
 
@@ -115,6 +113,14 @@ public class MineFragment extends Fragment implements View.OnClickListener {
         tv_sex.setText(user.isSex() ? getString(R.string.text_boy) : getString(R.string.text_girl_f));
         tv_desc.setText(user.getDesc());
 
+
+
+
+        if(user.getImage()!=null){
+            UtilTools.getImage(getActivity(),profile_image,user.getImage());
+        }
+
+
     }
 
 
@@ -149,7 +155,13 @@ public class MineFragment extends Fragment implements View.OnClickListener {
                 startActivity(new Intent(getActivity(), UpDateActivity.class));
                 break;
             case R.id.tv_sign_out:
-                // TODO: 2018/7/1 保存用户信息
+
+                //注销bmob
+                User.logOut();   //清除缓存用户对象
+                BmobUser currentUser = BmobUser.getCurrentUser(); // 现在的currentUser是null了
+                //注销环信
+                EMClient.getInstance().logout(true);
+
                 startActivity(new Intent(getActivity(), LoginActivity.class));
                 //将主页关掉
                 getActivity().finish();
@@ -158,5 +170,16 @@ public class MineFragment extends Fragment implements View.OnClickListener {
         }
 
 
+    }
+
+
+    //修改页面跳转到此页面，是图片修改显示成功
+    @Override
+    public void onResume() {
+        super.onResume();
+        User user = BmobUser.getCurrentUser(User.class);
+        if(user.getImage()!=null){
+            UtilTools.getImage(getActivity(),profile_image,user.getImage().trim());
+        }
     }
 }

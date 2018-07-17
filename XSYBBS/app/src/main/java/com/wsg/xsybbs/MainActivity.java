@@ -3,53 +3,58 @@ package com.wsg.xsybbs;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-
+import com.hyphenate.chat.EMClient;
+import com.hyphenate.chat.EMConversation;
+import com.hyphenate.easeui.EaseConstant;
+import com.hyphenate.easeui.domain.EaseUser;
+import com.hyphenate.easeui.ui.EaseContactListFragment;
+import com.hyphenate.easeui.ui.EaseConversationListFragment;
+import com.hyphenate.exceptions.HyphenateException;
+import com.wsg.xsybbs.activity.ChatActivity;
 import com.wsg.xsybbs.base.BaseActivity;
-import com.wsg.xsybbs.bean.User;
 import com.wsg.xsybbs.fragment.FriendsFragment;
-import com.wsg.xsybbs.fragment.MessageFragment;
+import com.wsg.xsybbs.fragment.MyMessageFragment;
 import com.wsg.xsybbs.fragment.MineFragment;
 import com.wsg.xsybbs.fragment.NoteFragment;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /*
 主界面
  */
 
 public class MainActivity extends BaseActivity implements View.OnClickListener {
-
-
     //Fragment
     private FragmentManager fm;
     private NoteFragment noteFragment;
-    private FriendsFragment friendsFragment;
-    private MessageFragment messageFragment;
+    private FriendsFragment contactListFragment ;
+    private MyMessageFragment myMessageFragment;
     private MineFragment mineFragment;
     private Fragment mCurrent;
-
     //RelativeLatout
     private RelativeLayout mNoteLayout;
     private RelativeLayout mFriendsLayout;
     private RelativeLayout mMessageLayout;
     private RelativeLayout mMineLayout;
-
-
     //TextView
-
     private TextView mNoteView;
     private TextView mFriendsView;
     private TextView mMessageView;
     private TextView mMineView;
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
 
         //初始化界面
 
@@ -118,8 +123,8 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
                 mMessageView.setBackgroundResource(R.drawable.message);
                 mMineView.setBackgroundResource(R.drawable.mine);
 
-                hideFragment(friendsFragment, fragmentTransaction);
-                hideFragment(messageFragment, fragmentTransaction);
+                hideFragment(contactListFragment , fragmentTransaction);
+                hideFragment(myMessageFragment, fragmentTransaction);
                 hideFragment(mineFragment, fragmentTransaction);
 
 
@@ -140,15 +145,35 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
                 mMineView.setBackgroundResource(R.drawable.mine);
 
                 hideFragment(noteFragment, fragmentTransaction);
-                hideFragment(messageFragment, fragmentTransaction);
+                hideFragment(myMessageFragment, fragmentTransaction);
                 hideFragment(mineFragment, fragmentTransaction);
 
 
-                if (friendsFragment == null) {
-                    friendsFragment = new FriendsFragment();
-                    fragmentTransaction.add(R.id.content_layout, friendsFragment);
+                if (contactListFragment == null) {
+                    contactListFragment = new FriendsFragment();
+                    new Thread() {//需要在子线程中调用
+                        @Override
+                        public void run() {
+                            //需要设置联系人列表才能启动fragment
+                            contactListFragment.setContactsMap(getContact());
+
+                        }
+                    }.start();
+
+
+
+                    //设置item点击事件
+                    contactListFragment.setContactListItemClickListener(new EaseContactListFragment.EaseContactListItemClickListener() {
+
+                        @Override
+                        public void onListItemClicked(EaseUser user) {
+                            startActivity(new Intent(MainActivity.this, ChatActivity.class).putExtra(EaseConstant.EXTRA_USER_ID, user.getUsername()));
+                        }
+                    });
+                    
+                    fragmentTransaction.add(R.id.content_layout, contactListFragment );
                 } else {
-                    fragmentTransaction.show(friendsFragment);
+                    fragmentTransaction.show(contactListFragment );
                 }
 
                 break;
@@ -160,15 +185,24 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
                 mMineView.setBackgroundResource(R.drawable.mine);
 
                 hideFragment(noteFragment, fragmentTransaction);
-                hideFragment(friendsFragment, fragmentTransaction);
+                hideFragment(contactListFragment , fragmentTransaction);
                 hideFragment(mineFragment, fragmentTransaction);
 
 
-                if (messageFragment == null) {
-                    messageFragment = new MessageFragment();
-                    fragmentTransaction.add(R.id.content_layout, messageFragment);
+                if (myMessageFragment == null) {
+                    myMessageFragment = new MyMessageFragment();
+                    myMessageFragment.setConversationListItemClickListener(new EaseConversationListFragment.EaseConversationListItemClickListener() {
+
+                        //隐藏标题栏
+                        //hideTitleBar();
+                        @Override
+                        public void onListItemClicked(EMConversation conversation) {
+                            startActivity(new Intent(MainActivity.this, ChatActivity.class).putExtra(EaseConstant.EXTRA_USER_ID, conversation.conversationId()));
+                        }
+                    });
+                    fragmentTransaction.add(R.id.content_layout, myMessageFragment);
                 } else {
-                    fragmentTransaction.show(messageFragment);
+                    fragmentTransaction.show(myMessageFragment);
                 }
 
 
@@ -181,8 +215,8 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
                 mMineView.setBackgroundResource(R.drawable.mine_pressed);
 
                 hideFragment(noteFragment, fragmentTransaction);
-                hideFragment(friendsFragment, fragmentTransaction);
-                hideFragment(messageFragment, fragmentTransaction);
+                hideFragment(contactListFragment , fragmentTransaction);
+                hideFragment(myMessageFragment, fragmentTransaction);
 
 
                 if (mineFragment== null) {
@@ -197,5 +231,23 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         }
 
         fragmentTransaction.commit();
+    }
+
+
+
+    //获取联系人
+    private Map<String, EaseUser> getContact() {
+        Map<String, EaseUser> map = new HashMap<>();
+        try {
+            List<String> userNames =                     EMClient.getInstance().contactManager().getAllContactsFromServer();
+//            KLog.e("......有几个好友:" + userNames.size());
+            for (String userId : userNames) {
+//                KLog.e("好友列表中有 : " + userId);
+                map.put(userId, new EaseUser(userId));
+            }
+        } catch (HyphenateException e) {
+            e.printStackTrace();
+        }
+        return map;
     }
 }

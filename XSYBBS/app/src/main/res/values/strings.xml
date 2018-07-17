@@ -50,5 +50,14 @@
     <string name="edit_information">编辑资料</string>
     <string name="text_editor_success">修改成功</string>
     <string name="text_editor_failure">修改失败</string>
+    <string name="test_chat">测试聊天</string>
+    <string name="serch">搜索</string>
+    <string name="text_add_note">发帖</string>
+    <string name="test_search_note">搜索帖子</string>
+    <string name="please_choose_note_type">请选择帖子类型：</string>
+    <string name="text_modify_my_note">修改帖子</string>
+    <string name="test_note_detail">帖子详情</string>
+    <string name="text_my_zan">我收到的赞</string>
+    <string name="text_my_me">我收到的评论</string>
 
 </resources>

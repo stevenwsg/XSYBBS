@@ -10,7 +10,6 @@ import android.graphics.drawable.BitmapDrawable;
 import android.util.Base64;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.wsg.xsybbs.R;
 import com.wsg.xsybbs.bean.User;
@@ -47,8 +46,9 @@ public class UtilTools {
     }
 
 
+
     //保存图片到shareutils
-    public static void putImageToShare(final Context mContext, ImageView imageView) {
+    public static void putImageToShare(Context mContext, ImageView imageView) {
         BitmapDrawable drawable = (BitmapDrawable) imageView.getDrawable();
         Bitmap bitmap = drawable.getBitmap();
         //第一步：将Bitmap压缩成字节数组输出流
@@ -58,47 +58,16 @@ public class UtilTools {
         byte[] byteArray = byStream.toByteArray();
         String imgString = new String(Base64.encodeToString(byteArray, Base64.DEFAULT));
         //第三步：将String保存shareUtils
-
-
-        L.d(imgString);
-
-        //设置具体的值
-        User userInfo = BmobUser.getCurrentUser(User.class);
-        userInfo.setImage(imgString);
-        //更新数据
-        BmobUser bmobUser = BmobUser.getCurrentUser();
-        userInfo.update(bmobUser.getObjectId(), new UpdateListener() {
-            @Override
-            public void done(BmobException e) {
-                if (e == null) {
-                    //修改成功
-                    Toast.makeText(mContext, R.string.text_editor_success, Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(mContext, R.string.text_editor_failure+e.toString()+e.getErrorCode(), Toast.LENGTH_SHORT).show();
-                    L.i(R.string.text_editor_failure+e.toString()+e.getErrorCode());
-                    Toast.makeText(mContext, e.getMessage(), Toast.LENGTH_SHORT).show();
-                    L.i(e.getMessage());
-                }
-            }
-        });
-
-
-
-
-
         SPUtils.putString(mContext, "image_title", imgString);
-        SPUtils.putBoolean(mContext,"image_modify",true);
 
-
-
-
-
+        //第四步，将图片保存到服务器
+        saveImageToBmob(imgString);
     }
 
     //读取图片
     public static void getImageToShare(Context mContext, ImageView imageView) {
         //1.拿到string
-        String imgString =SPUtils.getString(mContext, "image_title", "");
+        String imgString = SPUtils.getString(mContext, "image_title", "");
         if (!imgString.equals("")) {
             //2.利用Base64将我们string转换
             byte[] byteArray = Base64.decode(imgString, Base64.DEFAULT);
@@ -114,29 +83,31 @@ public class UtilTools {
     }
 
 
+    //保存图片到bmob
+    public static void saveImageToBmob(String s) {
+        User user = new User();
+        user.setImage(s);
+        BmobUser bmobUser = BmobUser.getCurrentUser();
+
+        user.update(bmobUser.getObjectId(), new UpdateListener() {
+            @Override
+            public void done(BmobException e) {
+                if (e == null) {
+                    L.d("头像修改成功");
+                } else {
+                    L.d("头像修改失败");
+
+                }
+
+            }
+        });
 
 
-    //保存图片到服务器
 
-    public static String putImage(final Context mContext, String path) {
-        Bitmap bitmap = BitmapFactory.decodeFile(path);
-        //第一步：将Bitmap压缩成字节数组输出流
-        ByteArrayOutputStream byStream = new ByteArrayOutputStream();
-        bitmap.compress(Bitmap.CompressFormat.PNG, 80, byStream);
-        //第二步：利用Base64将我们的字节数组输出流转换成String
-        byte[] byteArray = byStream.toByteArray();
-        String imgString = new String(Base64.encodeToString(byteArray, Base64.DEFAULT));
-        //第三步：将String保存shareUtils
-
-        //保存到服务器
-
-        return imgString;
 
 
 
     }
-
-
 
 
     //读取图片
@@ -155,6 +126,8 @@ public class UtilTools {
 
         }
     }
+
+
 
 
 

@@ -18,6 +18,29 @@
     <!--获取sd卡写的权限，用于文件上传和下载-->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
+    <!-- 环信easeUI-->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"
+        tools:ignore="MockLocation" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+
+    <!-- if you want to load images from a file OR from the internet -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+
+
+
+
+    <!---->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
 
 
@@ -38,12 +61,10 @@
 
         <!--闪屏页-->
         <activity android:name=".activity.SplashActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
 
 
@@ -56,11 +77,11 @@
         <!--修改密码页面-->
         <activity android:name=".activity.user.ModifyPasswordActivity" android:label="@string/text_editor_password"></activity>
         <!--游客浏览-->
-        <activity android:name=".activity.TouristLogin" android:label="@string/tourist_login"></activity>
+        <activity android:name=".activity.user.TouristLoginActivity" android:label="@string/tourist_login"></activity>
         <!--意见反馈-->
         <activity android:name=".activity.usercenter.FeedBackActivity" android:label="@string/back_t"></activity>
         <!--个人详细信息-->
-        <activity android:name=".activity.PersionalDealActivity"></activity>
+        <activity android:name=".activity.user.PersionalDealActivity"></activity>
         <!--版本更新-->
         <activity android:name=".activity.usercenter.UpDateActivity" android:label="@string/text_update"></activity>
         <!--关于-->
@@ -72,7 +93,7 @@
         <!--选择头像界面-->
         <activity android:name=".activity.usercenter.ChooseProfileActivity" android:label="@string/text_choose_profile"></activity>
         <!--编辑个人资料界面-->
-        <activity android:name=".activity.usercenter.ModifyPersionalInformationActivity" android:label="@string/edit_information"></activity>
+        <activity android:name=".activity.user.ModifyPersionalInformationActivity" android:label="@string/edit_information"></activity>
 
         <!--bmob更新activity-->
         <activity
@@ -86,6 +107,28 @@
         <activity android:name=".MainActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:launchMode="singleTask">
         </activity>
 
+        <!--聊天跳转界面-->
+        <activity android:name=".activity.ChatActivity"></activity>
+
+
+        <!-- EaseUI中发送图片后查看以及发送地理位置activit注册   -->
+        <activity android:name="com.hyphenate.easeui.ui.EaseBaiduMapActivity"/>
+        <!--添加帖子-->
+        <activity android:name=".activity.note.AddNoteActivity" android:label="@string/text_add_note"></activity>
+        <!--搜索帖子-->
+        <activity android:name=".activity.note.SearchNoteActivity" android:label="@string/test_search_note"></activity>
+        <!--修改帖子-->
+        <activity android:name=".activity.note.ModifyMyNoteActivity" android:label="@string/text_modify_my_note"></activity>
+        <!--帖子详情-->
+        <activity android:name=".activity.note.NoteDetailActivity" android:label="@string/test_note_detail"></activity>
+
+        <!--收到的赞-->
+        <activity android:name=".activity.message.MyMessageZanActivity" android:label="@string/text_my_zan"></activity>
+
+        <!--收到的评论-->
+        <activity android:name=".activity.message.MyMessageCommentActivity" android:label="@string/text_my_me"></activity>
+
+
 
 
         <!--Bmob自动更新兼容到 Android 7.0-->
@@ -98,6 +141,56 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_paths" />
         </provider>
+
+
+
+
+        <!-- 设置环信应用的AppKey -->
+        <meta-data android:name="EASEMOB_APPKEY"  android:value="1116170727115282#xsybbs" />
+        <!-- 声明SDK所需的service SDK核心功能-->
+        <service android:name="com.hyphenate.chat.EMChatService" android:exported="true"/>
+        <service android:name="com.hyphenate.chat.EMJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="true"
+            />
+        <!-- 声明SDK所需的receiver -->
+        <receiver android:name="com.hyphenate.chat.EMMonitorReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+            <!-- 可选filter -->
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+
+
+
+        <activity
+            android:name="com.hyphenate.easeui.ui.EaseShowBigImageActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.hyphenate.easeui.ui.EaseShowNormalFileActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.hyphenate.easeui.ui.EaseShowVideoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+
+        <service android:name="com.baidu.location.f" android:enabled="true" android:process=":remote">
+        </service>
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="XzM12MmxwUPhSqfgTdtxmcUEoTAg6pma" />
+
+
+
 
 
     </application>

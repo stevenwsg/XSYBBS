@@ -161,7 +161,7 @@
                 android:marqueeRepeatLimit="marquee_forever"
 
                 android:textColor="@color/colorPrimary"
-                android:singleLine="true" />
+                android:maxLines="1" />
 
         </LinearLayout>
 

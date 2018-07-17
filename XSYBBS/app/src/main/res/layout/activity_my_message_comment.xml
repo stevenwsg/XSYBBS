@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/comment_tv"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:text="正在加载，请稍候..."
+        android:textSize="30sp"
+        android:layout_height="wrap_content" />
+
+    <ListView
+        android:id="@+id/comment_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+
+</LinearLayout>

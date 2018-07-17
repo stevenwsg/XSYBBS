@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:paddingLeft="20dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/item_message_zan_tvname"
+            android:layout_width="wrap_content"
+            android:text="蓝莲花"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:paddingLeft="20dp"
+            android:layout_width="wrap_content"
+            android:text="：赞了你"
+            android:textSize="24sp"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/item_message_zan_title"
+        android:layout_width="match_parent"
+        android:textSize="30sp"
+        android:text="生活不止眼前的苟且，还有永远到不了的远方"
+        android:layout_height="wrap_content" />
+
+
+
+
+
+</LinearLayout>

@@ -12,15 +12,19 @@ import android.widget.EditText;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
+import com.hyphenate.chat.EMClient;
+import com.hyphenate.exceptions.HyphenateException;
 import com.wsg.xsybbs.R;
 import com.wsg.xsybbs.base.BaseActivity;
 import com.wsg.xsybbs.bean.User;
 import com.wsg.xsybbs.util.L;
+import com.wsg.xsybbs.util.SPUtils;
 import com.wsg.xsybbs.util.StaticClass;
 import com.wsg.xsybbs.view.CustomDialog;
 
 import cn.bmob.v3.exception.BmobException;
 import cn.bmob.v3.listener.SaveListener;
+import es.dmoral.toasty.Toasty;
 
 /**
  * Created by wsg
@@ -53,12 +57,12 @@ public class RegisterActivity extends BaseActivity implements View.OnClickListen
             switch (msg.what){
                 case StaticClass.REGISTER_SUCESS:
                     dialog.dismiss();
-                    Toast.makeText(RegisterActivity.this,"注册成功,请登录",Toast.LENGTH_SHORT).show();
+                    Toasty.success(RegisterActivity.this, "注册成功,请登录", Toast.LENGTH_SHORT, true).show();
                     finish();
                     break;
                 case StaticClass.REGISTER_FAILED:
                     dialog.dismiss();
-                    Toast.makeText(RegisterActivity.this,"注册失败，请修改用户名重试或检查邮箱格式是否正确",Toast.LENGTH_SHORT).show();
+                    Toasty.error(RegisterActivity.this, "注册失败，请修改用户名重试或检查邮箱格式是否正确", Toast.LENGTH_SHORT, true).show();
                     break;
             }
 
@@ -100,11 +104,11 @@ public class RegisterActivity extends BaseActivity implements View.OnClickListen
 
 
                 //获取到输入框的值
-                String name = et_user.getText().toString().trim();
+                final String name = et_user.getText().toString().trim();
                 String age = et_age.getText().toString().trim();
                 String desc = et_desc.getText().toString().trim();
                 String pass = et_pass.getText().toString().trim();
-                String password = et_password.getText().toString().trim();
+                final String password = et_password.getText().toString().trim();
                 String email = et_email.getText().toString().trim();
 
 
@@ -153,15 +157,17 @@ public class RegisterActivity extends BaseActivity implements View.OnClickListen
                         new Thread(new Runnable() {
                             @Override
                             public void run() {
+
+
+
                                 user.signUp(new SaveListener<User>() {
                                     @Override
                                     public void done(User user, BmobException e) {
                                         if(e==null){
-                                            // TODO: 2018/6/30 别忘了注册环信，环信注册成功之后才能说注册成功 
-                                            
-                                            handler.sendEmptyMessage(StaticClass.REGISTER_SUCESS);
+                                            //开始注册环信
+                                            regresterChat(user.getUsername(),user.getObjectId(),name,password);
                                         }else{
-                                            L.d(e.toString()+e.getErrorCode());
+                                            L.d(e.toString()+e.getErrorCode()+e.getMessage());
                                             handler.sendEmptyMessage(StaticClass.REGISTER_FAILED);
                                         }
                                     }
@@ -174,17 +180,52 @@ public class RegisterActivity extends BaseActivity implements View.OnClickListen
 
 
                     }else{
-                        Toast.makeText(this, R.string.text_two_input_not_consistent, Toast.LENGTH_SHORT).show();
+                        Toasty.info(this,  getString(R.string.text_two_input_not_consistent), Toast.LENGTH_SHORT, true).show();
                     }
 
 
                     
                 }else{
-                    Toast.makeText(this, getString(R.string.text_tost_empty), Toast.LENGTH_SHORT).show();
+                    Toasty.info(this,  getString(R.string.text_tost_empty), Toast.LENGTH_SHORT, true).show();
+
                 }
 
 
                 break;
+        }
+    }
+
+    public void regresterChat(final String name, final String password,final String n,final String p){
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    EMClient.getInstance().createAccount(name, password);//同步方法
+
+                    //保存用户信息
+                    SPUtils.putString(RegisterActivity.this,StaticClass.USER_NAME,n);
+                    SPUtils.putString(RegisterActivity.this,StaticClass.PASSWORD,p);
+
+
+                    handler.sendEmptyMessage(StaticClass.REGISTER_SUCESS);
+                } catch (HyphenateException e1) {
+                    e1.printStackTrace();
+                    L.e("HyphenateException"+e1.getDescription()+e1.getMessage()+e1.getErrorCode());
+                    handler.sendEmptyMessage(StaticClass.REGISTER_FAILED);
+                }
+
+
+
+            }
+        }).start();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if (handler != null) {
+            handler.removeCallbacksAndMessages(null);
+            handler = null;
         }
     }
 }

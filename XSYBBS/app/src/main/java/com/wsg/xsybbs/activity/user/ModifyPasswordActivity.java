@@ -11,9 +11,12 @@ import android.widget.Toast;
 import com.wsg.xsybbs.R;
 import com.wsg.xsybbs.base.BaseActivity;
 import com.wsg.xsybbs.bean.User;
+import com.wsg.xsybbs.util.SPUtils;
+import com.wsg.xsybbs.util.StaticClass;
 
 import cn.bmob.v3.exception.BmobException;
 import cn.bmob.v3.listener.UpdateListener;
+import es.dmoral.toasty.Toasty;
 
 /**
  * Created by wsg
@@ -54,7 +57,7 @@ public class ModifyPasswordActivity extends BaseActivity implements View.OnClick
 
                 String now = et_old.getText().toString().trim();
                 String news = et_new.getText().toString().trim();
-                String new_password = et_new_again.getText().toString();
+                final String new_password = et_new_again.getText().toString();
 
                 //判断是否为空
                 if (!TextUtils.isEmpty(now) & !TextUtils.isEmpty(news) & !TextUtils.isEmpty(new_password)) {
@@ -65,12 +68,13 @@ public class ModifyPasswordActivity extends BaseActivity implements View.OnClick
                             @Override
                             public void done(BmobException e) {
                                 if(e==null){
-                                    Toast.makeText(ModifyPasswordActivity.this,
-                                            R.string.reset_successfully, Toast.LENGTH_SHORT).show();
+                                    //保存用户信息
+                                    SPUtils.putString(ModifyPasswordActivity.this,StaticClass.PASSWORD,new_password);
+                                    Toasty.success(ModifyPasswordActivity.this, getString( R.string.reset_successfully), Toast.LENGTH_SHORT, true).show();
                                     finish();
 
                                 }else{
-                                    Toast.makeText(ModifyPasswordActivity.this, R.string.reset_failed, Toast.LENGTH_SHORT).show();
+                                    Toasty.error(ModifyPasswordActivity.this,getString(R.string.reset_failed), Toast.LENGTH_SHORT, true).show();
 
                                 }
 
@@ -79,7 +83,7 @@ public class ModifyPasswordActivity extends BaseActivity implements View.OnClick
 
 
                     } else {
-                        Toast.makeText(ModifyPasswordActivity.this, R.string.text_two_input_not_consistent, Toast.LENGTH_SHORT).show();
+                        Toasty.info(ModifyPasswordActivity.this, getString(R.string.text_two_input_not_consistent), Toast.LENGTH_SHORT, true).show();
                     }
 
 
@@ -88,7 +92,7 @@ public class ModifyPasswordActivity extends BaseActivity implements View.OnClick
 
                 }
                 else{
-                        Toast.makeText(ModifyPasswordActivity.this, R.string.text_tost_empty, Toast.LENGTH_SHORT).show();
+                    Toasty.info(ModifyPasswordActivity.this, getString(R.string.text_tost_empty), Toast.LENGTH_SHORT, true).show();
                     }
 
                     break;
