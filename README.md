@@ -4,7 +4,11 @@
 
 
 
-图片的话，太麻烦 ，我就不贴了 ，我把apk下载地址放这块，大家需要的话可以体验体验https://download.csdn.net/download/qq_29375837/10580988
+
+图片效果的话，大家可以看看这篇博客 ，https://blog.csdn.net/qq_29375837/article/details/82657976
+
+
+我把apk下载地址放这块，大家需要的话可以体验体验https://download.csdn.net/download/qq_29375837/10580988
 
 
 为期一个月的在校实习结束了，7个人一组，组内其他6个人都考研，也不会做Android，我一个人撸完了，说多了都是泪
