@@ -1,10 +1,10 @@
 [
     {
-        "merged": "G:\\git\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\debug\\layout-watch-v20\\abc_alert_dialog_button_bar_material.xml",
-        "source": "C:\\Users\\wsg\\.android\\build-cache\\5545c7321f641ad3bd8715aee63734809a6287d6\\output\\res\\layout-watch-v20\\abc_alert_dialog_button_bar_material.xml"
+        "merged": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\debug\\layout-watch-v20\\abc_alert_dialog_title_material.xml",
+        "source": "C:\\Users\\wsg\\.android\\build-cache\\c5b700e7e406a82af1ee12498ad64b4e529b728c\\output\\res\\layout-watch-v20\\abc_alert_dialog_title_material.xml"
     },
     {
-        "merged": "G:\\git\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\debug\\layout-watch-v20\\abc_alert_dialog_title_material.xml",
-        "source": "C:\\Users\\wsg\\.android\\build-cache\\5545c7321f641ad3bd8715aee63734809a6287d6\\output\\res\\layout-watch-v20\\abc_alert_dialog_title_material.xml"
+        "merged": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\debug\\layout-watch-v20\\abc_alert_dialog_button_bar_material.xml",
+        "source": "C:\\Users\\wsg\\.android\\build-cache\\c5b700e7e406a82af1ee12498ad64b4e529b728c\\output\\res\\layout-watch-v20\\abc_alert_dialog_button_bar_material.xml"
     }
 ]
