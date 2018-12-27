@@ -344,11 +344,11 @@
         "source": "C:\\Users\\wsg\\.android\\build-cache\\c5b700e7e406a82af1ee12498ad64b4e529b728c\\output\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
     },
     {
-        "merged": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_menu_item_layout.xml",
-        "source": "C:\\Users\\wsg\\.android\\build-cache\\c5b700e7e406a82af1ee12498ad64b4e529b728c\\output\\res\\layout\\abc_action_menu_item_layout.xml"
-    },
-    {
         "merged": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\release\\layout\\ease_widget_voice_recorder.xml",
         "source": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\layout\\ease_widget_voice_recorder.xml"
+    },
+    {
+        "merged": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_menu_item_layout.xml",
+        "source": "C:\\Users\\wsg\\.android\\build-cache\\c5b700e7e406a82af1ee12498ad64b4e529b728c\\output\\res\\layout\\abc_action_menu_item_layout.xml"
     }
 ]
