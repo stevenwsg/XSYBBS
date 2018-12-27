@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "G:\\git\\XSYBBS\\easeui\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
+        "outputFile": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 207
                 },
                 "from": {
-                    "file": "C:\\Users\\wsg\\.android\\build-cache\\5545c7321f641ad3bd8715aee63734809a6287d6\\output\\res\\values-v24\\values-v24.xml",
+                    "file": "C:\\Users\\wsg\\.android\\build-cache\\c5b700e7e406a82af1ee12498ad64b4e529b728c\\output\\res\\values-v24\\values-v24.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -30,7 +30,7 @@
                     "endOffset": 342
                 },
                 "from": {
-                    "file": "C:\\Users\\wsg\\.android\\build-cache\\5545c7321f641ad3bd8715aee63734809a6287d6\\output\\res\\values-v24\\values-v24.xml",
+                    "file": "C:\\Users\\wsg\\.android\\build-cache\\c5b700e7e406a82af1ee12498ad64b4e529b728c\\output\\res\\values-v24\\values-v24.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
