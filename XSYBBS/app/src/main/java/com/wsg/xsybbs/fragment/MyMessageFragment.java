@@ -34,6 +34,8 @@ public class MyMessageFragment extends EaseConversationListFragment {
 
 
 
+
+
     private void initData() {
         // run in a second
         final long timeInterval = 10000;

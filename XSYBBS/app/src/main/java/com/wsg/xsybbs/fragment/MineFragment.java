@@ -10,7 +10,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-
 import com.hyphenate.chat.EMClient;
 import com.wsg.xsybbs.R;
 import com.wsg.xsybbs.activity.usercenter.AboutActivity;
