@@ -33,7 +33,8 @@
     <string name="text_version">目前版本</string>
     <string name="text_update">检查更新</string>
     <string name="tex_about">关于</string>
-    <string name="about">制作团队：王胜国，刘金方，余映峰，贾寒松，宋静，张雪梅，刘鸽娟</string>
+    <string name="about">作者：蓝莲花</string>
+    <string name="author_qq">QQ：1305676305</string>
     <string name="make_sure_password">确认密码</string>
     <string name="text_tost_empty">输入框不能为空</string>
     <string name="text_two_input_not_consistent">两次密码不一致</string>
