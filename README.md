@@ -8,7 +8,7 @@
  
  * &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;  对界面进行不断美化
  * &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;  对代码不断进行优化
-  * &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;  修改bug(1、2018/12/29注销登录后，下次需要重新登录)
+  * &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;  修改bug(1、2018/12/29注销登录后，下次需要重新登录，还需要释放四个fragment资源，避免内存泄漏，发生OOM)
  * 2018/12/27&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;   修改关于界面 
  * 后续会陆续进行更新
  * 后续会陆续进行更新
