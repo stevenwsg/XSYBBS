@@ -7,6 +7,7 @@
  
  
  * &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;  对界面进行不断美化
+  * &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;  对代码不断进行优化
  * 2018/12/27&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;   修改关于界面 
  * 后续会陆续进行更新
  * 后续会陆续进行更新
