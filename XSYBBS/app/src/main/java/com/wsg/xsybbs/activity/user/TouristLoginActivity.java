@@ -1,6 +1,8 @@
 package com.wsg.xsybbs.activity.user;
 
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.support.annotation.Nullable;
 import android.widget.ListView;
 import android.widget.Toast;
@@ -12,6 +14,7 @@ import com.wsg.xsybbs.base.BaseActivity;
 import com.wsg.xsybbs.bean.Banne;
 import com.wsg.xsybbs.bean.Note;
 import com.wsg.xsybbs.util.L;
+import com.wsg.xsybbs.util.StaticClass;
 import com.youth.banner.Banner;
 
 import java.util.ArrayList;
@@ -29,11 +32,35 @@ import es.dmoral.toasty.Toasty;
  */
 public class TouristLoginActivity extends BaseActivity {
 
-    private List<String> listp=new ArrayList<>();
+    private List<String> listp = new ArrayList<>();
     private Banner banner;
     private ListView lvTLNote;
     private TlNoteAdapter tlnoteadapter;
-    private List<Note> mlist=new ArrayList<>();
+    private List<Note> mlist = new ArrayList<>();
+
+
+    private Handler handler = new Handler() {
+        @Override
+        public void handleMessage(Message msg) {
+            super.handleMessage(msg);
+            switch (msg.what) {
+                case StaticClass.TOURIST_NOTE_SUCESS:
+
+                    tlnoteadapter = new TlNoteAdapter(TouristLoginActivity.this, mlist);
+                    lvTLNote.setAdapter(tlnoteadapter);
+
+                    break;
+                case StaticClass.TOURIST_NOTE_FAILED:
+                    Toasty.error(TouristLoginActivity.this, "请求数据失败，请检查网络", Toast.LENGTH_LONG).show();
+                    break;
+                case StaticClass.TOURIST_BANNER_SUCESS:
+                    banner.start();
+                    break;
+                case StaticClass.TOURIST_BANNER_FAILED:
+                    break;
+            }
+        }
+    };
 
 
     @Override
@@ -57,9 +84,8 @@ public class TouristLoginActivity extends BaseActivity {
         //banner设置方法全部调用完毕时最后调用
         banner.start();
 
-        lvTLNote=(ListView)findViewById(R.id.lv_tl_note);
-        tlnoteadapter=new TlNoteAdapter(TouristLoginActivity.this,mlist);
-        lvTLNote.setAdapter(tlnoteadapter);
+        lvTLNote = (ListView) findViewById(R.id.lv_tl_note);
+
 
         initData();
 
@@ -69,55 +95,85 @@ public class TouristLoginActivity extends BaseActivity {
 
     //初始化banner
     private void initBanner() {
-        BmobQuery<Banne> query = new BmobQuery<Banne>();
-        query.setLimit(10);
-        //按时间降序
-        query.order("-createdAt");
-        query.findObjects(new FindListener<Banne>() {
+
+
+
+
+
+        new Thread(new Runnable() {
             @Override
-            public void done(List<Banne> list, BmobException e) {
-                if(e==null){
-                    listp.clear();
-                    for (int i = 0; i <list.size() ; i++) {
-                        listp.add(list.get(i).getPhoto());
+            public void run() {
+
+                BmobQuery<Banne> query = new BmobQuery<Banne>();
+                query.setLimit(50);
+                //按时间降序
+                query.order("-createdAt");
+                query.findObjects(new FindListener<Banne>() {
+                    @Override
+                    public void done(List<Banne> list, BmobException e) {
+                        if (e == null) {
+                            listp.clear();
+                            for (int i = 0; i < list.size(); i++) {
+                                listp.add(list.get(i).getPhoto());
+                            }
+                            //重新设置图片集合
+                            banner.setImages(listp);
+                            //banner设置方法全部调用完毕时最后调用
+                            handler.sendEmptyMessage(StaticClass.TOURIST_BANNER_SUCESS);
+                        } else {
+
+                        }
                     }
+                });
 
-                    //重新设置图片集合
-                    banner.setImages(listp);
-                    //banner设置方法全部调用完毕时最后调用
-                    banner.start();
-
-
-                }
             }
-        });
+        }).start();
+
+
 
 
     }
 
     //初始化数据
     private void initData() {
-        //获取数据
-        BmobQuery<Note> query = new BmobQuery<Note>();
-        query.setLimit(50);
-        //按时间降序
-        query.order("-top");
-        query.findObjects(new FindListener<Note>() {
+
+
+        //2018/12/29  开启线程
+        new Thread(new Runnable() {
             @Override
-            public void done(List<Note> list, BmobException e) {
-                if(e==null){
-                    //设置适配器
-                    mlist.addAll(list);
-                    tlnoteadapter.notifyDataSetChanged();
+            public void run() {
+                //获取数据
+                BmobQuery<Note> query = new BmobQuery<Note>();
+                query.setLimit(10);
+                //按时间降序
+                query.order("-top");
+                query.findObjects(new FindListener<Note>() {
+                    @Override
+                    public void done(List<Note> list, BmobException e) {
+                        if (e == null) {
+                            //设置适配器
+                            mlist.addAll(list);
+                            handler.sendEmptyMessage(StaticClass.TOURIST_NOTE_SUCESS);
+                        } else {
+                            L.d(e.toString() + e.getErrorCode() + e.getMessage());
+                            handler.sendEmptyMessage(StaticClass.TOURIST_NOTE_FAILED);
 
-                }else{
-                    L.d(e.toString()+e.getErrorCode()+e.getMessage());
-                    Toasty.error(TouristLoginActivity.this,"请求数据失败，请检查网络", Toast.LENGTH_LONG).show();
-
-                }
+                        }
+                    }
+                });
             }
-        });
+        }).start();
 
     }
 
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if (handler != null) {
+            handler.removeCallbacksAndMessages(null);
+            handler = null;
+        }
+
+    }
 }
