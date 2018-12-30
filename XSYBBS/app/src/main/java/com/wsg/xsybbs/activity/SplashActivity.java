@@ -28,6 +28,8 @@ import me.weyye.hipermission.HiPermission;
 import me.weyye.hipermission.PermissionCallback;
 import me.weyye.hipermission.PermissionItem;
 
+import static com.wsg.xsybbs.util.StaticClass.SHARE_IS_LOGIN;
+
 
 /**
  * Created by wsg
@@ -139,7 +141,7 @@ public class SplashActivity extends BaseActivity{
 
     //判断程序是否第一次运行
     private boolean isFirst() {
-        boolean isFirst = SPUtils.getBoolean(this,StaticClass.SHARE_IS_LOGIN,true);
+        boolean isFirst = SPUtils.getBoolean(this,SHARE_IS_LOGIN,true);
         if(isFirst){
             return true;
         }else {

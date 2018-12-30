@@ -1,6 +1,8 @@
 package com.wsg.xsybbs.activity.usercenter;
 
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.support.annotation.Nullable;
 import android.text.TextUtils;
 import android.view.View;
@@ -12,6 +14,7 @@ import com.wsg.xsybbs.R;
 import com.wsg.xsybbs.base.BaseActivity;
 import com.wsg.xsybbs.bean.Feedback;
 import com.wsg.xsybbs.bean.User;
+import com.wsg.xsybbs.util.StaticClass;
 
 import cn.bmob.v3.BmobUser;
 import cn.bmob.v3.exception.BmobException;
@@ -28,6 +31,24 @@ public class FeedBackActivity extends BaseActivity implements View.OnClickListen
     private EditText etback;
     private Button btback;
 
+
+    private Handler handler = new Handler() {
+        @Override
+        public void handleMessage(Message msg) {
+            super.handleMessage(msg);
+            switch (msg.what) {
+                case StaticClass.FEEDBACK_SUCESS:
+                    Toasty.success(FeedBackActivity.this, "反馈成功~~~", Toast.LENGTH_SHORT, true).show();
+                    finish();
+                    break;
+                case StaticClass.FEEDBACK_FAILED:
+                    Toasty.error(FeedBackActivity.this, "反馈失败~~~,请检查网络", Toast.LENGTH_SHORT, true).show();
+                    break;
+            }
+        }
+    };
+
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,49 +57,67 @@ public class FeedBackActivity extends BaseActivity implements View.OnClickListen
     }
 
     private void initView() {
-        etback=(EditText)findViewById(R.id.et_back);
-        btback=(Button)findViewById(R.id.bt_back);
+        etback = (EditText) findViewById(R.id.et_back);
+        btback = (Button) findViewById(R.id.bt_back);
         btback.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()){
+        switch (v.getId()) {
             case R.id.bt_back:
-                String s=etback.getText().toString().trim();
-                if(!TextUtils.isEmpty(s)){
+                String s = etback.getText().toString().trim();
+                if (!TextUtils.isEmpty(s)) {
 
                     //开始反馈数据
-                    Feedback feedback=new Feedback();
+                    Feedback feedback = new Feedback();
                     User user = BmobUser.getCurrentUser(User.class);
                     feedback.setUserid(user.getObjectId());
                     feedback.setContent(s);
                     feedback.setDeviceType("android");
 
 
-                    feedback.save(new SaveListener<String>() {
+
+                    //2018/12/29   上传反馈开启线程
+                    new Thread(new Runnable() {
                         @Override
-                        public void done(String s, BmobException e) {
+                        public void run() {
 
-                            if(e==null){
-                                Toasty.success(FeedBackActivity.this, "反馈成功~~~", Toast.LENGTH_SHORT, true).show();
-                                finish();
-                            }else{
-                                Toasty.error(FeedBackActivity.this, "反馈失败~~~,请检查网络", Toast.LENGTH_SHORT, true).show();
-                            }
+                            feedback.save(new SaveListener<String>() {
+                                @Override
+                                public void done(String s, BmobException e) {
 
+                                    if (e == null) {
+                                        handler.sendEmptyMessage(StaticClass.FEEDBACK_SUCESS);
+                                    } else {
+                                        handler.sendEmptyMessage(StaticClass.FEEDBACK_SUCESS);
+                                    }
+
+                                }
+
+                            });
                         }
-
-                    });
-
+                    }).start();
 
 
-                }else{
+                } else {
                     Toasty.info(FeedBackActivity.this, getString(R.string.text_tost_empty), Toast.LENGTH_SHORT, true).show();
                 }
 
 
                 break;
         }
+    }
+
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+
+        if (handler != null) {
+            handler.removeCallbacksAndMessages(null);
+            handler = null;
+        }
+
     }
 }

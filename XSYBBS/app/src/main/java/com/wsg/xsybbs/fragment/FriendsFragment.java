@@ -1,11 +1,6 @@
 package com.wsg.xsybbs.fragment;
-
-
-import android.os.Bundle;
 import android.view.Gravity;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.Toast;
@@ -25,6 +20,8 @@ import es.dmoral.toasty.Toasty;
  * on         2018/6/28.
  * function:好友列表Fragment
  */
+
+
 public class FriendsFragment extends EaseContactListFragment implements View.OnClickListener {
 
 

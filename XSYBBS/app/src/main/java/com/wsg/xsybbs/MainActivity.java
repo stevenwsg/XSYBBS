@@ -34,10 +34,12 @@ import java.util.Map;
 public class MainActivity extends BaseActivity implements View.OnClickListener {
     //Fragment
     private FragmentManager fm;
-    private NoteFragment noteFragment;
-    private FriendsFragment contactListFragment ;
-    private MyMessageFragment myMessageFragment;
-    private MineFragment mineFragment;
+
+
+    public NoteFragment noteFragment;
+    public FriendsFragment contactListFragment ;
+    public MyMessageFragment myMessageFragment;
+    public MineFragment mineFragment;
     private Fragment mCurrent;
     //RelativeLatout
     private RelativeLayout mNoteLayout;
@@ -214,6 +216,9 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
                 mMessageView.setBackgroundResource(R.drawable.message);
                 mMineView.setBackgroundResource(R.drawable.mine_pressed);
 
+
+
+
                 hideFragment(noteFragment, fragmentTransaction);
                 hideFragment(contactListFragment , fragmentTransaction);
                 hideFragment(myMessageFragment, fragmentTransaction);
@@ -249,5 +254,9 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
             e.printStackTrace();
         }
         return map;
+
     }
+
+
+
 }

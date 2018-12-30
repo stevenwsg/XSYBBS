@@ -1,6 +1,8 @@
 package com.wsg.xsybbs.activity.user;
 
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.support.annotation.Nullable;
 import android.text.TextUtils;
 import android.view.View;
@@ -11,6 +13,7 @@ import android.widget.Toast;
 import com.wsg.xsybbs.R;
 import com.wsg.xsybbs.base.BaseActivity;
 import com.wsg.xsybbs.bean.User;
+import com.wsg.xsybbs.util.L;
 import com.wsg.xsybbs.util.SPUtils;
 import com.wsg.xsybbs.util.StaticClass;
 
@@ -29,6 +32,25 @@ public class ModifyPasswordActivity extends BaseActivity implements View.OnClick
     private EditText et_new;
     private EditText et_new_again;
     private Button bt_modify;
+
+
+    private Handler handler = new Handler() {
+        @Override
+        public void handleMessage(Message msg) {
+            super.handleMessage(msg);
+            switch (msg.what) {
+                case StaticClass.MODIFYPASSWORD_SUCESS:
+                    Toasty.success(ModifyPasswordActivity.this, getString(R.string.reset_successfully), Toast.LENGTH_SHORT, true).show();
+                    finish();
+                    break;
+
+                case StaticClass.FORGETPASSWORD_FAILED:
+                    Toasty.error(ModifyPasswordActivity.this, getString(R.string.reset_failed), Toast.LENGTH_SHORT, true).show();
+                    break;
+
+            }
+        }
+    };
 
 
     @Override
@@ -63,23 +85,37 @@ public class ModifyPasswordActivity extends BaseActivity implements View.OnClick
                 if (!TextUtils.isEmpty(now) & !TextUtils.isEmpty(news) & !TextUtils.isEmpty(new_password)) {
                     //判断两次新密码是否一致
                     if (news.equals(new_password)) {
-                        //重置密码
-                        User.updateCurrentUserPassword(now, news, new UpdateListener() {
+
+
+                        //2017/12/29因为要进行网络操作 所以需要修改。开启线程进行网络操作  。可能之前是因为 项目赶的急，没有开线程
+
+
+                        new Thread(new Runnable() {
                             @Override
-                            public void done(BmobException e) {
-                                if(e==null){
-                                    //保存用户信息
-                                    SPUtils.putString(ModifyPasswordActivity.this,StaticClass.PASSWORD,new_password);
-                                    Toasty.success(ModifyPasswordActivity.this, getString( R.string.reset_successfully), Toast.LENGTH_SHORT, true).show();
-                                    finish();
+                            public void run() {
+                                //重置密码
+                                User.updateCurrentUserPassword(now, news, new UpdateListener() {
+                                    @Override
+                                    public void done(BmobException e) {
+                                        if (e == null) {
+                                            //保存用户信息
+                                            SPUtils.putString(ModifyPasswordActivity.this, StaticClass.PASSWORD, new_password);
+                                            handler.sendEmptyMessage(StaticClass.MODIFYPASSWORD_SUCESS);
+                                        } else {
 
-                                }else{
-                                    Toasty.error(ModifyPasswordActivity.this,getString(R.string.reset_failed), Toast.LENGTH_SHORT, true).show();
 
-                                }
+                                            // TODO: 2018/12/29     errorCode:211,errorMsg:用户请先登录，或者用户登录已过期需要重新登录用户请先登录，或者用户登录已过期需要重新登录211
+                                            
+                                            
+                                            L.e(e.toString()+e.getMessage()+e.getErrorCode());
+                                            handler.sendEmptyMessage(StaticClass.MODIFYPASSWORD_FAILED);
+                                        }
+
+                                    }
+                                });
 
                             }
-                        });
+                        }).start();
 
 
                     } else {
@@ -87,18 +123,24 @@ public class ModifyPasswordActivity extends BaseActivity implements View.OnClick
                     }
 
 
-
-
-
-                }
-                else{
+                } else {
                     Toasty.info(ModifyPasswordActivity.this, getString(R.string.text_tost_empty), Toast.LENGTH_SHORT, true).show();
-                    }
-
-                    break;
-
                 }
+                break;
         }
 
+
+    }
+
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+
+        if (handler != null) {
+            handler.removeCallbacksAndMessages(null);
+            handler = null;
+        }
+    }
 }
 

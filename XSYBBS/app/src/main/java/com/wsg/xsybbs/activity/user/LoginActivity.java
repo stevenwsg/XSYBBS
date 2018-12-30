@@ -43,7 +43,7 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
     private Button btnRegister;
     private TextView tvTouristLogin;
     private TextView tvForgetPassword;
-    private TextView tvModifyPassword;
+
 
     //进度条
     private CustomDialog dialog;
@@ -52,17 +52,16 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
     private CircleImageView profile_image;
 
 
-
-    private Handler handler=new Handler(){
+    private Handler handler = new Handler() {
         @Override
         public void handleMessage(Message msg) {
             super.handleMessage(msg);
 
-            switch (msg.what){
+            switch (msg.what) {
                 case StaticClass.LOGIN_SUCESS:
                     dialog.dismiss();
                     //跳转到主页
-                    Intent intent=new Intent(LoginActivity.this, MainActivity.class);
+                    Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                     startActivity(intent);
                     finish();
                     break;
@@ -83,7 +82,6 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
     };
 
 
-
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -91,24 +89,22 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
         //初始化控件
         initView();
     }
-    public void initView(){
-        etName=(EditText)findViewById(R.id.et_name);
-        etPassword=(EditText)findViewById(R.id.et_password);
-        btnLogin=(Button)findViewById(R.id.bt_login);
-        btnRegister=(Button)findViewById(R.id.bt_registered);
-        tvTouristLogin=(TextView) findViewById(R.id.tv_tourist);
-        tvForgetPassword=(TextView) findViewById(R.id.tv_forget);
-        tvModifyPassword=(TextView)findViewById(R.id.tv_modify);
+
+    public void initView() {
+        etName = (EditText) findViewById(R.id.et_name);
+        etPassword = (EditText) findViewById(R.id.et_password);
+        btnLogin = (Button) findViewById(R.id.bt_login);
+        btnRegister = (Button) findViewById(R.id.bt_registered);
+        tvTouristLogin = (TextView) findViewById(R.id.tv_tourist);
+        tvForgetPassword = (TextView) findViewById(R.id.tv_forget);
+
 
         //设置用户信息
-        etName.setText(SPUtils.getString(this,StaticClass.USER_NAME,""));
-        etPassword.setText(SPUtils.getString(this,StaticClass.PASSWORD,""));
+        etName.setText(SPUtils.getString(this, StaticClass.USER_NAME, ""));
+        etPassword.setText(SPUtils.getString(this, StaticClass.PASSWORD, ""));
 
 
-
-
-
-        dialog = new CustomDialog(this, 100, 100, R.layout.dialog_loding_login, R.style.Theme_dialog, Gravity.CENTER,R.style.pop_anim_style);
+        dialog = new CustomDialog(this, 100, 100, R.layout.dialog_loding_login, R.style.Theme_dialog, Gravity.CENTER, R.style.pop_anim_style);
         dialog.setCancelable(false);
 
 
@@ -117,7 +113,6 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
         btnRegister.setOnClickListener(this);
         tvTouristLogin.setOnClickListener(this);
         tvForgetPassword.setOnClickListener(this);
-        tvModifyPassword.setOnClickListener(this);
 
 
 
@@ -127,17 +122,17 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
     @Override
     public void onClick(View v) {
         Intent intent;
-        switch (v.getId()){
+        switch (v.getId()) {
             //登录的逻辑
             case R.id.bt_login:
                 //获取输入框的值
                 final String name = etName.getText().toString().trim();
                 final String password = etPassword.getText().toString().trim();
                 //判断是否为空
-                if (!TextUtils.isEmpty(name) & !TextUtils.isEmpty(password)){
+                if (!TextUtils.isEmpty(name) & !TextUtils.isEmpty(password)) {
                     dialog.show();
                     //填充数据
-                    final User user=new User();
+                    final User user = new User();
                     user.setUsername(name);
                     user.setPassword(password);
 
@@ -149,13 +144,13 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
                             user.login(new SaveListener<User>() {
                                 @Override
                                 public void done(User user, BmobException e) {
-                                    if(e==null){
+                                    if (e == null) {
 
 
-                                        if(user.getBan()==false){
+                                        if (user.getBan() == false) {
 
 
-                                            EMClient.getInstance().login(name,user.getObjectId(),new EMCallBack() {//回调
+                                            EMClient.getInstance().login(name, user.getObjectId(), new EMCallBack() {//回调
                                                 @Override
                                                 public void onSuccess() {
                                                     EMClient.getInstance().groupManager().loadAllGroups();
@@ -163,23 +158,18 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
                                                     L.d("登录聊天服务器成功！");
 
 
-
                                                     //如果用户记得自己的密码，没有进行注册，还需要在这块保存用户信息
-                                                    if(SPUtils.getString(LoginActivity.this,StaticClass.USER_NAME,"").equals("")){
+                                                    if (SPUtils.getString(LoginActivity.this, StaticClass.USER_NAME, "").equals("")) {
                                                         //保存用户信息
-                                                        SPUtils.putString(LoginActivity.this,StaticClass.USER_NAME,name);
-                                                        SPUtils.putString(LoginActivity.this,StaticClass.PASSWORD,password);
+                                                        SPUtils.putString(LoginActivity.this, StaticClass.USER_NAME, name);
+                                                        SPUtils.putString(LoginActivity.this, StaticClass.PASSWORD, password);
                                                     }
-
 
 
                                                     //如果第一次登录成功，则以后每次闪屏页直接跳转到 主页
-                                                    if(SPUtils.getBoolean(LoginActivity.this,StaticClass.SHARE_IS_LOGIN,true)==true){
-                                                        SPUtils.putBoolean(LoginActivity.this,StaticClass.SHARE_IS_LOGIN,false);
+                                                    if (SPUtils.getBoolean(LoginActivity.this, StaticClass.SHARE_IS_LOGIN, true) == true) {
+                                                        SPUtils.putBoolean(LoginActivity.this, StaticClass.SHARE_IS_LOGIN, false);
                                                     }
-
-
-
 
 
                                                     handler.sendEmptyMessage(StaticClass.LOGIN_SUCESS);
@@ -193,23 +183,19 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
                                                 @Override
                                                 public void onError(int code, String message) {
                                                     handler.sendEmptyMessage(StaticClass.LOGIN_FAILED);
-                                                    L.d( "登录聊天服务器失败！");
+                                                    L.d("登录聊天服务器失败！");
                                                 }
                                             });
 
 
-                                        }else{
+                                        } else {
                                             handler.sendEmptyMessage(StaticClass.Login_BAN);
 
                                         }
 
 
-
-
-
-
-                                    }else{
-                                        L.d(e.toString()+e.getErrorCode());
+                                    } else {
+                                        L.d(e.toString() + e.getErrorCode());
                                         handler.sendEmptyMessage(StaticClass.LOGIN_FAILED);
                                     }
                                 }
@@ -219,40 +205,28 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
                     }).start();
 
 
-                }else{
+                } else {
                     Toasty.info(LoginActivity.this, "输入框不能为空", Toast.LENGTH_SHORT, true).show();
                 }
 
 
-
-
-
-
-
-
-
-
-
-                    break;
-             //跳转注册页面
+                break;
+            //跳转注册页面
             case R.id.bt_registered:
-                intent=new Intent(LoginActivity.this,RegisterActivity.class);
+                intent = new Intent(LoginActivity.this, RegisterActivity.class);
                 startActivity(intent);
                 break;
-             //跳转游客登录页面
+            //跳转游客登录页面
             case R.id.tv_tourist:
-                intent=new Intent(LoginActivity.this,TouristLoginActivity.class);
+                intent = new Intent(LoginActivity.this, TouristLoginActivity.class);
                 startActivity(intent);
                 break;
-             //跳转忘记密码页面
+            //跳转忘记密码页面
             case R.id.tv_forget:
-                intent=new Intent(LoginActivity.this,ForgetPasswordActivity.class);
+                intent = new Intent(LoginActivity.this, ForgetPasswordActivity.class);
                 startActivity(intent);
                 break;
-            case R.id.tv_modify:
-                intent=new Intent(LoginActivity.this,ModifyPasswordActivity.class);
-                startActivity(intent);
-                break;
+
         }
 
     }

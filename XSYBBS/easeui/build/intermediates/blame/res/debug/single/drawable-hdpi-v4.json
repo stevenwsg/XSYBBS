@@ -12,18 +12,28 @@
         "source": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\drawable-hdpi\\ease_conversation_normal.png"
     },
     {
+<<<<<<< HEAD
         "merged": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ease_record_animate_04.png",
         "source": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\drawable-hdpi\\ease_record_animate_04.png"
     },
     {
         "merged": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png",
         "source": "C:\\Users\\wsg\\.android\\build-cache\\06b56d54d90f8796dab44b079f5ccd1d46dc18c9\\output\\res\\drawable-hdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png"
+=======
+        "merged": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png",
+        "source": "C:\\Users\\wsg\\.android\\build-cache\\06b56d54d90f8796dab44b079f5ccd1d46dc18c9\\output\\res\\drawable-hdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ease_record_animate_04.png",
+        "source": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\drawable-hdpi\\ease_record_animate_04.png"
+>>>>>>> refs/remotes/origin/graduation-project
     },
     {
         "merged": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ease_icon_marka.png",
         "source": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\drawable-hdpi\\ease_icon_marka.png"
     },
     {
+<<<<<<< HEAD
         "merged": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ease_slidetab_bg_press.9.png",
         "source": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\drawable-hdpi\\ease_slidetab_bg_press.9.png"
     },
@@ -38,6 +48,22 @@
     {
         "merged": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ease_chatfrom_bg_focused.9.png",
         "source": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\drawable-hdpi\\ease_chatfrom_bg_focused.9.png"
+=======
+        "merged": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ease_conversation_selected.png",
+        "source": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\drawable-hdpi\\ease_conversation_selected.png"
+    },
+    {
+        "merged": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ease_slidetab_bg_press.9.png",
+        "source": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\drawable-hdpi\\ease_slidetab_bg_press.9.png"
+    },
+    {
+        "merged": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ease_chatfrom_bg_focused.9.png",
+        "source": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\drawable-hdpi\\ease_chatfrom_bg_focused.9.png"
+    },
+    {
+        "merged": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ease_chatto_voice_playing_f1.png",
+        "source": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\drawable-hdpi\\ease_chatto_voice_playing_f1.png"
+>>>>>>> refs/remotes/origin/graduation-project
     },
     {
         "merged": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ease_search_clear_normal.png",

@@ -43,19 +43,13 @@ dependencies {
     //Bmob文件存储
     //Bmob
     compile 'cn.bmob.android:bmob-sdk:3.5.5'
-
     //Toasty  美化的toast
     compile 'com.github.GrenderG:Toasty:1.2.5'
     //首页banner轮播图
     compile 'com.youth.banner:banner:1.4.10'
     //图片选择器
     compile 'me.thewyp:avatar:1.0.4'
-
     //6.0+权限申请
     compile 'me.weyye.hipermission:library:1.0.7'
-
-
-
-
     compile project(':easeui')
 }
