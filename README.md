@@ -170,6 +170,11 @@
 
 
  * 百度地图定位：http://lbsyun.baidu.com/index.php?title=%E9%A6%96%E9%A1%B5
+ 
+  
+ * Leakcanary检测内存泄漏：https://github.com/square/leakcanary
+ 
+ 
 
 
 
@@ -203,8 +208,9 @@
  
  * 2018/12/29&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;将修改密码界面从登录界面搬到 个人中心界面
  
-  * 2018/12/29&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;解决搜索页面重复加载问题（每次搜索前清空集合）  
+ * 2018/12/29&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;解决搜索页面重复加载问题（每次搜索前清空集合）  
  
+ * 2019/01/05&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;集成leakcanary检测内存泄漏 
 
  * 后续会陆续进行更新
  * 后续会陆续进行更新
