@@ -1,20 +1,11 @@
 [
     {
-<<<<<<< HEAD
-        "merged": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_ab_back_material.xml",
-        "source": "C:\\Users\\wsg\\.android\\build-cache\\06b56d54d90f8796dab44b079f5ccd1d46dc18c9\\output\\res\\drawable\\abc_ic_ab_back_material.xml"
-    },
-    {
-        "merged": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",
-        "source": "C:\\Users\\wsg\\.android\\build-cache\\06b56d54d90f8796dab44b079f5ccd1d46dc18c9\\output\\res\\drawable\\abc_edit_text_material.xml"
-=======
         "merged": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",
         "source": "C:\\Users\\wsg\\.android\\build-cache\\06b56d54d90f8796dab44b079f5ccd1d46dc18c9\\output\\res\\drawable\\abc_edit_text_material.xml"
     },
     {
         "merged": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_ab_back_material.xml",
         "source": "C:\\Users\\wsg\\.android\\build-cache\\06b56d54d90f8796dab44b079f5ccd1d46dc18c9\\output\\res\\drawable\\abc_ic_ab_back_material.xml"
->>>>>>> refs/remotes/origin/graduation-project
     },
     {
         "merged": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",

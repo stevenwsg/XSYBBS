@@ -344,11 +344,11 @@
         "source": "C:\\Users\\wsg\\.android\\build-cache\\06b56d54d90f8796dab44b079f5ccd1d46dc18c9\\output\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
     },
     {
-        "merged": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\release\\layout\\ease_widget_voice_recorder.xml",
-        "source": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\layout\\ease_widget_voice_recorder.xml"
-    },
-    {
         "merged": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_menu_item_layout.xml",
         "source": "C:\\Users\\wsg\\.android\\build-cache\\06b56d54d90f8796dab44b079f5ccd1d46dc18c9\\output\\res\\layout\\abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\release\\layout\\ease_widget_voice_recorder.xml",
+        "source": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\layout\\ease_widget_voice_recorder.xml"
     }
 ]
