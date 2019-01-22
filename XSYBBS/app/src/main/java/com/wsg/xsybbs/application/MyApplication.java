@@ -7,6 +7,7 @@ import android.support.annotation.RequiresApi;
 
 import com.hyphenate.chat.EMOptions;
 import com.hyphenate.easeui.EaseUI;
+
 import com.squareup.leakcanary.LeakCanary;
 import com.tencent.bugly.crashreport.CrashReport;
 import com.wsg.xsybbs.util.StaticClass;
@@ -61,6 +62,7 @@ public class MyApplication extends Application {
             // You should not init your app in this process.
             return;
         }
+
         LeakCanary.install(this);
 
 

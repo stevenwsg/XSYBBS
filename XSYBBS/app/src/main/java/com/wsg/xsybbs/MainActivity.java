@@ -169,7 +169,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
 
                         @Override
                         public void onListItemClicked(EaseUser user) {
-                            startActivity(new Intent(MainActivity.this, ChatActivity.class).putExtra(EaseConstant.EXTRA_USER_ID, user.getUsername()));
+                            startActivity(new Intent(getApplicationContext(), ChatActivity.class).putExtra(EaseConstant.EXTRA_USER_ID, user.getUsername()));
                         }
                     });
                     
@@ -199,7 +199,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
                         //hideTitleBar();
                         @Override
                         public void onListItemClicked(EMConversation conversation) {
-                            startActivity(new Intent(MainActivity.this, ChatActivity.class).putExtra(EaseConstant.EXTRA_USER_ID, conversation.conversationId()));
+                            startActivity(new Intent(getApplicationContext(), ChatActivity.class).putExtra(EaseConstant.EXTRA_USER_ID, conversation.conversationId()));
                         }
                     });
                     fragmentTransaction.add(R.id.content_layout, myMessageFragment);

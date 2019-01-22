@@ -440,12 +440,12 @@
         "source": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\drawable-hdpi\\ease_chatfrom_voice_playing_f3.png"
     },
     {
-        "merged": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\abc_ic_star_black_16dp.png",
-        "source": "C:\\Users\\wsg\\.android\\build-cache\\06b56d54d90f8796dab44b079f5ccd1d46dc18c9\\output\\res\\drawable-hdpi-v4\\abc_ic_star_black_16dp.png"
-    },
-    {
         "merged": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\ease_chatting_setmode_keyboard_btn_pressed.png",
         "source": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\drawable-hdpi\\ease_chatting_setmode_keyboard_btn_pressed.png"
+    },
+    {
+        "merged": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\abc_ic_star_black_16dp.png",
+        "source": "C:\\Users\\wsg\\.android\\build-cache\\06b56d54d90f8796dab44b079f5ccd1d46dc18c9\\output\\res\\drawable-hdpi-v4\\abc_ic_star_black_16dp.png"
     },
     {
         "merged": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\ease_dx_checkbox_off.png",

@@ -149,9 +149,7 @@ public class MineFragment extends Fragment implements View.OnClickListener {
                 startActivity(new Intent(getActivity(), UpDateActivity.class));
                 break;
             case R.id.tv_sign_out:
-
                 logout();
-
                 break;
 
 
@@ -179,10 +177,10 @@ public class MineFragment extends Fragment implements View.OnClickListener {
 
         startActivity(new Intent(getActivity(), LoginActivity.class));
         //将主页关掉
-        getActivity().finish();
+        ((MainActivity)getActivity()).finish();
 
 
-        // TODO: 2018/12/29 注销后需要 释放 四个 fragments  资源 ，不然会出现OOM
+        // TODO: 2018/12/29 注销后需要 释放 四个 fragments  资源 ，不然会出现OOM      2019/1/19 leakcanary内存泄漏检测崩溃
     }
 
 
