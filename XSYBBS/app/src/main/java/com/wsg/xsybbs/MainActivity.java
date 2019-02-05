@@ -149,8 +149,11 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
                 hideFragment(mineFragment, fragmentTransaction);
 
 
+
                 if (contactListFragment == null) {
                     contactListFragment = new FriendsFragment();
+
+
                     new Thread() {//需要在子线程中调用
                         @Override
                         public void run() {
@@ -159,6 +162,9 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
 
                         }
                     }.start();
+
+
+
 
 
 
@@ -254,7 +260,6 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         return map;
 
     }
-
 
 
 }

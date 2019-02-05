@@ -59,9 +59,11 @@ public class MineFragment extends Fragment implements View.OnClickListener {
     private TextView tv_signout;
 
 
-    //2012/12/29
+    //2018/12/29
     private TextView tv_modify_password;
 
+    //2019/2/5
+    private TextView tv_exit;
 
     @Nullable
     @Override
@@ -102,6 +104,10 @@ public class MineFragment extends Fragment implements View.OnClickListener {
 
         tv_modify_password=(TextView)view.findViewById(R.id.tv_modify);
         tv_modify_password.setOnClickListener(this);
+
+
+        tv_exit=(TextView)view.findViewById(R.id.tv_exit_system);
+        tv_exit.setOnClickListener(this);
 
         //设置具体的值
 
@@ -157,10 +163,16 @@ public class MineFragment extends Fragment implements View.OnClickListener {
                 startActivity(new Intent(getActivity(),ModifyPasswordActivity.class));
                 break;
 
+            case R.id.tv_exit_system:
+                exit();
+                break;
+
         }
 
 
     }
+
+
 
     //退出登录
     private void logout() {
@@ -193,4 +205,11 @@ public class MineFragment extends Fragment implements View.OnClickListener {
             UtilTools.getImage(getActivity(), profile_image, user.getImage().trim());
         }
     }
+
+    //退出系统
+    private void exit() {
+        getActivity().finish();
+    }
+
+
 }

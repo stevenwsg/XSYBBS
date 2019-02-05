@@ -11,6 +11,8 @@ import android.view.ViewGroup;
 
 import com.hyphenate.easeui.ui.EaseConversationListFragment;
 import com.wsg.xsybbs.R;
+import com.wsg.xsybbs.ThreadPool.MyThreadPool;
+import com.wsg.xsybbs.util.L;
 
 /**
  * Created by wsg
@@ -29,7 +31,6 @@ public class MyMessageFragment extends EaseConversationListFragment {
 //        hideTitleBar();
         initData();
     }
-
     // TODO: 2018/7/5 需要自己定制
 
 
@@ -53,7 +54,9 @@ public class MyMessageFragment extends EaseConversationListFragment {
                 }
             }
         };
-        Thread thread = new Thread(runnable);
-        thread.start();
+        //2019/2/5   试着解决内存泄漏问题
+        MyThreadPool.getThreadPool().execute(runnable);
     }
+
+
 }

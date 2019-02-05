@@ -12,7 +12,7 @@ public class L {
     //开关
     public static final  boolean DEBUG = true;
     //TAG
-    public static final String TAG = "XYSBBS";
+    public static final String TAG = "";
 
     //五个等级  DIWE
 
