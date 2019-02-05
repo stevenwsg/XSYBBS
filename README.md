@@ -212,7 +212,7 @@
  
  * 2019/01/05&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;集成leakcanary检测内存泄漏 
 
- *2019/01/05&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 个人主页面 添加 退出系统选项
+ * 2019/02/05&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 个人主页面 添加 退出系统选项
  * 后续会陆续进行更新
  * 后续会陆续进行更新
  * 后续会陆续进行更新 
