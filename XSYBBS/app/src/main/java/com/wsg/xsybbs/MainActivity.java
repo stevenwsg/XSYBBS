@@ -136,8 +136,6 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
                 } else {
                     fragmentTransaction.show(noteFragment);
                 }
-
-
                 break;
 
             case R.id.friend_layout_view:
