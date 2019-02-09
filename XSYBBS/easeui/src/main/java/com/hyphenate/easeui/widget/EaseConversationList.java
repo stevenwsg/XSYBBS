@@ -33,19 +33,19 @@ public class EaseConversationList extends ListView{
     
     
     public EaseConversationList(Context context, AttributeSet attrs) {
-        super(context, attrs);
-        init(context, attrs);
+        super(context.getApplicationContext(), attrs);
+        init(context.getApplicationContext(), attrs);
     }
     
     public EaseConversationList(Context context, AttributeSet attrs, int defStyle) {
-        super(context, attrs, defStyle);
-        init(context, attrs);
+        super(context.getApplicationContext(), attrs, defStyle);
+        init(context.getApplicationContext(), attrs);
     }
 
     
     private void init(Context context, AttributeSet attrs) {
-        this.context = context;
-        TypedArray ta = context.obtainStyledAttributes(attrs, R.styleable.EaseConversationList);
+        this.context = context.getApplicationContext();
+        TypedArray ta = context.getApplicationContext().obtainStyledAttributes(attrs, R.styleable.EaseConversationList);
         primaryColor = ta.getColor(R.styleable.EaseConversationList_cvsListPrimaryTextColor, getResources().getColor(R.color.list_itease_primary_color));
         secondaryColor = ta.getColor(R.styleable.EaseConversationList_cvsListSecondaryTextColor, getResources().getColor(R.color.list_itease_secondary_color));
         timeColor = ta.getColor(R.styleable.EaseConversationList_cvsListTimeTextColor, getResources().getColor(R.color.list_itease_secondary_color));
@@ -66,7 +66,7 @@ public class EaseConversationList extends ListView{
         if(helper != null){
             this.conversationListHelper = helper;
         }
-        adapter = new EaseConversationAdapter(context, 0, conversationList);
+        adapter = new EaseConversationAdapter(context.getApplicationContext(), 0, conversationList);
         adapter.setCvsListHelper(conversationListHelper);
         adapter.setPrimaryColor(primaryColor);
         adapter.setPrimarySize(primarySize);

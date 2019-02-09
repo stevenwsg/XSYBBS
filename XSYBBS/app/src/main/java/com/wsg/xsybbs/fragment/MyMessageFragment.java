@@ -1,18 +1,11 @@
 package com.wsg.xsybbs.fragment;
 
-import android.app.Fragment;
-import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
+
+import android.os.AsyncTask;
 
 import com.hyphenate.easeui.ui.EaseConversationListFragment;
-import com.wsg.xsybbs.R;
-import com.wsg.xsybbs.ThreadPool.MyThreadPool;
-import com.wsg.xsybbs.util.L;
+
 
 /**
  * Created by wsg
@@ -20,6 +13,10 @@ import com.wsg.xsybbs.util.L;
  * function: 消息列表Fragment
  */
 public class MyMessageFragment extends EaseConversationListFragment {
+
+    private MyTask myTask;
+
+
     @Override
     protected void initView() {
         super.initView();
@@ -34,29 +31,41 @@ public class MyMessageFragment extends EaseConversationListFragment {
     // TODO: 2018/7/5 需要自己定制
 
 
-
-
-
     private void initData() {
-        // run in a second
-        final long timeInterval = 10000;
-        Runnable runnable = new Runnable() {
-            public void run() {
-                while (true) {
-                    // ------- code for task to run
-                    conversationListView.refresh();
-                    // ------- ends here
-                    try {
-                        Thread.sleep(timeInterval);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
-                }
-            }
-        };
-        //2019/2/5   试着解决内存泄漏问题
-        MyThreadPool.getThreadPool().execute(runnable);
+        myTask=new MyTask();
+        myTask.execute();
     }
 
 
+    class MyTask extends AsyncTask<Void, Void, Void> {
+        @Override
+        protected Void doInBackground(Void... voids) {
+
+            // run in a second
+            final long timeInterval = 10000;
+            while (true) {
+                // ------- code for task to run
+                conversationListView.refresh();
+                // ------- ends here
+                try {
+                    Thread.sleep(timeInterval);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                return null;
+            }
+        }
+    }
+
+
+    @Override
+    public void onDestroy() {
+
+        //如果异步任务不为空 并且状态是 运行时  ，就把他取消这个加载任务
+        if(myTask !=null && myTask.getStatus() != AsyncTask.Status.FINISHED){
+            myTask.cancel(true);
+
+        }
+        super.onDestroy();
+    }
 }

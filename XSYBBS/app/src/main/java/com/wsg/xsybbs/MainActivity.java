@@ -9,6 +9,8 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import com.hyphenate.chat.EMClient;
 import com.hyphenate.chat.EMConversation;
 import com.hyphenate.easeui.EaseConstant;
@@ -26,6 +28,8 @@ import com.wsg.xsybbs.fragment.NoteFragment;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
+import es.dmoral.toasty.Toasty;
 
 /*
 主界面
@@ -51,6 +55,12 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     private TextView mFriendsView;
     private TextView mMessageView;
     private TextView mMineView;
+
+    //点击两次退出程序
+    private boolean isFirst =true;
+    private long lastTime;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -260,6 +270,24 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         return map;
 
     }
+
+
+    @Override
+    public void onBackPressed() {
+        if(isFirst){
+            Toasty.info(this,"再按一次退出",Toast.LENGTH_LONG).show();
+            lastTime=System.currentTimeMillis();
+            isFirst=false;
+        }else {
+            if ((System.currentTimeMillis()-lastTime)<2000){
+                this.finish();
+            }else {
+                Toasty.info(this,"再按一次退出",Toast.LENGTH_LONG).show();
+                lastTime=System.currentTimeMillis();
+            }
+        }
+    }
+
 
 
 }

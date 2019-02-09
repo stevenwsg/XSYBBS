@@ -82,7 +82,7 @@ public class EaseConversationAdapter extends ArrayAdapter<EMConversation> {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         if (convertView == null) {
-            convertView = LayoutInflater.from(getContext()).inflate(R.layout.ease_row_chat_history, parent, false);
+            convertView = LayoutInflater.from(getContext().getApplicationContext()).inflate(R.layout.ease_row_chat_history, parent, false);
         }
         ViewHolder holder = (ViewHolder) convertView.getTag();
         if (holder == null) {
@@ -121,7 +121,7 @@ public class EaseConversationAdapter extends ArrayAdapter<EMConversation> {
             holder.name.setText(room != null && !TextUtils.isEmpty(room.getName()) ? room.getName() : username);
             holder.motioned.setVisibility(View.GONE);
         }else {
-            EaseUserUtils.setUserAvatar(getContext(), username, holder.avatar);
+            EaseUserUtils.setUserAvatar(getContext().getApplicationContext(), username, holder.avatar);
             EaseUserUtils.setUserNick(username, holder.name);
             holder.motioned.setVisibility(View.GONE);
         }
@@ -153,7 +153,7 @@ public class EaseConversationAdapter extends ArrayAdapter<EMConversation> {
             if(cvsListHelper != null){
                 content = cvsListHelper.onSetItemSecondaryText(lastMessage);
             }
-            holder.message.setText(EaseSmileUtils.getSmiledText(getContext(), EaseCommonUtils.getMessageDigest(lastMessage, (this.getContext()))),
+            holder.message.setText(EaseSmileUtils.getSmiledText(getContext().getApplicationContext(), EaseCommonUtils.getMessageDigest(lastMessage, (this.getContext().getApplicationContext()))),
                     BufferType.SPANNABLE);
             if(content != null){
                 holder.message.setText(content);
