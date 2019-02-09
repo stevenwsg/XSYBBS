@@ -213,6 +213,9 @@
  * 2019/01/05&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;集成leakcanary检测内存泄漏 
 
  * 2019/02/05&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 个人主页面 添加 退出系统选项
+ 
+ * 2019/02/09&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 解决内存泄漏问题 主要是因为线程未关闭，利用AsyncTask系统回调来使用后台线程，关闭后台线程
+ 
  * 后续会陆续进行更新
  * 后续会陆续进行更新
  * 后续会陆续进行更新 
