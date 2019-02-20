@@ -216,6 +216,9 @@
  
  * 2019/02/09&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;解决内存泄漏问题 主要是因为线程未关闭，利用AsyncTask系统回调来使用后台线程，关闭后台线程
  
- * 后续会陆续进行更新
- * 后续会陆续进行更新
- * 后续会陆续进行更新 
+ * 后续安排
+ * 添加动画
+ * md风格
+ * banner 不要直接写死，抽成 listview header 
+ * banner elevation 
+ 
