@@ -16,12 +16,20 @@ android {
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         useJack=true
+
+        ndk {
+            // 设置支持的SO库架构
+            abiFilters 'armeabi','x86'//, 'armeabi-v7a', 'arm64-v8a',, 'x86_64'
+        }
     }
     buildTypes {
         release {
-            minifyEnabled false
+            //如果编译速度慢，可以将下面两行注释掉
+            minifyEnabled true
+            shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+
     }
     productFlavors {
     }
@@ -59,6 +67,7 @@ dependencies {
 
 
     // 2019/1/5集成leakcanary检测内存泄漏
+    //因编译缓慢 所以将其注销掉
     debugCompile 'com.squareup.leakcanary:leakcanary-android:1.6.3'
     releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.6.3'
     testCompile 'com.squareup.leakcanary:leakcanary-support-fragment:1.6.3'

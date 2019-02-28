@@ -55,7 +55,7 @@ public class MyApplication extends Application {
 
 
 
-        //2019/1/5 集成leakcanary
+       // 2019/1/5 集成leakcanary
 
         if (LeakCanary.isInAnalyzerProcess(this)) {
             // This process is dedicated to LeakCanary for heap analysis.
