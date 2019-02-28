@@ -216,6 +216,8 @@
  
  * 2019/02/09&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;解决内存泄漏问题 主要是因为线程未关闭，利用AsyncTask系统回调来使用后台线程，关闭后台线程
  
+ * 2019/03/01&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;过滤掉无用so包，将安装包体积从30m减小到8m
+ 
  * 后续安排
  * 添加动画
  * md风格
