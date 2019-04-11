@@ -191,8 +191,6 @@ public class MineFragment extends Fragment implements View.OnClickListener {
         //将主页关掉
         ((MainActivity)getActivity()).finish();
 
-
-        // TODO: 2018/12/29 注销后需要 释放 四个 fragments  资源 ，不然会出现OOM      2019/1/19 leakcanary内存泄漏检测崩溃
     }
 
 

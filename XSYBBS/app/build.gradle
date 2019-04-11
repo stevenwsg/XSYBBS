@@ -19,14 +19,14 @@ android {
 
         ndk {
             // 设置支持的SO库架构
-            abiFilters 'armeabi','x86'//, 'armeabi-v7a', 'arm64-v8a',, 'x86_64'
+            abiFilters 'armeabi','x86', 'armeabi-v7a', 'arm64-v8a', 'x86_64'
         }
     }
     buildTypes {
         release {
             //如果编译速度慢，可以将下面两行注释掉
-            minifyEnabled true
-            shrinkResources true
+//            minifyEnabled true
+//            shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
 

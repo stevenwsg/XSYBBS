@@ -104,12 +104,12 @@
         "source": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\anim\\slide_in_from_left.xml"
     },
     {
-        "merged": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\debug\\anim\\abc_tooltip_exit.xml",
-        "source": "C:\\Users\\wsg\\.android\\build-cache\\06b56d54d90f8796dab44b079f5ccd1d46dc18c9\\output\\res\\anim\\abc_tooltip_exit.xml"
-    },
-    {
         "merged": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_exit.xml",
         "source": "C:\\Users\\wsg\\.android\\build-cache\\06b56d54d90f8796dab44b079f5ccd1d46dc18c9\\output\\res\\anim\\abc_popup_exit.xml"
+    },
+    {
+        "merged": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\debug\\anim\\abc_tooltip_exit.xml",
+        "source": "C:\\Users\\wsg\\.android\\build-cache\\06b56d54d90f8796dab44b079f5ccd1d46dc18c9\\output\\res\\anim\\abc_tooltip_exit.xml"
     },
     {
         "merged": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",

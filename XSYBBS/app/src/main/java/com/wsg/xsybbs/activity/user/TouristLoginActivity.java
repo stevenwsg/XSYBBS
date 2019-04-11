@@ -96,6 +96,10 @@ public class TouristLoginActivity extends BaseActivity {
     //初始化banner
     private void initBanner() {
 
+
+
+
+
         new Thread(new Runnable() {
             @Override
             public void run() {
