@@ -220,7 +220,7 @@
   
  * 2019/04/11&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;引入kotlin
  
- * 2019/03/01&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;引入全局线程池
+ * 2019/04/11&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;引入全局线程池
  
  * 后续安排
  * 添加动画
