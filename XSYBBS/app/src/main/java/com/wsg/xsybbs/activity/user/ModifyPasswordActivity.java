@@ -77,8 +77,8 @@ public class ModifyPasswordActivity extends BaseActivity implements View.OnClick
         switch (v.getId()) {
             case R.id.btn_update_password:
 
-                String now = et_old.getText().toString().trim();
-                String news = et_new.getText().toString().trim();
+                final String now = et_old.getText().toString().trim();
+                final String news = et_new.getText().toString().trim();
                 final String new_password = et_new_again.getText().toString();
 
                 //判断是否为空

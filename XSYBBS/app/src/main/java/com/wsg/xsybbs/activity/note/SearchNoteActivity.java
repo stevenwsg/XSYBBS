@@ -108,7 +108,7 @@ public class SearchNoteActivity extends BaseActivity implements View.OnClickList
             case R.id.iv_searchnote:
 
 
-                String title = etSearcNote.getText().toString().trim();
+                final String title = etSearcNote.getText().toString().trim();
                 listnote.clear();
 
                 if (!TextUtils.isEmpty(title)) {

@@ -245,7 +245,7 @@ public class NoteDetailActivity extends BaseActivity implements View.OnClickList
 
                 String s=editText.getText().toString().trim();
                 if(!TextUtils.isEmpty(s)){
-                    Comment comment=new Comment();
+                    final Comment comment=new Comment();
                     comment.setNoteid(note.getObjectId());
                     User user = BmobUser.getCurrentUser(User.class);
                     comment.setContent(s);

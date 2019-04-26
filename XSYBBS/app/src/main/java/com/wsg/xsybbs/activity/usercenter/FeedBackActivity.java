@@ -70,7 +70,7 @@ public class FeedBackActivity extends BaseActivity implements View.OnClickListen
                 if (!TextUtils.isEmpty(s)) {
 
                     //开始反馈数据
-                    Feedback feedback = new Feedback();
+                    final Feedback feedback = new Feedback();
                     User user = BmobUser.getCurrentUser(User.class);
                     feedback.setUserid(user.getObjectId());
                     feedback.setContent(s);

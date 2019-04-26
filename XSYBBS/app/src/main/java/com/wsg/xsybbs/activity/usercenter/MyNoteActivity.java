@@ -97,7 +97,7 @@ public class MyNoteActivity extends BaseActivity implements MyNoteAdapter.Callba
 
     @Override
     public void click(View v) {
-        int i=(Integer) v.getTag();
+        final int i=(Integer) v.getTag();
         switch(v.getId()){
             //修改帖子
             case R.id.item_my_note_modify:
