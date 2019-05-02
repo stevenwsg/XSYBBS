@@ -28,7 +28,6 @@ public class MyMessageFragment extends EaseConversationListFragment {
 //        hideTitleBar();
         initData();
     }
-    // TODO: 2018/7/5 需要自己定制
 
 
     private void initData() {

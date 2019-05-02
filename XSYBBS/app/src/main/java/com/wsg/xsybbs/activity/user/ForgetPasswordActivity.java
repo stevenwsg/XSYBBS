@@ -13,6 +13,7 @@ import android.widget.Toast;
 import com.wsg.xsybbs.R;
 import com.wsg.xsybbs.base.BaseActivity;
 import com.wsg.xsybbs.bean.User;
+import com.wsg.xsybbs.threadpool.MyThreadPool;
 import com.wsg.xsybbs.util.StaticClass;
 
 import cn.bmob.v3.exception.BmobException;
@@ -28,7 +29,7 @@ public class ForgetPasswordActivity extends BaseActivity implements View.OnClick
 
     private EditText et_email;
     private Button bt_sure;
-    private String  email;
+    private String email;
 
 
     private Handler handler = new Handler() {
@@ -73,12 +74,7 @@ public class ForgetPasswordActivity extends BaseActivity implements View.OnClick
                 //判断是否为空
                 if (!TextUtils.isEmpty(email)) {
                     //发送邮件
-
-
-
-                    //2017/12/29因为要进行网络操作 所以需要修改。开启线程进行网络操作  。可能之前是因为 项目赶的急，没有开线程
-
-                    new Thread(new Runnable() {
+                    MyThreadPool.execute(new Runnable() {
                         @Override
                         public void run() {
                             User.resetPasswordByEmail(email, new UpdateListener() {
@@ -91,11 +87,8 @@ public class ForgetPasswordActivity extends BaseActivity implements View.OnClick
                                     }
                                 }
                             });
-
                         }
-                    }).start();
-
-
+                    });
 
                 } else {
                     Toasty.info(ForgetPasswordActivity.this, getString(R.string.text_tost_empty), Toast.LENGTH_SHORT, true).show();
@@ -108,9 +101,9 @@ public class ForgetPasswordActivity extends BaseActivity implements View.OnClick
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        if (handler!=null){
+        if (handler != null) {
             handler.removeCallbacksAndMessages(null);
-            handler=null;
+            handler = null;
         }
 
     }

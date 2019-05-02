@@ -18,6 +18,7 @@ import com.wsg.xsybbs.R;
 import com.wsg.xsybbs.adapter.NoteAdapter;
 import com.wsg.xsybbs.base.BaseActivity;
 import com.wsg.xsybbs.bean.Note;
+import com.wsg.xsybbs.threadpool.MyThreadPool;
 import com.wsg.xsybbs.util.StaticClass;
 
 import java.util.ArrayList;
@@ -115,7 +116,8 @@ public class SearchNoteActivity extends BaseActivity implements View.OnClickList
                     tvSearchNote.setVisibility(View.VISIBLE);
 
                     //2018/12/29 开启线程
-                    new Thread(new Runnable() {
+                    //2019/5/2 全局线程池重构
+                    MyThreadPool.execute(new Runnable() {
                         @Override
                         public void run() {
                             BmobQuery<Note> query = new BmobQuery<Note>();
@@ -126,8 +128,6 @@ public class SearchNoteActivity extends BaseActivity implements View.OnClickList
                                 public void done(List<Note> list, BmobException e) {
                                     if (e == null) {
                                         if (list.size() != 0) {
-
-
                                             listnote.addAll(list);
                                             handler.sendEmptyMessage(StaticClass.SEARCH_NOTE_SUCCESS);
 
@@ -139,10 +139,8 @@ public class SearchNoteActivity extends BaseActivity implements View.OnClickList
                                     }
                                 }
                             });
-
                         }
-                    }).start();
-
+                    });
                 } else {
                     Toasty.info(SearchNoteActivity.this, "亲，输入框不能为空", Toast.LENGTH_SHORT).show();
                 }

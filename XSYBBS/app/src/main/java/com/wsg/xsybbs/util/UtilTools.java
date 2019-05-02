@@ -13,6 +13,7 @@ import android.widget.TextView;
 
 import com.wsg.xsybbs.R;
 import com.wsg.xsybbs.bean.User;
+import com.wsg.xsybbs.threadpool.MyThreadPool;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -76,37 +77,34 @@ public class UtilTools {
             Bitmap bitmap = BitmapFactory.decodeStream(byStream);
             imageView.setImageBitmap(bitmap);
 
-
-
-
         }
     }
 
 
     //保存图片到bmob
     public static void saveImageToBmob(String s) {
-        User user = new User();
+        final User user = new User();
         user.setImage(s);
-        BmobUser bmobUser = BmobUser.getCurrentUser();
+        final BmobUser bmobUser = BmobUser.getCurrentUser();
 
-        user.update(bmobUser.getObjectId(), new UpdateListener() {
+        MyThreadPool.execute(new Runnable() {
             @Override
-            public void done(BmobException e) {
-                if (e == null) {
-                    L.d("头像修改成功");
-                } else {
-                    L.d("头像修改失败");
+            public void run() {
+                user.update(bmobUser.getObjectId(), new UpdateListener() {
+                    @Override
+                    public void done(BmobException e) {
+                        if (e == null) {
+                            L.d("头像修改成功");
+                        } else {
+                            L.d("头像修改失败");
 
-                }
+                        }
+
+                    }
+                });
 
             }
         });
-
-
-
-
-
-
     }
 
 
@@ -121,8 +119,6 @@ public class UtilTools {
             //3.生成bitmap
             Bitmap bitmap = BitmapFactory.decodeStream(byStream);
             imageView.setImageBitmap(bitmap);
-
-
 
         }
     }

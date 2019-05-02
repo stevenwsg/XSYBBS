@@ -17,6 +17,7 @@ import com.hyphenate.exceptions.HyphenateException;
 import com.wsg.xsybbs.R;
 import com.wsg.xsybbs.base.BaseActivity;
 import com.wsg.xsybbs.bean.User;
+import com.wsg.xsybbs.threadpool.MyThreadPool;
 import com.wsg.xsybbs.util.L;
 import com.wsg.xsybbs.util.SPUtils;
 import com.wsg.xsybbs.util.StaticClass;
@@ -153,13 +154,10 @@ public class RegisterActivity extends BaseActivity implements View.OnClickListen
 
 
                         //注册，开个线程吧，毕竟需要请求网络
-
-                        new Thread(new Runnable() {
+                        //2019/5/2 使用全局线程池
+                        MyThreadPool.execute(new Runnable() {
                             @Override
                             public void run() {
-
-
-
                                 user.signUp(new SaveListener<User>() {
                                     @Override
                                     public void done(User user, BmobException e) {
@@ -173,12 +171,7 @@ public class RegisterActivity extends BaseActivity implements View.OnClickListen
                                     }
                                 });
                             }
-                        }).start();
-
-
-
-
-
+                        });
                     }else{
                         Toasty.info(this,  getString(R.string.text_two_input_not_consistent), Toast.LENGTH_SHORT, true).show();
                     }

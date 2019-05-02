@@ -19,6 +19,7 @@ import com.wsg.xsybbs.MainActivity;
 import com.wsg.xsybbs.R;
 import com.wsg.xsybbs.base.BaseActivity;
 import com.wsg.xsybbs.bean.User;
+import com.wsg.xsybbs.threadpool.MyThreadPool;
 import com.wsg.xsybbs.util.L;
 import com.wsg.xsybbs.util.SPUtils;
 import com.wsg.xsybbs.util.StaticClass;
@@ -136,9 +137,8 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
                     user.setUsername(name);
                     user.setPassword(password);
 
-                    //登录需要连接网络，开新线程
-
-                    new Thread(new Runnable() {
+                    //使用线程池
+                    MyThreadPool.execute(new Runnable() {
                         @Override
                         public void run() {
                             user.login(new SaveListener<User>() {
@@ -200,9 +200,8 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
                                     }
                                 }
                             });
-
                         }
-                    }).start();
+                    });
 
 
                 } else {

@@ -25,6 +25,7 @@ import com.wsg.xsybbs.activity.usercenter.MyMessageActivity;
 import com.wsg.xsybbs.activity.usercenter.MyNoteActivity;
 import com.wsg.xsybbs.activity.usercenter.UpDateActivity;
 import com.wsg.xsybbs.bean.User;
+import com.wsg.xsybbs.threadpool.MyThreadPool;
 import com.wsg.xsybbs.util.SPUtils;
 import com.wsg.xsybbs.util.StaticClass;
 import com.wsg.xsybbs.util.UtilTools;
@@ -206,7 +207,9 @@ public class MineFragment extends Fragment implements View.OnClickListener {
 
     //退出系统
     private void exit() {
-        getActivity().finish();
+        //关闭线程池
+        MyThreadPool.shutDown();
+        System.exit(0);
     }
 
 

@@ -24,6 +24,7 @@ import com.wsg.xsybbs.fragment.FriendsFragment;
 import com.wsg.xsybbs.fragment.MyMessageFragment;
 import com.wsg.xsybbs.fragment.MineFragment;
 import com.wsg.xsybbs.fragment.NoteFragment;
+import com.wsg.xsybbs.threadpool.MyThreadPool;
 
 import java.util.HashMap;
 import java.util.List;
@@ -162,21 +163,13 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
 
                 if (contactListFragment == null) {
                     contactListFragment = new FriendsFragment();
-
-
-                    new Thread() {//需要在子线程中调用
+                    MyThreadPool.execute(new Runnable() {
                         @Override
                         public void run() {
                             //需要设置联系人列表才能启动fragment
                             contactListFragment.setContactsMap(getContact());
-
                         }
-                    }.start();
-
-
-
-
-
+                    });
 
                     //设置item点击事件
                     contactListFragment.setContactListItemClickListener(new EaseContactListFragment.EaseContactListItemClickListener() {
@@ -186,7 +179,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
                             startActivity(new Intent(getApplicationContext(), ChatActivity.class).putExtra(EaseConstant.EXTRA_USER_ID, user.getUsername()));
                         }
                     });
-                    
+
                     fragmentTransaction.add(R.id.content_layout, contactListFragment );
                 } else {
                     fragmentTransaction.show(contactListFragment );

@@ -14,6 +14,7 @@ import com.wsg.xsybbs.R;
 import com.wsg.xsybbs.base.BaseActivity;
 import com.wsg.xsybbs.bean.Feedback;
 import com.wsg.xsybbs.bean.User;
+import com.wsg.xsybbs.threadpool.MyThreadPool;
 import com.wsg.xsybbs.util.StaticClass;
 
 import cn.bmob.v3.BmobUser;
@@ -79,10 +80,9 @@ public class FeedBackActivity extends BaseActivity implements View.OnClickListen
 
 
                     //2018/12/29   上传反馈开启线程
-                    new Thread(new Runnable() {
+                    MyThreadPool.execute(new Runnable() {
                         @Override
                         public void run() {
-
                             feedback.save(new SaveListener<String>() {
                                 @Override
                                 public void done(String s, BmobException e) {
@@ -97,9 +97,7 @@ public class FeedBackActivity extends BaseActivity implements View.OnClickListen
 
                             });
                         }
-                    }).start();
-
-
+                    });
                 } else {
                     Toasty.info(FeedBackActivity.this, getString(R.string.text_tost_empty), Toast.LENGTH_SHORT, true).show();
                 }

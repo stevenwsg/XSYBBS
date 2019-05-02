@@ -15,6 +15,7 @@ import android.widget.Toast;
 import com.wsg.xsybbs.R;
 import com.wsg.xsybbs.base.BaseActivity;
 import com.wsg.xsybbs.bean.Note;
+import com.wsg.xsybbs.threadpool.MyThreadPool;
 
 import cn.bmob.v3.exception.BmobException;
 import cn.bmob.v3.listener.UpdateListener;
@@ -94,20 +95,32 @@ public class ModifyMyNoteActivity extends BaseActivity implements View.OnClickLi
                     note.setTitle(title);
                     note.setContent(content);
 
-                    note.update(note.getObjectId(), new UpdateListener() {
+                    MyThreadPool.execute(new Runnable() {
                         @Override
-                        public void done(BmobException e) {
-                            if(e==null){
-                                Toasty.success(ModifyMyNoteActivity.this,"修改成功",Toast.LENGTH_SHORT).show();
-                                finish();
-                            }else{
-                                Toasty.error(ModifyMyNoteActivity.this,"修改失败，请检查网络", Toast.LENGTH_SHORT).show();
-                            }
+                        public void run() {
+                            note.update(note.getObjectId(), new UpdateListener() {
+                                @Override
+                                public void done(BmobException e) {
+                                    if(e==null){
+                                        runOnUiThread(new Runnable() {
+                                            @Override
+                                            public void run() {
+                                                Toasty.success(ModifyMyNoteActivity.this,"修改成功",Toast.LENGTH_SHORT).show();
+                                                finish();
+                                            }
+                                        });
+                                    }else{
+                                        runOnUiThread(new Runnable() {
+                                            @Override
+                                            public void run() {
+                                                Toasty.error(ModifyMyNoteActivity.this,"修改失败，请检查网络", Toast.LENGTH_SHORT).show();
+                                            }
+                                        });
+                                    }
+                                }
+                            });
                         }
                     });
-
-
-
                 }else{
                     Toasty.info(ModifyMyNoteActivity.this,"亲，输入框怒能为空", Toast.LENGTH_SHORT).show();
                 }

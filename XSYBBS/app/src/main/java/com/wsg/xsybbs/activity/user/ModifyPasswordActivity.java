@@ -13,6 +13,7 @@ import android.widget.Toast;
 import com.wsg.xsybbs.R;
 import com.wsg.xsybbs.base.BaseActivity;
 import com.wsg.xsybbs.bean.User;
+import com.wsg.xsybbs.threadpool.MyThreadPool;
 import com.wsg.xsybbs.util.L;
 import com.wsg.xsybbs.util.SPUtils;
 import com.wsg.xsybbs.util.StaticClass;
@@ -88,9 +89,8 @@ public class ModifyPasswordActivity extends BaseActivity implements View.OnClick
 
 
                         //2017/12/29因为要进行网络操作 所以需要修改。开启线程进行网络操作  。可能之前是因为 项目赶的急，没有开线程
-
-
-                        new Thread(new Runnable() {
+                        //2019/5/2 使用全局线程池重构
+                        MyThreadPool.execute(new Runnable() {
                             @Override
                             public void run() {
                                 //重置密码
@@ -102,22 +102,15 @@ public class ModifyPasswordActivity extends BaseActivity implements View.OnClick
                                             SPUtils.putString(ModifyPasswordActivity.this, StaticClass.PASSWORD, new_password);
                                             handler.sendEmptyMessage(StaticClass.MODIFYPASSWORD_SUCESS);
                                         } else {
-
-
                                             // TODO: 2018/12/29     errorCode:211,errorMsg:用户请先登录，或者用户登录已过期需要重新登录用户请先登录，或者用户登录已过期需要重新登录211
-                                            
-                                            
                                             L.e(e.toString()+e.getMessage()+e.getErrorCode());
                                             handler.sendEmptyMessage(StaticClass.MODIFYPASSWORD_FAILED);
                                         }
 
                                     }
                                 });
-
                             }
-                        }).start();
-
-
+                        });
                     } else {
                         Toasty.info(ModifyPasswordActivity.this, getString(R.string.text_two_input_not_consistent), Toast.LENGTH_SHORT, true).show();
                     }

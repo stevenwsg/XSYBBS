@@ -15,6 +15,7 @@ import com.bumptech.glide.Glide;
 import com.wsg.xsybbs.R;
 import com.wsg.xsybbs.base.BaseActivity;
 import com.wsg.xsybbs.bean.User;
+import com.wsg.xsybbs.threadpool.MyThreadPool;
 import com.wsg.xsybbs.util.L;
 import com.wsg.xsybbs.util.UtilTools;
 
@@ -45,15 +46,6 @@ public class ModifyPersionalInformationActivity extends BaseActivity implements 
     private EditText et_sex;
     private EditText et_age;
     private EditText et_desc;
-
-
-
-
-
-
-
-
-
 
     //更新按钮
     private Button btn_update_ok;
@@ -135,7 +127,7 @@ public class ModifyPersionalInformationActivity extends BaseActivity implements 
                 //2.判断是否为空
                 if (!TextUtils.isEmpty(username) & !TextUtils.isEmpty(age) & !TextUtils.isEmpty(sex)) {
                     //3.更新属性
-                    User user = new User();
+                    final User user = new User();
                     user.setUsername(username);
                     user.setAge(Integer.parseInt(age));
                     //性别
@@ -150,19 +142,35 @@ public class ModifyPersionalInformationActivity extends BaseActivity implements 
                     } else {
                         user.setDesc(getString(R.string.text_nothing));
                     }
-                    BmobUser bmobUser = BmobUser.getCurrentUser();
-                    user.update(bmobUser.getObjectId(), new UpdateListener() {
+                    final BmobUser bmobUser = BmobUser.getCurrentUser();
+
+                    MyThreadPool.execute(new Runnable() {
                         @Override
-                        public void done(BmobException e) {
-                            if (e == null) {
-                                //修改成功
-                                UtilTools.putImageToShare(ModifyPersionalInformationActivity.this,profile_image);
-                                Toasty.success(ModifyPersionalInformationActivity.this, getString(R.string.text_editor_success), Toast.LENGTH_SHORT, true).show();
-                                finish();
-                            } else {
-                                L.d(e.getMessage()+e.getErrorCode()+e.toString());
-                                Toasty.error(ModifyPersionalInformationActivity.this, getString(R.string.text_editor_failure), Toast.LENGTH_SHORT, true).show();
-                            }
+                        public void run() {
+                            user.update(bmobUser.getObjectId(), new UpdateListener() {
+                                @Override
+                                public void done(BmobException e) {
+                                    if (e == null) {
+                                        //修改成功
+                                        UtilTools.putImageToShare(ModifyPersionalInformationActivity.this,profile_image);
+                                        runOnUiThread(new Runnable() {
+                                            @Override
+                                            public void run() {
+                                                Toasty.success(ModifyPersionalInformationActivity.this, getString(R.string.text_editor_success), Toast.LENGTH_SHORT, true).show();
+                                                finish();
+                                            }
+                                        });
+                                    } else {
+                                        L.d(e.getMessage()+e.getErrorCode()+e.toString());
+                                        runOnUiThread(new Runnable() {
+                                            @Override
+                                            public void run() {
+                                                Toasty.error(ModifyPersionalInformationActivity.this, getString(R.string.text_editor_failure), Toast.LENGTH_SHORT, true).show();
+                                            }
+                                        });
+                                    }
+                                }
+                            });
                         }
                     });
                 } else {

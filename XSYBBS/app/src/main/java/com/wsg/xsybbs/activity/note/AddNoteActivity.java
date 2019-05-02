@@ -18,6 +18,7 @@ import com.wsg.xsybbs.base.BaseActivity;
 import com.wsg.xsybbs.bean.Note;
 import com.wsg.xsybbs.bean.Type;
 import com.wsg.xsybbs.bean.User;
+import com.wsg.xsybbs.threadpool.MyThreadPool;
 import com.wsg.xsybbs.util.L;
 
 import java.util.ArrayList;
@@ -136,7 +137,7 @@ public class AddNoteActivity extends BaseActivity implements View.OnClickListene
                     //获取用户信息
                     User user = BmobUser.getCurrentUser(User.class);
                     //开始填充信息
-                    Note note=new Note();
+                    final Note note=new Note();
                     note.setUserid(user.getObjectId());
                     note.setImage(user.getImage());
                     note.setTypeid(type);
@@ -146,21 +147,34 @@ public class AddNoteActivity extends BaseActivity implements View.OnClickListene
                     note.setZancount(0);
                     note.setReplaycount(0);
 
-                    note.save(new SaveListener<String>() {
+                    //使用全局线程池
+                    MyThreadPool.execute(new Runnable() {
                         @Override
-                        public void done(String s, BmobException e) {
-
-                            if(e==null){
-                                Toasty.success(AddNoteActivity.this,"发布成功",Toast.LENGTH_SHORT).show();
-                                finish();
-                            }else{
-                                Toasty.error(AddNoteActivity.this,"发布失败，请检查网络",Toast.LENGTH_SHORT).show();
-                                L.d(e.toString()+e.getMessage()+e.getErrorCode());
-                            }
+                        public void run() {
+                            note.save(new SaveListener<String>() {
+                                @Override
+                                public void done(String s, BmobException e) {
+                                    if(e==null){
+                                        runOnUiThread(new Runnable() {
+                                            @Override
+                                            public void run() {
+                                                Toasty.success(AddNoteActivity.this,"发布成功",Toast.LENGTH_SHORT).show();
+                                                finish();
+                                            }
+                                        });
+                                    }else{
+                                        runOnUiThread(new Runnable() {
+                                            @Override
+                                            public void run() {
+                                                Toasty.error(AddNoteActivity.this,"发布失败，请检查网络",Toast.LENGTH_SHORT).show();
+                                            }
+                                        });
+                                        L.d(e.toString()+e.getMessage()+e.getErrorCode());
+                                    }
+                                }
+                            });
                         }
                     });
-
-
 
                 }else{
                     Toasty.info(AddNoteActivity.this,"亲，输入框不能为空",Toast.LENGTH_SHORT).show();

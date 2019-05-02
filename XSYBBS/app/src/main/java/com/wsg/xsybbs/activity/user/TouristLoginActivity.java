@@ -13,6 +13,7 @@ import com.wsg.xsybbs.adapter.TlNoteAdapter;
 import com.wsg.xsybbs.base.BaseActivity;
 import com.wsg.xsybbs.bean.Banne;
 import com.wsg.xsybbs.bean.Note;
+import com.wsg.xsybbs.threadpool.MyThreadPool;
 import com.wsg.xsybbs.util.L;
 import com.wsg.xsybbs.util.StaticClass;
 import com.youth.banner.Banner;
@@ -139,10 +140,10 @@ public class TouristLoginActivity extends BaseActivity {
 
 
         //2018/12/29  开启线程
-        new Thread(new Runnable() {
+        //2019/5/2 全局线程池重构
+        MyThreadPool.execute(new Runnable() {
             @Override
             public void run() {
-                //获取数据
                 BmobQuery<Note> query = new BmobQuery<Note>();
                 query.setLimit(10);
                 //按时间降序
@@ -162,8 +163,7 @@ public class TouristLoginActivity extends BaseActivity {
                     }
                 });
             }
-        }).start();
-
+        });
     }
 
 

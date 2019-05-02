@@ -91,9 +91,6 @@ public class MyNoteAdapter extends BaseAdapter implements View.OnClickListener {
         viewHolder.type.setText(note.getTypeid());
         viewHolder.time.setText(note.getUpdatedAt().substring(0,10));
         viewHolder.content.setText(note.getContent());
-
-        //// TODO: 2018/7/7添加点击事件和事件回调
-
         viewHolder.modify.setTag(position);
         viewHolder.modify.setOnClickListener(this);
         viewHolder.delete.setTag(position);
