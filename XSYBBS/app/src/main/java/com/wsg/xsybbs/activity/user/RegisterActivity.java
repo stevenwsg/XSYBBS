@@ -91,10 +91,20 @@ public class RegisterActivity extends BaseActivity implements View.OnClickListen
         btnRegistered = (Button) findViewById(R.id.btnRegistered);
         btnRegistered.setOnClickListener(this);
 
-
-
         dialog = new CustomDialog(this, 100, 100, R.layout.dialog_loding_register, R.style.Theme_dialog, Gravity.CENTER,R.style.pop_anim_style);
         dialog.setCancelable(false);
+
+        //先把性别判断一下
+        mRadioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                if (checkedId == R.id.rb_boy) {
+                    isGender = true;
+                } else if (checkedId == R.id.rb_girl) {
+                    isGender = false;
+                }
+            }
+        });
     }
 
     @Override
@@ -121,21 +131,7 @@ public class RegisterActivity extends BaseActivity implements View.OnClickListen
 
                     //判断两次输入的密码是否一致
                     if (pass.equals(password)){
-
                         dialog.show();
-
-                        //先把性别判断一下
-                        mRadioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-                            @Override
-                            public void onCheckedChanged(RadioGroup group, int checkedId) {
-                                if (checkedId == R.id.rb_boy) {
-                                    isGender = true;
-                                } else if (checkedId == R.id.rb_girl) {
-                                    isGender = false;
-                                }
-                            }
-                        });
-
                         //判断简介是否为空，如果为空填为默认
                         if (TextUtils.isEmpty(desc)) {
                             desc = getString(R.string.text_nothing);

@@ -203,6 +203,11 @@ public class MineFragment extends Fragment implements View.OnClickListener {
         if (user.getImage() != null) {
             UtilTools.getImage(getActivity(), profile_image, user.getImage().trim());
         }
+        //其他资料也需要修改
+        tv_username.setText(user.getUsername());
+        tv_age.setText(user.getAge() + "");
+        tv_sex.setText(user.isSex() ? getString(R.string.text_boy) : getString(R.string.text_girl_f));
+        tv_desc.setText(user.getDesc());
     }
 
     //退出系统
