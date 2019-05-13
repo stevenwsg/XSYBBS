@@ -56,7 +56,7 @@ dependencies {
     //其中latest.release指代最新Bugly SDK版本号，也可以指定明确的版本号，例如2.2.0
     //Bmob文件存储
     //Bmob
-    compile 'cn.bmob.android:bmob-sdk:3.5.5'
+    compile 'cn.bmob.android:bmob-sdk:3.6.1'
     //Toasty  美化的toast
     compile 'com.github.GrenderG:Toasty:1.2.5'
     //首页banner轮播图
