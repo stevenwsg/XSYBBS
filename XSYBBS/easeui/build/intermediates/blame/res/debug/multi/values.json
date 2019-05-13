@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+        "outputFile": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
         "map": [
             {
                 "to": {
@@ -372,7 +372,7 @@
                     "endOffset": 1419
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
                     "position": {
                         "startLine": 35,
                         "startColumn": 4,
@@ -391,7 +391,7 @@
                     "endOffset": 1474
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
                     "position": {
                         "startLine": 18,
                         "startColumn": 4,
@@ -410,7 +410,7 @@
                     "endOffset": 1533
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,
@@ -543,7 +543,7 @@
                     "endOffset": 2111
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
                     "position": {
                         "startLine": 37,
                         "startColumn": 4,
@@ -562,7 +562,7 @@
                     "endOffset": 2164
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
                     "position": {
                         "startLine": 36,
                         "startColumn": 4,
@@ -581,7 +581,7 @@
                     "endOffset": 2214
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
                     "position": {
                         "startLine": 27,
                         "startColumn": 4,
@@ -600,7 +600,7 @@
                     "endOffset": 2265
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
                     "position": {
                         "startLine": 28,
                         "startColumn": 4,
@@ -619,7 +619,7 @@
                     "endOffset": 2315
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
                     "position": {
                         "startLine": 24,
                         "startColumn": 4,
@@ -638,7 +638,7 @@
                     "endOffset": 2366
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
                     "position": {
                         "startLine": 26,
                         "startColumn": 4,
@@ -657,7 +657,7 @@
                     "endOffset": 2424
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
                     "position": {
                         "startLine": 25,
                         "startColumn": 4,
@@ -676,7 +676,7 @@
                     "endOffset": 2475
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
                     "position": {
                         "startLine": 22,
                         "startColumn": 4,
@@ -695,7 +695,7 @@
                     "endOffset": 2527
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
                     "position": {
                         "startLine": 23,
                         "startColumn": 4,
@@ -714,7 +714,7 @@
                     "endOffset": 2578
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -733,7 +733,7 @@
                     "endOffset": 2630
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -752,7 +752,7 @@
                     "endOffset": 2682
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -771,7 +771,7 @@
                     "endOffset": 2735
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -790,7 +790,7 @@
                     "endOffset": 2793
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -809,7 +809,7 @@
                     "endOffset": 2847
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -828,7 +828,7 @@
                     "endOffset": 2902
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -847,7 +847,7 @@
                     "endOffset": 2953
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,
@@ -866,7 +866,7 @@
                     "endOffset": 3005
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
                     "position": {
                         "startLine": 21,
                         "startColumn": 4,
@@ -923,7 +923,7 @@
                     "endOffset": 3164
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -942,7 +942,7 @@
                     "endOffset": 3226
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -961,7 +961,7 @@
                     "endOffset": 3290
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -980,7 +980,7 @@
                     "endOffset": 3347
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
@@ -999,7 +999,7 @@
                     "endOffset": 3401
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -1094,7 +1094,7 @@
                     "endOffset": 3728
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
@@ -1113,7 +1113,7 @@
                     "endOffset": 3781
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
                     "position": {
                         "startLine": 45,
                         "startColumn": 4,
@@ -1132,7 +1132,7 @@
                     "endOffset": 3837
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
                     "position": {
                         "startLine": 44,
                         "startColumn": 1,
@@ -1170,7 +1170,7 @@
                     "endOffset": 3943
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,
@@ -1227,7 +1227,7 @@
                     "endOffset": 4134
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
                     "position": {
                         "startLine": 31,
                         "startColumn": 4,
@@ -1246,7 +1246,7 @@
                     "endOffset": 4181
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
                     "position": {
                         "startLine": 30,
                         "startColumn": 4,
@@ -1265,7 +1265,7 @@
                     "endOffset": 4236
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
                     "position": {
                         "startLine": 33,
                         "startColumn": 4,
@@ -1284,7 +1284,7 @@
                     "endOffset": 4291
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
                     "position": {
                         "startLine": 32,
                         "startColumn": 4,
@@ -1341,7 +1341,7 @@
                     "endOffset": 4479
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
                     "position": {
                         "startLine": 40,
                         "startColumn": 1,
@@ -1360,7 +1360,7 @@
                     "endOffset": 4532
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
                     "position": {
                         "startLine": 41,
                         "startColumn": 1,
@@ -1379,7 +1379,7 @@
                     "endOffset": 4586
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
                     "position": {
                         "startLine": 42,
                         "startColumn": 1,
@@ -1398,7 +1398,7 @@
                     "endOffset": 4637
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
                     "position": {
                         "startLine": 43,
                         "startColumn": 1,
@@ -1417,7 +1417,7 @@
                     "endOffset": 4694
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
                     "position": {
                         "startLine": 39,
                         "startColumn": 1,
@@ -1436,7 +1436,7 @@
                     "endOffset": 4756
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
                     "position": {
                         "startLine": 38,
                         "startColumn": 1,
@@ -1721,7 +1721,7 @@
                     "endOffset": 5601
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
                     "position": {
                         "startLine": 29,
                         "startColumn": 4,
@@ -1892,7 +1892,7 @@
                     "endOffset": 6238
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
                     "position": {
                         "startLine": 46,
                         "startColumn": 4,
@@ -1911,7 +1911,7 @@
                     "endOffset": 6290
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
                     "position": {
                         "startLine": 47,
                         "startColumn": 4,
@@ -1930,7 +1930,7 @@
                     "endOffset": 6342
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
                     "position": {
                         "startLine": 48,
                         "startColumn": 4,
@@ -2177,7 +2177,7 @@
                     "endOffset": 7212
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
@@ -2196,7 +2196,7 @@
                     "endOffset": 7272
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_colors.xml",
                     "position": {
                         "startLine": 34,
                         "startColumn": 4,
@@ -3621,7 +3621,7 @@
                     "endOffset": 40455
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_dimens.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_dimens.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -3640,7 +3640,7 @@
                     "endOffset": 40511
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_dimens.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_dimens.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -3659,7 +3659,7 @@
                     "endOffset": 40567
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_dimens.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_dimens.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -3678,7 +3678,7 @@
                     "endOffset": 40624
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_dimens.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_dimens.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -3697,7 +3697,7 @@
                     "endOffset": 40684
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_dimens.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_dimens.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -3716,7 +3716,7 @@
                     "endOffset": 40737
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_dimens.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_dimens.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 1,
@@ -3735,7 +3735,7 @@
                     "endOffset": 40788
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_dimens.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_dimens.xml",
                     "position": {
                         "startLine": 18,
                         "startColumn": 1,
@@ -3887,7 +3887,7 @@
                     "endOffset": 41351
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_dimens.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_dimens.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -3906,7 +3906,7 @@
                     "endOffset": 41397
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_dimens.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_dimens.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -3925,7 +3925,7 @@
                     "endOffset": 41446
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_dimens.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_dimens.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -3944,7 +3944,7 @@
                     "endOffset": 41492
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_dimens.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_dimens.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 5,
@@ -4096,7 +4096,7 @@
                     "endOffset": 42156
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_dimens.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_dimens.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 5,
@@ -4115,7 +4115,7 @@
                     "endOffset": 42210
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_dimens.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_dimens.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
@@ -4134,7 +4134,7 @@
                     "endOffset": 42261
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_dimens.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_dimens.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -4438,7 +4438,7 @@
                     "endOffset": 43288
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_dimens.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_dimens.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -4457,7 +4457,7 @@
                     "endOffset": 43331
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_dimens.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_dimens.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,
@@ -4476,7 +4476,7 @@
                     "endOffset": 43380
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_dimens.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_dimens.xml",
                     "position": {
                         "startLine": 22,
                         "startColumn": 4,
@@ -4495,7 +4495,7 @@
                     "endOffset": 43425
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_dimens.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_dimens.xml",
                     "position": {
                         "startLine": 21,
                         "startColumn": 4,
@@ -4514,7 +4514,7 @@
                     "endOffset": 43471
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_dimens.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_dimens.xml",
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,
@@ -4533,7 +4533,7 @@
                     "endOffset": 43517
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_dimens.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_dimens.xml",
                     "position": {
                         "startLine": 23,
                         "startColumn": 4,
@@ -4552,7 +4552,7 @@
                     "endOffset": 43561
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_dimens.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_dimens.xml",
                     "position": {
                         "startLine": 24,
                         "startColumn": 4,
@@ -4571,7 +4571,7 @@
                     "endOffset": 43610
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_dimens.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_dimens.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
@@ -4590,7 +4590,7 @@
                     "endOffset": 43653
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_dimens.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_dimens.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -5179,7 +5179,7 @@
                     "endOffset": 45282
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 186,
                         "startColumn": 4,
@@ -5198,7 +5198,7 @@
                     "endOffset": 45349
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 127,
                         "startColumn": 4,
@@ -5217,7 +5217,7 @@
                     "endOffset": 45424
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 179,
                         "startColumn": 4,
@@ -5236,7 +5236,7 @@
                     "endOffset": 45488
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 250,
                         "startColumn": 4,
@@ -5255,7 +5255,7 @@
                     "endOffset": 45586
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 210,
                         "startColumn": 4,
@@ -5274,7 +5274,7 @@
                     "endOffset": 45665
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 79,
                         "startColumn": 4,
@@ -5293,7 +5293,7 @@
                     "endOffset": 45739
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 244,
                         "startColumn": 4,
@@ -5312,7 +5312,7 @@
                     "endOffset": 45792
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 247,
                         "startColumn": 4,
@@ -5331,7 +5331,7 @@
                     "endOffset": 45869
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 230,
                         "startColumn": 4,
@@ -5350,7 +5350,7 @@
                     "endOffset": 45924
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 225,
                         "startColumn": 4,
@@ -5369,7 +5369,7 @@
                     "endOffset": 45996
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 175,
                         "startColumn": 4,
@@ -5388,7 +5388,7 @@
                     "endOffset": 46045
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 188,
                         "startColumn": 4,
@@ -5407,7 +5407,7 @@
                     "endOffset": 46123
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 160,
                         "startColumn": 4,
@@ -5426,7 +5426,7 @@
                     "endOffset": 46191
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 259,
                         "startColumn": 4,
@@ -5445,7 +5445,7 @@
                     "endOffset": 46286
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 219,
                         "startColumn": 4,
@@ -5464,7 +5464,7 @@
                     "endOffset": 46352
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 234,
                         "startColumn": 4,
@@ -5483,7 +5483,7 @@
                     "endOffset": 46412
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 87,
                         "startColumn": 4,
@@ -5502,7 +5502,7 @@
                     "endOffset": 46471
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 162,
                         "startColumn": 4,
@@ -5521,7 +5521,7 @@
                     "endOffset": 46537
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 257,
                         "startColumn": 4,
@@ -5540,7 +5540,7 @@
                     "endOffset": 46601
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 241,
                         "startColumn": 4,
@@ -5559,7 +5559,7 @@
                     "endOffset": 46685
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 178,
                         "startColumn": 4,
@@ -5578,7 +5578,7 @@
                     "endOffset": 46761
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 226,
                         "startColumn": 4,
@@ -5597,7 +5597,7 @@
                     "endOffset": 46838
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 227,
                         "startColumn": 4,
@@ -5616,7 +5616,7 @@
                     "endOffset": 46907
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 97,
                         "startColumn": 4,
@@ -5635,7 +5635,7 @@
                     "endOffset": 46970
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 122,
                         "startColumn": 4,
@@ -5654,7 +5654,7 @@
                     "endOffset": 47052
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 177,
                         "startColumn": 4,
@@ -5673,7 +5673,7 @@
                     "endOffset": 47128
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 215,
                         "startColumn": 4,
@@ -5692,7 +5692,7 @@
                     "endOffset": 47205
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 228,
                         "startColumn": 4,
@@ -5711,7 +5711,7 @@
                     "endOffset": 47303
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 190,
                         "startColumn": 4,
@@ -5730,7 +5730,7 @@
                     "endOffset": 47386
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 195,
                         "startColumn": 4,
@@ -5749,7 +5749,7 @@
                     "endOffset": 47454
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 148,
                         "startColumn": 4,
@@ -5768,7 +5768,7 @@
                     "endOffset": 47504
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 117,
                         "startColumn": 4,
@@ -5787,7 +5787,7 @@
                     "endOffset": 47577
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 100,
                         "startColumn": 4,
@@ -5806,7 +5806,7 @@
                     "endOffset": 47638
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 92,
                         "startColumn": 4,
@@ -5825,7 +5825,7 @@
                     "endOffset": 47720
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 213,
                         "startColumn": 4,
@@ -5844,7 +5844,7 @@
                     "endOffset": 47778
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 101,
                         "startColumn": 4,
@@ -5863,7 +5863,7 @@
                     "endOffset": 47828
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 111,
                         "startColumn": 4,
@@ -5882,7 +5882,7 @@
                     "endOffset": 47879
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 245,
                         "startColumn": 4,
@@ -5901,7 +5901,7 @@
                     "endOffset": 47963
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 242,
                         "startColumn": 4,
@@ -5920,7 +5920,7 @@
                     "endOffset": 48020
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 143,
                         "startColumn": 4,
@@ -5939,7 +5939,7 @@
                     "endOffset": 48071
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 246,
                         "startColumn": 4,
@@ -5958,7 +5958,7 @@
                     "endOffset": 48134
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 240,
                         "startColumn": 4,
@@ -5977,7 +5977,7 @@
                     "endOffset": 48188
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 232,
                         "startColumn": 4,
@@ -5996,7 +5996,7 @@
                     "endOffset": 48258
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 239,
                         "startColumn": 4,
@@ -6015,7 +6015,7 @@
                     "endOffset": 48305
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 102,
                         "startColumn": 4,
@@ -6034,7 +6034,7 @@
                     "endOffset": 48396
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 209,
                         "startColumn": 4,
@@ -6053,7 +6053,7 @@
                     "endOffset": 48497
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 251,
                         "startColumn": 4,
@@ -6072,7 +6072,7 @@
                     "endOffset": 48547
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 201,
                         "startColumn": 4,
@@ -6091,7 +6091,7 @@
                     "endOffset": 48621
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 163,
                         "startColumn": 4,
@@ -6110,7 +6110,7 @@
                     "endOffset": 48706
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 231,
                         "startColumn": 4,
@@ -6129,7 +6129,7 @@
                     "endOffset": 48777
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 191,
                         "startColumn": 4,
@@ -6148,7 +6148,7 @@
                     "endOffset": 48837
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 221,
                         "startColumn": 4,
@@ -6167,7 +6167,7 @@
                     "endOffset": 48910
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 214,
                         "startColumn": 4,
@@ -6186,7 +6186,7 @@
                     "endOffset": 48966
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 180,
                         "startColumn": 4,
@@ -6205,7 +6205,7 @@
                     "endOffset": 49029
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 194,
                         "startColumn": 4,
@@ -6224,7 +6224,7 @@
                     "endOffset": 49100
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 165,
                         "startColumn": 4,
@@ -6243,7 +6243,7 @@
                     "endOffset": 49184
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 164,
                         "startColumn": 4,
@@ -6262,7 +6262,7 @@
                     "endOffset": 49239
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 204,
                         "startColumn": 4,
@@ -6281,7 +6281,7 @@
                     "endOffset": 49307
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 211,
                         "startColumn": 4,
@@ -6300,7 +6300,7 @@
                     "endOffset": 49389
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 131,
                         "startColumn": 4,
@@ -6319,7 +6319,7 @@
                     "endOffset": 49483
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 173,
                         "startColumn": 4,
@@ -6338,7 +6338,7 @@
                     "endOffset": 49567
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 156,
                         "startColumn": 4,
@@ -6357,7 +6357,7 @@
                     "endOffset": 49651
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 155,
                         "startColumn": 4,
@@ -6376,7 +6376,7 @@
                     "endOffset": 49731
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 258,
                         "startColumn": 4,
@@ -6395,7 +6395,7 @@
                     "endOffset": 49787
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 130,
                         "startColumn": 4,
@@ -6414,7 +6414,7 @@
                     "endOffset": 49831
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 88,
                         "startColumn": 4,
@@ -6433,7 +6433,7 @@
                     "endOffset": 49888
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 95,
                         "startColumn": 4,
@@ -6452,7 +6452,7 @@
                     "endOffset": 49967
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 94,
                         "startColumn": 4,
@@ -6471,7 +6471,7 @@
                     "endOffset": 50050
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 218,
                         "startColumn": 4,
@@ -6490,7 +6490,7 @@
                     "endOffset": 50129
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 199,
                         "startColumn": 4,
@@ -6509,7 +6509,7 @@
                     "endOffset": 50205
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 123,
                         "startColumn": 4,
@@ -6528,7 +6528,7 @@
                     "endOffset": 50291
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 152,
                         "startColumn": 4,
@@ -6547,7 +6547,7 @@
                     "endOffset": 50335
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 137,
                         "startColumn": 4,
@@ -6566,7 +6566,7 @@
                     "endOffset": 50411
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 222,
                         "startColumn": 4,
@@ -6585,7 +6585,7 @@
                     "endOffset": 50487
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 212,
                         "startColumn": 4,
@@ -6604,7 +6604,7 @@
                     "endOffset": 50553
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 134,
                         "startColumn": 4,
@@ -6623,7 +6623,7 @@
                     "endOffset": 50634
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 129,
                         "startColumn": 4,
@@ -6642,7 +6642,7 @@
                     "endOffset": 50718
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 243,
                         "startColumn": 4,
@@ -6661,7 +6661,7 @@
                     "endOffset": 50776
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 192,
                         "startColumn": 4,
@@ -6680,7 +6680,7 @@
                     "endOffset": 50842
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 99,
                         "startColumn": 4,
@@ -6699,7 +6699,7 @@
                     "endOffset": 50927
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 252,
                         "startColumn": 4,
@@ -6718,7 +6718,7 @@
                     "endOffset": 51017
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 151,
                         "startColumn": 4,
@@ -6737,7 +6737,7 @@
                     "endOffset": 51084
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 98,
                         "startColumn": 4,
@@ -6756,7 +6756,7 @@
                     "endOffset": 51170
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 185,
                         "startColumn": 4,
@@ -6775,7 +6775,7 @@
                     "endOffset": 51266
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 149,
                         "startColumn": 4,
@@ -6794,7 +6794,7 @@
                     "endOffset": 51330
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 90,
                         "startColumn": 4,
@@ -6813,7 +6813,7 @@
                     "endOffset": 51407
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 237,
                         "startColumn": 4,
@@ -6832,7 +6832,7 @@
                     "endOffset": 51482
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 139,
                         "startColumn": 4,
@@ -6851,7 +6851,7 @@
                     "endOffset": 51561
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 140,
                         "startColumn": 4,
@@ -6870,7 +6870,7 @@
                     "endOffset": 51661
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 236,
                         "startColumn": 4,
@@ -6889,7 +6889,7 @@
                     "endOffset": 51744
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 141,
                         "startColumn": 4,
@@ -6908,7 +6908,7 @@
                     "endOffset": 51831
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 238,
                         "startColumn": 4,
@@ -6927,7 +6927,7 @@
                     "endOffset": 51907
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 138,
                         "startColumn": 4,
@@ -6946,7 +6946,7 @@
                     "endOffset": 52010
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 235,
                         "startColumn": 4,
@@ -6965,7 +6965,7 @@
                     "endOffset": 52093
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 233,
                         "startColumn": 4,
@@ -6984,7 +6984,7 @@
                     "endOffset": 52185
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 153,
                         "startColumn": 4,
@@ -7003,7 +7003,7 @@
                     "endOffset": 52251
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 216,
                         "startColumn": 4,
@@ -7022,7 +7022,7 @@
                     "endOffset": 52345
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 126,
                         "startColumn": 4,
@@ -7041,7 +7041,7 @@
                     "endOffset": 52405
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 103,
                         "startColumn": 4,
@@ -7060,7 +7060,7 @@
                     "endOffset": 52495
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 220,
                         "startColumn": 4,
@@ -7079,7 +7079,7 @@
                     "endOffset": 52556
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 89,
                         "startColumn": 4,
@@ -7098,7 +7098,7 @@
                     "endOffset": 52626
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 224,
                         "startColumn": 4,
@@ -7117,7 +7117,7 @@
                     "endOffset": 52707
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 198,
                         "startColumn": 4,
@@ -7136,7 +7136,7 @@
                     "endOffset": 52783
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 229,
                         "startColumn": 4,
@@ -7155,7 +7155,7 @@
                     "endOffset": 52838
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 197,
                         "startColumn": 4,
@@ -7174,7 +7174,7 @@
                     "endOffset": 52895
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 93,
                         "startColumn": 4,
@@ -7193,7 +7193,7 @@
                     "endOffset": 52970
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 150,
                         "startColumn": 4,
@@ -7212,7 +7212,7 @@
                     "endOffset": 53036
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 217,
                         "startColumn": 4,
@@ -7782,7 +7782,7 @@
                     "endOffset": 55206
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 82,
                         "startColumn": 4,
@@ -7801,7 +7801,7 @@
                     "endOffset": 55273
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 261,
                         "startColumn": 4,
@@ -7820,7 +7820,7 @@
                     "endOffset": 55327
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 76,
                         "startColumn": 4,
@@ -7839,7 +7839,7 @@
                     "endOffset": 55367
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 116,
                         "startColumn": 4,
@@ -7858,7 +7858,7 @@
                     "endOffset": 55476
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 300,
                         "startColumn": 4,
@@ -7877,7 +7877,7 @@
                     "endOffset": 55528
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 255,
                         "startColumn": 4,
@@ -7896,7 +7896,7 @@
                     "endOffset": 55570
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 113,
                         "startColumn": 4,
@@ -7915,7 +7915,7 @@
                     "endOffset": 55640
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 171,
                         "startColumn": 4,
@@ -7934,7 +7934,7 @@
                     "endOffset": 55685
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -7953,7 +7953,7 @@
                     "endOffset": 55738
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
@@ -7972,7 +7972,7 @@
                     "endOffset": 55787
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -7991,7 +7991,7 @@
                     "endOffset": 55837
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -8010,7 +8010,7 @@
                     "endOffset": 55889
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -8029,7 +8029,7 @@
                     "endOffset": 55936
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -8048,7 +8048,7 @@
                     "endOffset": 55993
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
@@ -8067,7 +8067,7 @@
                     "endOffset": 56050
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
@@ -8086,7 +8086,7 @@
                     "endOffset": 56088
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -8105,7 +8105,7 @@
                     "endOffset": 56140
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 135,
                         "startColumn": 4,
@@ -8124,7 +8124,7 @@
                     "endOffset": 56186
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 168,
                         "startColumn": 4,
@@ -8143,7 +8143,7 @@
                     "endOffset": 56236
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 84,
                         "startColumn": 4,
@@ -8162,7 +8162,7 @@
                     "endOffset": 56285
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 96,
                         "startColumn": 4,
@@ -8181,7 +8181,7 @@
                     "endOffset": 56335
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 74,
                         "startColumn": 4,
@@ -8200,7 +8200,7 @@
                     "endOffset": 56378
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 56,
                         "startColumn": 4,
@@ -8219,7 +8219,7 @@
                     "endOffset": 56427
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 53,
                         "startColumn": 4,
@@ -8238,7 +8238,7 @@
                     "endOffset": 56476
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 34,
                         "startColumn": 4,
@@ -8257,7 +8257,7 @@
                     "endOffset": 56535
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -8276,7 +8276,7 @@
                     "endOffset": 56580
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 54,
                         "startColumn": 4,
@@ -8295,7 +8295,7 @@
                     "endOffset": 56627
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 55,
                         "startColumn": 4,
@@ -8314,7 +8314,7 @@
                     "endOffset": 56672
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -8333,7 +8333,7 @@
                     "endOffset": 56732
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 35,
                         "startColumn": 4,
@@ -8352,7 +8352,7 @@
                     "endOffset": 56788
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 136,
                         "startColumn": 4,
@@ -8371,7 +8371,7 @@
                     "endOffset": 56880
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 207,
                         "startColumn": 4,
@@ -8390,7 +8390,7 @@
                     "endOffset": 56922
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 37,
                         "startColumn": 4,
@@ -8409,7 +8409,7 @@
                     "endOffset": 56991
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 147,
                         "startColumn": 4,
@@ -8428,7 +8428,7 @@
                     "endOffset": 57132
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 174,
                         "startColumn": 4,
@@ -8447,7 +8447,7 @@
                     "endOffset": 57180
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 118,
                         "startColumn": 4,
@@ -8466,7 +8466,7 @@
                     "endOffset": 57262
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 265,
                         "startColumn": 4,
@@ -8485,7 +8485,7 @@
                     "endOffset": 57312
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 72,
                         "startColumn": 4,
@@ -8504,7 +8504,7 @@
                     "endOffset": 57381
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 170,
                         "startColumn": 4,
@@ -8523,7 +8523,7 @@
                     "endOffset": 57452
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 40,
                         "startColumn": 4,
@@ -8542,7 +8542,7 @@
                     "endOffset": 57514
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 39,
                         "startColumn": 4,
@@ -8561,7 +8561,7 @@
                     "endOffset": 57590
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 61,
                         "startColumn": 4,
@@ -8580,7 +8580,7 @@
                     "endOffset": 57652
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 29,
                         "startColumn": 4,
@@ -8599,7 +8599,7 @@
                     "endOffset": 57737
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 189,
                         "startColumn": 4,
@@ -8618,7 +8618,7 @@
                     "endOffset": 57798
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 108,
                         "startColumn": 4,
@@ -8637,7 +8637,7 @@
                     "endOffset": 57889
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 67,
                         "startColumn": 4,
@@ -8656,7 +8656,7 @@
                     "endOffset": 57983
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 30,
                         "startColumn": 4,
@@ -8675,7 +8675,7 @@
                     "endOffset": 58021
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 32,
                         "startColumn": 4,
@@ -8694,7 +8694,7 @@
                     "endOffset": 58075
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 24,
                         "startColumn": 4,
@@ -8713,7 +8713,7 @@
                     "endOffset": 58117
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 27,
                         "startColumn": 4,
@@ -8732,7 +8732,7 @@
                     "endOffset": 58185
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 23,
                         "startColumn": 4,
@@ -8751,7 +8751,7 @@
                     "endOffset": 58275
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 22,
                         "startColumn": 4,
@@ -8770,7 +8770,7 @@
                     "endOffset": 58333
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 21,
                         "startColumn": 4,
@@ -8789,7 +8789,7 @@
                     "endOffset": 58387
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 26,
                         "startColumn": 4,
@@ -8808,7 +8808,7 @@
                     "endOffset": 58441
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 25,
                         "startColumn": 4,
@@ -8827,7 +8827,7 @@
                     "endOffset": 58489
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 161,
                         "startColumn": 4,
@@ -8846,7 +8846,7 @@
                     "endOffset": 58535
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 85,
                         "startColumn": 4,
@@ -8865,7 +8865,7 @@
                     "endOffset": 58593
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 142,
                         "startColumn": 4,
@@ -8884,7 +8884,7 @@
                     "endOffset": 58640
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 248,
                         "startColumn": 4,
@@ -8903,7 +8903,7 @@
                     "endOffset": 58696
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 260,
                         "startColumn": 4,
@@ -8922,7 +8922,7 @@
                     "endOffset": 58789
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 65,
                         "startColumn": 4,
@@ -8941,7 +8941,7 @@
                     "endOffset": 58834
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 289,
                         "startColumn": 4,
@@ -8960,7 +8960,7 @@
                     "endOffset": 58895
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 284,
                         "startColumn": 4,
@@ -8979,7 +8979,7 @@
                     "endOffset": 58952
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 285,
                         "startColumn": 4,
@@ -8998,7 +8998,7 @@
                     "endOffset": 58989
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 288,
                         "startColumn": 4,
@@ -9017,7 +9017,7 @@
                     "endOffset": 59052
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 283,
                         "startColumn": 4,
@@ -9036,7 +9036,7 @@
                     "endOffset": 59111
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 291,
                         "startColumn": 4,
@@ -9055,7 +9055,7 @@
                     "endOffset": 59168
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 292,
                         "startColumn": 4,
@@ -9074,7 +9074,7 @@
                     "endOffset": 59216
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 293,
                         "startColumn": 4,
@@ -9093,7 +9093,7 @@
                     "endOffset": 59299
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 109,
                         "startColumn": 4,
@@ -9112,7 +9112,7 @@
                     "endOffset": 59367
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 49,
                         "startColumn": 4,
@@ -9131,7 +9131,7 @@
                     "endOffset": 59469
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 273,
                         "startColumn": 4,
@@ -9150,7 +9150,7 @@
                     "endOffset": 59559
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 274,
                         "startColumn": 4,
@@ -9169,7 +9169,7 @@
                     "endOffset": 59603
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 66,
                         "startColumn": 4,
@@ -9188,7 +9188,7 @@
                     "endOffset": 59711
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 64,
                         "startColumn": 4,
@@ -9207,7 +9207,7 @@
                     "endOffset": 59763
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 133,
                         "startColumn": 4,
@@ -9226,7 +9226,7 @@
                     "endOffset": 59872
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 276,
                         "startColumn": 4,
@@ -9245,7 +9245,7 @@
                     "endOffset": 59997
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 176,
                         "startColumn": 4,
@@ -9264,7 +9264,7 @@
                     "endOffset": 60037
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 48,
                         "startColumn": 4,
@@ -9283,7 +9283,7 @@
                     "endOffset": 60081
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 33,
                         "startColumn": 4,
@@ -9302,7 +9302,7 @@
                     "endOffset": 60197
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 166,
                         "startColumn": 4,
@@ -9321,7 +9321,7 @@
                     "endOffset": 60265
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 262,
                         "startColumn": 4,
@@ -9340,7 +9340,7 @@
                     "endOffset": 60324
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 305,
                         "startColumn": 4,
@@ -9359,7 +9359,7 @@
                     "endOffset": 60374
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 81,
                         "startColumn": 4,
@@ -9378,7 +9378,7 @@
                     "endOffset": 60420
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 266,
                         "startColumn": 4,
@@ -9397,7 +9397,7 @@
                     "endOffset": 60486
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 182,
                         "startColumn": 4,
@@ -9416,7 +9416,7 @@
                     "endOffset": 60536
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 91,
                         "startColumn": 4,
@@ -9435,7 +9435,7 @@
                     "endOffset": 60607
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 270,
                         "startColumn": 4,
@@ -9454,7 +9454,7 @@
                     "endOffset": 60726
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 183,
                         "startColumn": 4,
@@ -9473,7 +9473,7 @@
                     "endOffset": 60788
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 271,
                         "startColumn": 4,
@@ -9492,7 +9492,7 @@
                     "endOffset": 60832
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 112,
                         "startColumn": 4,
@@ -9511,7 +9511,7 @@
                     "endOffset": 60884
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 278,
                         "startColumn": 4,
@@ -9530,7 +9530,7 @@
                     "endOffset": 60966
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 206,
                         "startColumn": 4,
@@ -9549,7 +9549,7 @@
                     "endOffset": 61030
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 279,
                         "startColumn": 4,
@@ -9568,7 +9568,7 @@
                     "endOffset": 61095
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 268,
                         "startColumn": 4,
@@ -9587,7 +9587,7 @@
                     "endOffset": 61183
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 121,
                         "startColumn": 4,
@@ -9606,7 +9606,7 @@
                     "endOffset": 61263
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 172,
                         "startColumn": 4,
@@ -9625,7 +9625,7 @@
                     "endOffset": 61328
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 169,
                         "startColumn": 4,
@@ -9644,7 +9644,7 @@
                     "endOffset": 61392
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 264,
                         "startColumn": 4,
@@ -9663,7 +9663,7 @@
                     "endOffset": 61467
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 202,
                         "startColumn": 4,
@@ -9682,7 +9682,7 @@
                     "endOffset": 61537
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 42,
                         "startColumn": 4,
@@ -9701,7 +9701,7 @@
                     "endOffset": 61595
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 44,
                         "startColumn": 4,
@@ -9720,7 +9720,7 @@
                     "endOffset": 61653
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 41,
                         "startColumn": 4,
@@ -9739,7 +9739,7 @@
                     "endOffset": 61693
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 104,
                         "startColumn": 4,
@@ -9758,7 +9758,7 @@
                     "endOffset": 61795
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 203,
                         "startColumn": 4,
@@ -9777,7 +9777,7 @@
                     "endOffset": 61837
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 62,
                         "startColumn": 4,
@@ -9796,7 +9796,7 @@
                     "endOffset": 61958
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 63,
                         "startColumn": 4,
@@ -9815,7 +9815,7 @@
                     "endOffset": 62026
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 267,
                         "startColumn": 4,
@@ -9834,7 +9834,7 @@
                     "endOffset": 62100
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 18,
                         "startColumn": 4,
@@ -9853,7 +9853,7 @@
                     "endOffset": 62138
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 110,
                         "startColumn": 4,
@@ -9872,7 +9872,7 @@
                     "endOffset": 62236
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 223,
                         "startColumn": 4,
@@ -9891,7 +9891,7 @@
                     "endOffset": 62317
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 58,
                         "startColumn": 4,
@@ -9910,7 +9910,7 @@
                     "endOffset": 62431
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 31,
                         "startColumn": 4,
@@ -9929,7 +9929,7 @@
                     "endOffset": 62484
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 115,
                         "startColumn": 4,
@@ -9948,7 +9948,7 @@
                     "endOffset": 62546
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 70,
                         "startColumn": 4,
@@ -9967,7 +9967,7 @@
                     "endOffset": 62592
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 282,
                         "startColumn": 4,
@@ -9986,7 +9986,7 @@
                     "endOffset": 62784
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 272,
                         "startColumn": 4,
@@ -10005,7 +10005,7 @@
                     "endOffset": 62846
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 263,
                         "startColumn": 4,
@@ -10024,7 +10024,7 @@
                     "endOffset": 62908
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 125,
                         "startColumn": 4,
@@ -10043,7 +10043,7 @@
                     "endOffset": 63004
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 145,
                         "startColumn": 4,
@@ -10062,7 +10062,7 @@
                     "endOffset": 63071
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 187,
                         "startColumn": 4,
@@ -10081,7 +10081,7 @@
                     "endOffset": 63130
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 120,
                         "startColumn": 4,
@@ -10100,7 +10100,7 @@
                     "endOffset": 63190
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 69,
                         "startColumn": 4,
@@ -10119,7 +10119,7 @@
                     "endOffset": 63259
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 78,
                         "startColumn": 4,
@@ -10138,7 +10138,7 @@
                     "endOffset": 63293
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 36,
                         "startColumn": 4,
@@ -10157,7 +10157,7 @@
                     "endOffset": 63339
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 106,
                         "startColumn": 4,
@@ -10176,7 +10176,7 @@
                     "endOffset": 63381
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 167,
                         "startColumn": 4,
@@ -10195,7 +10195,7 @@
                     "endOffset": 63427
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 46,
                         "startColumn": 4,
@@ -10214,7 +10214,7 @@
                     "endOffset": 63542
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 132,
                         "startColumn": 4,
@@ -10233,7 +10233,7 @@
                     "endOffset": 63692
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 200,
                         "startColumn": 4,
@@ -10252,7 +10252,7 @@
                     "endOffset": 63734
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 38,
                         "startColumn": 4,
@@ -10271,7 +10271,7 @@
                     "endOffset": 63794
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 86,
                         "startColumn": 4,
@@ -10290,7 +10290,7 @@
                     "endOffset": 63862
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 298,
                         "startColumn": 4,
@@ -10309,7 +10309,7 @@
                     "endOffset": 63944
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 205,
                         "startColumn": 4,
@@ -10328,7 +10328,7 @@
                     "endOffset": 64027
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 59,
                         "startColumn": 4,
@@ -10347,7 +10347,7 @@
                     "endOffset": 64084
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 43,
                         "startColumn": 4,
@@ -10366,7 +10366,7 @@
                     "endOffset": 64156
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 275,
                         "startColumn": 4,
@@ -10385,7 +10385,7 @@
                     "endOffset": 64202
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 107,
                         "startColumn": 4,
@@ -10404,7 +10404,7 @@
                     "endOffset": 64274
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 299,
                         "startColumn": 4,
@@ -10423,7 +10423,7 @@
                     "endOffset": 64319
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 249,
                         "startColumn": 4,
@@ -10442,7 +10442,7 @@
                     "endOffset": 64398
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,
@@ -10461,7 +10461,7 @@
                     "endOffset": 64521
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 181,
                         "startColumn": 4,
@@ -10480,7 +10480,7 @@
                     "endOffset": 64563
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 28,
                         "startColumn": 4,
@@ -10499,7 +10499,7 @@
                     "endOffset": 64613
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 280,
                         "startColumn": 4,
@@ -10518,7 +10518,7 @@
                     "endOffset": 64651
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -10537,7 +10537,7 @@
                     "endOffset": 64715
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 80,
                         "startColumn": 4,
@@ -10556,7 +10556,7 @@
                     "endOffset": 64812
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 146,
                         "startColumn": 4,
@@ -10575,7 +10575,7 @@
                     "endOffset": 64854
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 83,
                         "startColumn": 4,
@@ -10594,7 +10594,7 @@
                     "endOffset": 64903
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 57,
                         "startColumn": 4,
@@ -10632,7 +10632,7 @@
                     "endOffset": 65002
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 253,
                         "startColumn": 4,
@@ -10651,7 +10651,7 @@
                     "endOffset": 65069
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 269,
                         "startColumn": 4,
@@ -10670,7 +10670,7 @@
                     "endOffset": 65117
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 277,
                         "startColumn": 4,
@@ -10689,7 +10689,7 @@
                     "endOffset": 65180
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 60,
                         "startColumn": 4,
@@ -10708,7 +10708,7 @@
                     "endOffset": 65230
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,
@@ -10727,7 +10727,7 @@
                     "endOffset": 65334
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 154,
                         "startColumn": 4,
@@ -10746,7 +10746,7 @@
                     "endOffset": 65427
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 128,
                         "startColumn": 4,
@@ -10765,7 +10765,7 @@
                     "endOffset": 65527
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 193,
                         "startColumn": 4,
@@ -10784,7 +10784,7 @@
                     "endOffset": 65576
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 75,
                         "startColumn": 4,
@@ -10803,7 +10803,7 @@
                     "endOffset": 65617
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 68,
                         "startColumn": 4,
@@ -10822,7 +10822,7 @@
                     "endOffset": 65662
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 77,
                         "startColumn": 4,
@@ -10841,7 +10841,7 @@
                     "endOffset": 65724
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 287,
                         "startColumn": 4,
@@ -10860,7 +10860,7 @@
                     "endOffset": 65764
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 71,
                         "startColumn": 4,
@@ -10898,7 +10898,7 @@
                     "endOffset": 65902
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 184,
                         "startColumn": 4,
@@ -10917,7 +10917,7 @@
                     "endOffset": 66009
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 196,
                         "startColumn": 4,
@@ -10936,7 +10936,7 @@
                     "endOffset": 66055
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -10955,7 +10955,7 @@
                     "endOffset": 66112
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -10974,7 +10974,7 @@
                     "endOffset": 66213
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 159,
                         "startColumn": 4,
@@ -10993,7 +10993,7 @@
                     "endOffset": 66306
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 158,
                         "startColumn": 4,
@@ -11012,7 +11012,7 @@
                     "endOffset": 66426
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 208,
                         "startColumn": 4,
@@ -11031,7 +11031,7 @@
                     "endOffset": 66484
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 304,
                         "startColumn": 4,
@@ -11050,7 +11050,7 @@
                     "endOffset": 66556
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 303,
                         "startColumn": 4,
@@ -11069,7 +11069,7 @@
                     "endOffset": 66616
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 281,
                         "startColumn": 4,
@@ -11088,7 +11088,7 @@
                     "endOffset": 66688
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 290,
                         "startColumn": 4,
@@ -11107,7 +11107,7 @@
                     "endOffset": 66745
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 286,
                         "startColumn": 4,
@@ -11126,7 +11126,7 @@
                     "endOffset": 66817
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 295,
                         "startColumn": 4,
@@ -11145,7 +11145,7 @@
                     "endOffset": 66895
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 294,
                         "startColumn": 4,
@@ -11164,7 +11164,7 @@
                     "endOffset": 66965
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 297,
                         "startColumn": 4,
@@ -11183,7 +11183,7 @@
                     "endOffset": 67041
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 296,
                         "startColumn": 4,
@@ -11202,7 +11202,7 @@
                     "endOffset": 67119
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 114,
                         "startColumn": 4,
@@ -11221,7 +11221,7 @@
                     "endOffset": 67214
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 144,
                         "startColumn": 4,
@@ -11240,7 +11240,7 @@
                     "endOffset": 67266
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,
@@ -11259,7 +11259,7 @@
                     "endOffset": 67314
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 105,
                         "startColumn": 4,
@@ -11278,7 +11278,7 @@
                     "endOffset": 67356
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 47,
                         "startColumn": 4,
@@ -11297,7 +11297,7 @@
                     "endOffset": 67408
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 52,
                         "startColumn": 4,
@@ -11316,7 +11316,7 @@
                     "endOffset": 67448
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 45,
                         "startColumn": 4,
@@ -11335,7 +11335,7 @@
                     "endOffset": 67530
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 119,
                         "startColumn": 4,
@@ -11354,7 +11354,7 @@
                     "endOffset": 67582
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 51,
                         "startColumn": 4,
@@ -11373,7 +11373,7 @@
                     "endOffset": 67631
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 50,
                         "startColumn": 4,
@@ -11392,7 +11392,7 @@
                     "endOffset": 67693
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 254,
                         "startColumn": 4,
@@ -11411,7 +11411,7 @@
                     "endOffset": 67745
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 73,
                         "startColumn": 4,
@@ -11430,7 +11430,7 @@
                     "endOffset": 67827
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_strings.xml",
                     "position": {
                         "startLine": 157,
                         "startColumn": 4,
@@ -11488,7 +11488,7 @@
                     "endOffset": 68228
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_styles.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_styles.xml",
                     "position": {
                         "startLine": 45,
                         "startColumn": 4,
@@ -11509,7 +11509,7 @@
                     "endOffset": 68540
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_styles.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_styles.xml",
                     "position": {
                         "startLine": 32,
                         "startColumn": 4,
@@ -11530,7 +11530,7 @@
                     "endOffset": 68977
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_styles.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_styles.xml",
                     "position": {
                         "startLine": 38,
                         "startColumn": 4,
@@ -11551,7 +11551,7 @@
                     "endOffset": 69194
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_styles.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_styles.xml",
                     "position": {
                         "startLine": 60,
                         "startColumn": 4,
@@ -11572,7 +11572,7 @@
                     "endOffset": 69418
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_styles.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_styles.xml",
                     "position": {
                         "startLine": 50,
                         "startColumn": 4,
@@ -11593,7 +11593,7 @@
                     "endOffset": 69645
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_styles.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_styles.xml",
                     "position": {
                         "startLine": 55,
                         "startColumn": 4,
@@ -11614,7 +11614,7 @@
                     "endOffset": 69806
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_styles.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_styles.xml",
                     "position": {
                         "startLine": 65,
                         "startColumn": 4,
@@ -11635,7 +11635,7 @@
                     "endOffset": 69957
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_styles.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_styles.xml",
                     "position": {
                         "startLine": 69,
                         "startColumn": 4,
@@ -11712,7 +11712,7 @@
                     "endOffset": 70289
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_styles.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_styles.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -14615,7 +14615,7 @@
                     "endOffset": 138654
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_styles.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_styles.xml",
                     "position": {
                         "startLine": 137,
                         "startColumn": 4,
@@ -14636,7 +14636,7 @@
                     "endOffset": 138989
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_styles.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_styles.xml",
                     "position": {
                         "startLine": 98,
                         "startColumn": 4,
@@ -14657,7 +14657,7 @@
                     "endOffset": 139557
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_styles.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_styles.xml",
                     "position": {
                         "startLine": 87,
                         "startColumn": 4,
@@ -14678,7 +14678,7 @@
                     "endOffset": 140221
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_styles.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_styles.xml",
                     "position": {
                         "startLine": 105,
                         "startColumn": 4,
@@ -14699,7 +14699,7 @@
                     "endOffset": 140881
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_styles.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_styles.xml",
                     "position": {
                         "startLine": 121,
                         "startColumn": 4,
@@ -18235,7 +18235,7 @@
                     "endOffset": 171966
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_styles.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_styles.xml",
                     "position": {
                         "startLine": 160,
                         "startColumn": 1,
@@ -18256,7 +18256,7 @@
                     "endOffset": 172340
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_styles.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_styles.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -18277,7 +18277,7 @@
                     "endOffset": 172852
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_styles.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_styles.xml",
                     "position": {
                         "startLine": 21,
                         "startColumn": 4,
@@ -18298,7 +18298,7 @@
                     "endOffset": 173060
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_styles.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_styles.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
@@ -18319,7 +18319,7 @@
                     "endOffset": 173278
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_styles.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_styles.xml",
                     "position": {
                         "startLine": 153,
                         "startColumn": 4,
@@ -18340,7 +18340,7 @@
                     "endOffset": 173435
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_styles.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_styles.xml",
                     "position": {
                         "startLine": 73,
                         "startColumn": 4,
@@ -18360,7 +18360,7 @@
                     "endOffset": 173502
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_styles.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values\\ease_styles.xml",
                     "position": {
                         "startLine": 77,
                         "startColumn": 4,

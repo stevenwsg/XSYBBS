@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v11\\values-v11.xml",
+        "outputFile": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v11\\values-v11.xml",
         "map": [
             {
                 "to": {
@@ -12,7 +12,7 @@
                     "endOffset": 219
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values-v11\\ease_styles.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values-v11\\ease_styles.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -33,7 +33,7 @@
                     "endOffset": 394
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values-v11\\ease_styles.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values-v11\\ease_styles.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -53,7 +53,7 @@
                     "endOffset": 479
                 },
                 "from": {
-                    "file": "D:\\Work\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values-v11\\ease_styles.xml",
+                    "file": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\values-v11\\ease_styles.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
