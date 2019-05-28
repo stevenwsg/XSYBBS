@@ -1,4 +1,5 @@
-# XSYBBS
+# XSYBBS 
+注： Kotlin版本请查看Kotlin分支
 ## 校园BBS+校园论坛 2018/7/20
 
 
@@ -226,10 +227,5 @@
  
  * 2019/05/02&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 创建 kotlin 分支
  
- * 后续安排
- * 添加动画
- * md风格
- * banner 不要直接写死，抽成 listview header 
- * banner elevation 
  * 不断完善kotlin分支
  
