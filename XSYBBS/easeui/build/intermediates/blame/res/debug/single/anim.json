@@ -5,19 +5,19 @@
     },
     {
         "merged": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",
-        "source": "C:\\Users\\wsg\\.android\\build-cache\\b706790958b4fceb1ab588a7bad2a083199dc729\\output\\res\\anim\\abc_slide_out_top.xml"
-    },
-    {
-        "merged": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\debug\\anim\\push_top_in.xml",
-        "source": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\anim\\push_top_in.xml"
+        "source": "C:\\Users\\wsg\\.android\\build-cache\\5b2035ac99533768e762f9dba1348bb63b40fa18\\output\\res\\anim\\abc_slide_out_top.xml"
     },
     {
         "merged": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\debug\\anim\\head_in.xml",
         "source": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\anim\\head_in.xml"
     },
     {
+        "merged": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\debug\\anim\\push_top_in.xml",
+        "source": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\anim\\push_top_in.xml"
+    },
+    {
         "merged": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_enter.xml",
-        "source": "C:\\Users\\wsg\\.android\\build-cache\\b706790958b4fceb1ab588a7bad2a083199dc729\\output\\res\\anim\\abc_popup_enter.xml"
+        "source": "C:\\Users\\wsg\\.android\\build-cache\\5b2035ac99533768e762f9dba1348bb63b40fa18\\output\\res\\anim\\abc_popup_enter.xml"
     },
     {
         "merged": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\debug\\anim\\hold.xml",
@@ -37,15 +37,15 @@
     },
     {
         "merged": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
-        "source": "C:\\Users\\wsg\\.android\\build-cache\\b706790958b4fceb1ab588a7bad2a083199dc729\\output\\res\\anim\\abc_fade_in.xml"
+        "source": "C:\\Users\\wsg\\.android\\build-cache\\5b2035ac99533768e762f9dba1348bb63b40fa18\\output\\res\\anim\\abc_fade_in.xml"
     },
     {
         "merged": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\debug\\anim\\abc_tooltip_exit.xml",
-        "source": "C:\\Users\\wsg\\.android\\build-cache\\b706790958b4fceb1ab588a7bad2a083199dc729\\output\\res\\anim\\abc_tooltip_exit.xml"
+        "source": "C:\\Users\\wsg\\.android\\build-cache\\5b2035ac99533768e762f9dba1348bb63b40fa18\\output\\res\\anim\\abc_tooltip_exit.xml"
     },
     {
         "merged": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
-        "source": "C:\\Users\\wsg\\.android\\build-cache\\b706790958b4fceb1ab588a7bad2a083199dc729\\output\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
+        "source": "C:\\Users\\wsg\\.android\\build-cache\\5b2035ac99533768e762f9dba1348bb63b40fa18\\output\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
     },
     {
         "merged": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\debug\\anim\\fade_out.xml",
@@ -61,11 +61,11 @@
     },
     {
         "merged": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
-        "source": "C:\\Users\\wsg\\.android\\build-cache\\b706790958b4fceb1ab588a7bad2a083199dc729\\output\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
+        "source": "C:\\Users\\wsg\\.android\\build-cache\\5b2035ac99533768e762f9dba1348bb63b40fa18\\output\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
     },
     {
         "merged": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\debug\\anim\\abc_tooltip_enter.xml",
-        "source": "C:\\Users\\wsg\\.android\\build-cache\\b706790958b4fceb1ab588a7bad2a083199dc729\\output\\res\\anim\\abc_tooltip_enter.xml"
+        "source": "C:\\Users\\wsg\\.android\\build-cache\\5b2035ac99533768e762f9dba1348bb63b40fa18\\output\\res\\anim\\abc_tooltip_enter.xml"
     },
     {
         "merged": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\debug\\anim\\head_out.xml",
@@ -89,7 +89,7 @@
     },
     {
         "merged": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
-        "source": "C:\\Users\\wsg\\.android\\build-cache\\b706790958b4fceb1ab588a7bad2a083199dc729\\output\\res\\anim\\abc_slide_in_bottom.xml"
+        "source": "C:\\Users\\wsg\\.android\\build-cache\\5b2035ac99533768e762f9dba1348bb63b40fa18\\output\\res\\anim\\abc_slide_in_bottom.xml"
     },
     {
         "merged": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\debug\\anim\\voice_to_icon.xml",
@@ -97,11 +97,11 @@
     },
     {
         "merged": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_bottom.xml",
-        "source": "C:\\Users\\wsg\\.android\\build-cache\\b706790958b4fceb1ab588a7bad2a083199dc729\\output\\res\\anim\\abc_slide_out_bottom.xml"
+        "source": "C:\\Users\\wsg\\.android\\build-cache\\5b2035ac99533768e762f9dba1348bb63b40fa18\\output\\res\\anim\\abc_slide_out_bottom.xml"
     },
     {
         "merged": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_top.xml",
-        "source": "C:\\Users\\wsg\\.android\\build-cache\\b706790958b4fceb1ab588a7bad2a083199dc729\\output\\res\\anim\\abc_slide_in_top.xml"
+        "source": "C:\\Users\\wsg\\.android\\build-cache\\5b2035ac99533768e762f9dba1348bb63b40fa18\\output\\res\\anim\\abc_slide_in_top.xml"
     },
     {
         "merged": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\debug\\anim\\voice_from_icon.xml",
@@ -109,10 +109,10 @@
     },
     {
         "merged": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
-        "source": "C:\\Users\\wsg\\.android\\build-cache\\b706790958b4fceb1ab588a7bad2a083199dc729\\output\\res\\anim\\abc_fade_out.xml"
+        "source": "C:\\Users\\wsg\\.android\\build-cache\\5b2035ac99533768e762f9dba1348bb63b40fa18\\output\\res\\anim\\abc_fade_out.xml"
     },
     {
         "merged": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_exit.xml",
-        "source": "C:\\Users\\wsg\\.android\\build-cache\\b706790958b4fceb1ab588a7bad2a083199dc729\\output\\res\\anim\\abc_popup_exit.xml"
+        "source": "C:\\Users\\wsg\\.android\\build-cache\\5b2035ac99533768e762f9dba1348bb63b40fa18\\output\\res\\anim\\abc_popup_exit.xml"
     }
 ]
