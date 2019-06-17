@@ -16,12 +16,12 @@
         "source": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\drawable-hdpi\\ease_chatting_biaoqing_btn_normal.png"
     },
     {
-        "merged": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ease_record_animate_04.png",
-        "source": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\drawable-hdpi\\ease_record_animate_04.png"
-    },
-    {
         "merged": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ease_mm_listitem_disable.9.png",
         "source": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\drawable-hdpi\\ease_mm_listitem_disable.9.png"
+    },
+    {
+        "merged": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ease_record_animate_04.png",
+        "source": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\drawable-hdpi\\ease_record_animate_04.png"
     },
     {
         "merged": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ease_contact_list_selected.png",
@@ -48,12 +48,12 @@
         "source": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\drawable-hdpi\\ee_26.png"
     },
     {
-        "merged": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ease_default_avatar.png",
-        "source": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\drawable-hdpi\\ease_default_avatar.png"
-    },
-    {
         "merged": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ease_record_animate_05.png",
         "source": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\drawable-hdpi\\ease_record_animate_05.png"
+    },
+    {
+        "merged": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ease_default_avatar.png",
+        "source": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\drawable-hdpi\\ease_default_avatar.png"
     },
     {
         "merged": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_popup_background_mtrl_mult.9.png",
@@ -300,12 +300,12 @@
         "source": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\drawable-hdpi\\ease_video_play_btn_small_nor.png"
     },
     {
-        "merged": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_list_focused_holo.9.png",
-        "source": "C:\\Users\\wsg\\.android\\build-cache\\5b2035ac99533768e762f9dba1348bb63b40fa18\\output\\res\\drawable-hdpi-v4\\abc_list_focused_holo.9.png"
-    },
-    {
         "merged": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ease_chatting_setmode_keyboard_btn_pressed.png",
         "source": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\drawable-hdpi\\ease_chatting_setmode_keyboard_btn_pressed.png"
+    },
+    {
+        "merged": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_list_focused_holo.9.png",
+        "source": "C:\\Users\\wsg\\.android\\build-cache\\5b2035ac99533768e762f9dba1348bb63b40fa18\\output\\res\\drawable-hdpi-v4\\abc_list_focused_holo.9.png"
     },
     {
         "merged": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ease_new_friends_icon.png",

@@ -8,12 +8,12 @@
         "source": "C:\\Users\\wsg\\.android\\build-cache\\5b2035ac99533768e762f9dba1348bb63b40fa18\\output\\res\\anim\\abc_slide_out_top.xml"
     },
     {
-        "merged": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\debug\\anim\\head_in.xml",
-        "source": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\anim\\head_in.xml"
-    },
-    {
         "merged": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\debug\\anim\\push_top_in.xml",
         "source": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\anim\\push_top_in.xml"
+    },
+    {
+        "merged": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\debug\\anim\\head_in.xml",
+        "source": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\anim\\head_in.xml"
     },
     {
         "merged": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_enter.xml",

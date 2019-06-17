@@ -4,12 +4,12 @@
         "source": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\layout\\ease_widget_emojicon_tab_bar.xml"
     },
     {
-        "merged": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\debug\\layout\\ease_row_received_location.xml",
-        "source": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\layout\\ease_row_received_location.xml"
-    },
-    {
         "merged": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\debug\\layout\\ease_search_bar_with_padding.xml",
         "source": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\layout\\ease_search_bar_with_padding.xml"
+    },
+    {
+        "merged": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\debug\\layout\\ease_row_received_location.xml",
+        "source": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\layout\\ease_row_received_location.xml"
     },
     {
         "merged": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\debug\\layout\\abc_expanded_menu_layout.xml",
@@ -328,12 +328,12 @@
         "source": "C:\\Users\\wsg\\.android\\build-cache\\5b2035ac99533768e762f9dba1348bb63b40fa18\\output\\res\\layout\\abc_activity_chooser_view_list_item.xml"
     },
     {
-        "merged": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
-        "source": "C:\\Users\\wsg\\.android\\build-cache\\5b2035ac99533768e762f9dba1348bb63b40fa18\\output\\res\\layout\\abc_list_menu_item_icon.xml"
-    },
-    {
         "merged": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\debug\\layout\\ease_widget_voice_recorder.xml",
         "source": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\src\\main\\res\\layout\\ease_widget_voice_recorder.xml"
+    },
+    {
+        "merged": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
+        "source": "C:\\Users\\wsg\\.android\\build-cache\\5b2035ac99533768e762f9dba1348bb63b40fa18\\output\\res\\layout\\abc_list_menu_item_icon.xml"
     },
     {
         "merged": "D:\\Work\\Project\\XSYBBS\\XSYBBS\\easeui\\build\\intermediates\\res\\merged\\debug\\layout\\ease_row_sent_file.xml",
