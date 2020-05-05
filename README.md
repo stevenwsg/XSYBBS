@@ -195,37 +195,10 @@
 # 毕业设计 
 ## 2018/12/27
 ### 由于要去实习，所以毕设就选了这个曾经做过的项目进行修改，从而节省时间。
- 
- 
-####   下面是相对master主分支修改的内容：
- 
- 
- * &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;  对界面进行不断美化
- * &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;  对代码不断进行优化
- * &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;  修改bug
- * 2018/12/27&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;修改关于界面 
- 
- * 2018/12/29&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;注销登录后，下次需要重新登录，还需要释放四个fragment资源，避免内存泄漏，发生OOM
- 
- * 2018/12/29&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;将修改密码界面从登录界面搬到 个人中心界面
- 
- * 2018/12/29&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;解决搜索页面重复加载问题（每次搜索前清空集合）  
- 
- * 2019/01/05&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;集成leakcanary检测内存泄漏 
 
- * 2019/02/05&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;个人主页面 添加 退出系统选项
- 
- * 2019/02/09&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;解决内存泄漏问题 主要是因为线程未关闭，利用AsyncTask系统回调来使用后台线程，关闭后台线程
- 
- * 2019/03/01&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;过滤掉无用so包，将安装包体积从30m减小到8m
-  
- * 2019/04/11&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;引入kotlin
- 
- * 2019/04/11&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;引入全局线程池
- 
- * 2019/05/02&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;使用全局线程池重构项目
- 
- * 2019/05/02&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 创建 kotlin 分支
- 
- * 不断完善kotlin分支
- 
+
+# MVVM改造 
+## 2020/05/05
+### 由于最近在学习MVVM，所以将此项目重构为MVVM架构 
+
+MVVM采用 DataBinding + ViewModel + LiveData 实现
