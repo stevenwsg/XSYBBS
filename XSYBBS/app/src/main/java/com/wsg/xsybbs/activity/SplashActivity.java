@@ -5,17 +5,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.support.annotation.Nullable;
-import android.support.v4.content.res.ResourcesCompat;
+
+import androidx.annotation.Nullable;
+import androidx.core.content.res.ResourcesCompat;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.wsg.xsybbs.MainActivity;
 import com.wsg.xsybbs.R;
 import com.wsg.xsybbs.activity.user.LoginActivity;
 import com.wsg.xsybbs.base.BaseActivity;
-import com.wsg.xsybbs.runtimepermissions.runtimepermissions.PermissionsManager;
-import com.wsg.xsybbs.runtimepermissions.runtimepermissions.PermissionsResultAction;
 import com.wsg.xsybbs.util.L;
 import com.wsg.xsybbs.util.SPUtils;
 import com.wsg.xsybbs.util.StaticClass;

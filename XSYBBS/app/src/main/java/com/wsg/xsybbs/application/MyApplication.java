@@ -3,7 +3,8 @@ package com.wsg.xsybbs.application;
 import android.app.Application;
 import android.os.Build;
 import android.os.StrictMode;
-import android.support.annotation.RequiresApi;
+
+import androidx.annotation.RequiresApi;
 
 import com.hyphenate.chat.EMOptions;
 import com.hyphenate.easeui.EaseUI;

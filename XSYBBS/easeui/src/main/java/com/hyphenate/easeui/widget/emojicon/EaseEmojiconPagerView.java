@@ -4,13 +4,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 import android.content.Context;
-import android.support.v4.view.PagerAdapter;
-import android.support.v4.view.ViewPager;
+
+
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.GridView;
+
+import androidx.viewpager.widget.PagerAdapter;
+import androidx.viewpager.widget.ViewPager;
 
 import com.hyphenate.easeui.R;
 import com.hyphenate.easeui.adapter.EmojiconGridAdapter;
@@ -20,7 +23,7 @@ import com.hyphenate.easeui.domain.EaseEmojicon.Type;
 import com.hyphenate.easeui.domain.EaseEmojiconGroupEntity;
 import com.hyphenate.easeui.utils.EaseSmileUtils;
 
-public class EaseEmojiconPagerView extends ViewPager{
+public class EaseEmojiconPagerView extends ViewPager {
 
     private Context context;
     private List<EaseEmojiconGroupEntity> groupEntities;

@@ -2,11 +2,12 @@ package com.wsg.xsybbs.activity.usercenter;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.view.View;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.Nullable;
 
 import com.wsg.xsybbs.R;
 import com.wsg.xsybbs.activity.note.ModifyMyNoteActivity;

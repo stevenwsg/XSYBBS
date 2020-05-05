@@ -2,7 +2,6 @@ package com.wsg.xsybbs.activity.note;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Adapter;
@@ -13,6 +12,8 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.Nullable;
 
 import com.wsg.xsybbs.R;
 import com.wsg.xsybbs.activity.user.PersionalDealActivity;

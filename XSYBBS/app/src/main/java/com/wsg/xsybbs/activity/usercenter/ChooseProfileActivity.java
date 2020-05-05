@@ -1,7 +1,8 @@
 package com.wsg.xsybbs.activity.usercenter;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+
+import androidx.annotation.Nullable;
 
 import com.wsg.xsybbs.R;
 import com.wsg.xsybbs.base.BaseActivity;

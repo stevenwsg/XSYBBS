@@ -5,12 +5,14 @@ import android.graphics.Color;
 
 import android.os.Bundle;
 
-import android.support.annotation.Nullable;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import androidx.annotation.Nullable;
+
 import com.bumptech.glide.Glide;
 import com.wsg.xsybbs.R;
 import com.wsg.xsybbs.base.BaseActivity;
