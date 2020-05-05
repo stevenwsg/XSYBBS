@@ -3,6 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/XSYBBS.iml" filepath="$PROJECT_DIR$/XSYBBS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/XSYBBS-XSYBBS.iml" filepath="$PROJECT_DIR$/XSYBBS-XSYBBS.iml" group="XSYBBS" />
+      <module fileurl="file://$PROJECT_DIR$/app/XSYBBS-app.iml" filepath="$PROJECT_DIR$/app/XSYBBS-app.iml" group="XSYBBS/app" />
+      <module fileurl="file://$PROJECT_DIR$/easeui/XSYBBS-easeui.iml" filepath="$PROJECT_DIR$/easeui/XSYBBS-easeui.iml" group="XSYBBS/easeui" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/easeui/easeui.iml" filepath="$PROJECT_DIR$/easeui/easeui.iml" />
     </modules>
