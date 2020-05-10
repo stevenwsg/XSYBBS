@@ -17,7 +17,7 @@ import androidx.annotation.RequiresApi;
 import com.hyphenate.chat.EMClient;
 import com.wsg.xsybbs.MainActivity;
 import com.wsg.xsybbs.R;
-import com.wsg.xsybbs.activity.user.ModifyPasswordActivity;
+import com.wsg.xsybbs.module.modifypassword.view.ModifyPasswordActivity;
 import com.wsg.xsybbs.activity.usercenter.AboutActivity;
 import com.wsg.xsybbs.module.feedback.view.FeedBackActivity;
 import com.wsg.xsybbs.activity.user.LoginActivity;

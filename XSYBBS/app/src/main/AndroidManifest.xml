@@ -75,7 +75,7 @@
         <!--忘记密码界面-->
         <activity android:name=".activity.user.ForgetPasswordActivity" android:label="@string/forget_password"></activity>
         <!--修改密码页面-->
-        <activity android:name=".activity.user.ModifyPasswordActivity" android:label="@string/text_editor_password"></activity>
+        <activity android:name=".module.modifypassword.view.ModifyPasswordActivity" android:label="@string/text_editor_password"></activity>
         <!--游客浏览-->
         <activity android:name=".activity.user.TouristLoginActivity" android:label="@string/tourist_login"></activity>
         <!--意见反馈-->
