@@ -1,10 +1,10 @@
 package com.wsg.xsybbs.application;
 
-import android.app.Application;
 import android.os.Build;
 import android.os.StrictMode;
 
 import androidx.annotation.RequiresApi;
+import androidx.multidex.MultiDexApplication;
 
 import com.hyphenate.chat.EMOptions;
 import com.hyphenate.easeui.EaseUI;
@@ -20,7 +20,7 @@ import cn.bmob.v3.update.BmobUpdateAgent;
  * on         2018/6/29.
  * function:   全局application的封装
  */
-public class MyApplication extends Application {
+public class MyApplication extends MultiDexApplication {
     @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN_MR2)
     @Override
     public void onCreate() {
@@ -44,32 +44,17 @@ public class MyApplication extends Application {
         options.setAcceptInvitationAlways(true);
         EaseUI.getInstance().init(this, options);
 
-
-
-
         //7.0+
         StrictMode.VmPolicy.Builder builder = new StrictMode.VmPolicy.Builder();
         StrictMode.setVmPolicy(builder.build());
         builder.detectFileUriExposure();
 
-
-
-
-
        // 2019/1/5 集成leakcanary
-
         if (LeakCanary.isInAnalyzerProcess(this)) {
             // This process is dedicated to LeakCanary for heap analysis.
             // You should not init your app in this process.
             return;
         }
-
         LeakCanary.install(this);
-
-
-
-
-
-
     }
 }

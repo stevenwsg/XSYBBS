@@ -19,7 +19,7 @@ import com.wsg.xsybbs.MainActivity;
 import com.wsg.xsybbs.R;
 import com.wsg.xsybbs.activity.user.ModifyPasswordActivity;
 import com.wsg.xsybbs.activity.usercenter.AboutActivity;
-import com.wsg.xsybbs.activity.usercenter.FeedBackActivity;
+import com.wsg.xsybbs.module.feedback.view.FeedBackActivity;
 import com.wsg.xsybbs.activity.user.LoginActivity;
 import com.wsg.xsybbs.activity.user.ModifyPersionalInformationActivity;
 import com.wsg.xsybbs.activity.usercenter.MyMessageActivity;

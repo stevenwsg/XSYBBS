@@ -1,4 +1,6 @@
 apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-android'
 
 android {
     compileSdkVersion 28
@@ -21,6 +23,8 @@ android {
             // 设置支持的SO库架构
             abiFilters 'armeabi','x86', 'armeabi-v7a', 'arm64-v8a', 'x86_64'
         }
+
+        multiDexEnabled true
     }
     buildTypes {
         release {
@@ -85,5 +89,14 @@ dependencies {
 
     // 2020/5/5 引入MVVM
     implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation "androidx.core:core-ktx:+"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 
+    // multidex
+    implementation 'com.android.support:multidex:1.0.3'
+
+}
+repositories {
+    mavenCentral()
 }
