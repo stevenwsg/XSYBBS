@@ -18,7 +18,7 @@ import androidx.annotation.Nullable;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.wsg.xsybbs.R;
-import com.wsg.xsybbs.activity.note.AddNoteActivity;
+import com.wsg.xsybbs.module.addnote.view.AddNoteActivity;
 import com.wsg.xsybbs.activity.note.NoteDetailActivity;
 import com.wsg.xsybbs.activity.note.SearchNoteActivity;
 import com.wsg.xsybbs.adapter.GlideImageLoader;

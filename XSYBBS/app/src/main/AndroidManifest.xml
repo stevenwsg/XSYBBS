@@ -114,7 +114,7 @@
         <!-- EaseUI中发送图片后查看以及发送地理位置activit注册   -->
         <activity android:name="com.hyphenate.easeui.ui.EaseBaiduMapActivity"/>
         <!--添加帖子-->
-        <activity android:name=".activity.note.AddNoteActivity" android:label="@string/text_add_note"></activity>
+        <activity android:name=".module.addnote.view.AddNoteActivity" android:label="@string/text_add_note"></activity>
         <!--搜索帖子-->
         <activity android:name=".activity.note.SearchNoteActivity" android:label="@string/test_search_note"></activity>
         <!--修改帖子-->
