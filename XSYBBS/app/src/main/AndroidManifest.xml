@@ -73,7 +73,7 @@
         <!--注册界面-->
         <activity android:name=".activity.user.RegisterActivity" android:label="@string/register"></activity>
         <!--忘记密码界面-->
-        <activity android:name=".activity.user.ForgetPasswordActivity" android:label="@string/forget_password"></activity>
+        <activity android:name=".module.forgetpassword.view.ForgetPasswordActivity" android:label="@string/forget_password"></activity>
         <!--修改密码页面-->
         <activity android:name=".module.modifypassword.view.ModifyPasswordActivity" android:label="@string/text_editor_password"></activity>
         <!--游客浏览-->

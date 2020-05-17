@@ -11,7 +11,7 @@ data class ModifyNoteResultMessage(val code : Int,  val message: String) {
         const val CODE_SUCCESS : Int = 0
         const val CODE_ERROR : Int = 1
 
-        const val MESSAGE_SUCCESS : String = "发布成功"
-        const val MESSAGE_ERROR : String = "发布失败，请检查网络"
+        const val MESSAGE_SUCCESS : String = "修改成功"
+        const val MESSAGE_ERROR : String = "修改失败，请检查网络"
     }
 }

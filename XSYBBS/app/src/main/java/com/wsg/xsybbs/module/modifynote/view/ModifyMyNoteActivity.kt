@@ -68,6 +68,7 @@ class ModifyMyNoteActivity : BaseActivity() {
         viewModel?.liveData?.observe(this, Observer { t ->
             if (t?.code == 0) {
                 Toasty.success(this, t.message, Toast.LENGTH_SHORT).show()
+                finish()
             } else {
                 t?.message?.let { Toasty.error(this, it, Toast.LENGTH_SHORT).show() }
             }
