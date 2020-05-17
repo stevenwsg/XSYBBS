@@ -15,11 +15,9 @@ import kotlinx.coroutines.*
 class FeedBackModel {
     var feedBackResultMessage: FeedBackResultMessage? = null
 
-    fun feedBack(content: String, liveData: MutableLiveData<FeedBackResultMessage>){
-        GlobalScope.launch(Dispatchers.Main) {
-            withContext(Dispatchers.IO) {
-                saveFeedBack(Feedback(content), liveData)
-            }
+    fun feedBack(content: String, liveData: MutableLiveData<FeedBackResultMessage>) {
+        GlobalScope.launch(Dispatchers.IO) {
+            saveFeedBack(Feedback(content), liveData)
         }
     }
 

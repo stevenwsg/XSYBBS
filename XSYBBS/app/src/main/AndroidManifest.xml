@@ -118,7 +118,7 @@
         <!--搜索帖子-->
         <activity android:name=".activity.note.SearchNoteActivity" android:label="@string/test_search_note"></activity>
         <!--修改帖子-->
-        <activity android:name=".activity.note.ModifyMyNoteActivity" android:label="@string/text_modify_my_note"></activity>
+        <activity android:name=".module.modifynote.view.ModifyMyNoteActivity" android:label="@string/text_modify_my_note"></activity>
         <!--帖子详情-->
         <activity android:name=".activity.note.NoteDetailActivity" android:label="@string/test_note_detail"></activity>
 

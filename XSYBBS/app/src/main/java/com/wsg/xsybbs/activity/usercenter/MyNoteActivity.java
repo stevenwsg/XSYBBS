@@ -10,7 +10,7 @@ import android.widget.Toast;
 import androidx.annotation.Nullable;
 
 import com.wsg.xsybbs.R;
-import com.wsg.xsybbs.activity.note.ModifyMyNoteActivity;
+import com.wsg.xsybbs.module.modifynote.view.ModifyMyNoteActivity;
 import com.wsg.xsybbs.adapter.MyNoteAdapter;
 import com.wsg.xsybbs.base.BaseActivity;
 import com.wsg.xsybbs.bean.Note;
