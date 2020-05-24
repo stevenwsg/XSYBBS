@@ -12,7 +12,6 @@ import com.wsg.xsybbs.bean.Note
 import com.wsg.xsybbs.module.modifynote.viewmodel.ModifyNoteViewModel
 import es.dmoral.toasty.Toasty
 import kotlinx.android.synthetic.main.activity_modify_my_note.*
-import kotlinx.android.synthetic.main.ease_chat_menu_item.view.*
 
 /**
  * Created by wsg
@@ -38,7 +37,7 @@ class ModifyMyNoteActivity : BaseActivity() {
         modify_note_title.setText(note?.title)
         modify_note_content.setText(note?.content)
         for (i in 0..modify_radioGroup.childCount) {
-            if (modify_radioGroup.getChildAt(i).text.toString().trim() == note?.typeid.toString().trim()) {
+            if ((modify_radioGroup.getChildAt(i) as RadioButton).text.toString().trim() == note?.typeid.toString().trim()) {
                 (modify_radioGroup.getChildAt(i) as RadioButton).isChecked = true
                 break
             }

@@ -96,6 +96,9 @@ dependencies {
     // multidex
     implementation 'com.android.support:multidex:1.0.3'
 
+    // MultiType
+    implementation 'me.drakeet.multitype:multitype:3.5.0'
+
 }
 repositories {
     mavenCentral()
