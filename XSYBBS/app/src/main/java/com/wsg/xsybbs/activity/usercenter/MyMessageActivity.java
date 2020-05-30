@@ -9,7 +9,7 @@ import androidx.annotation.Nullable;
 
 import com.wsg.xsybbs.R;
 import com.wsg.xsybbs.module.messagecomment.view.MyMessageCommentActivity;
-import com.wsg.xsybbs.activity.message.MyMessageZanActivity;
+import com.wsg.xsybbs.module.messagezan.view.MyMessageZanActivity;
 import com.wsg.xsybbs.base.BaseActivity;
 
 /**

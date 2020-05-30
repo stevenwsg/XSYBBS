@@ -123,7 +123,7 @@
         <activity android:name=".activity.note.NoteDetailActivity" android:label="@string/test_note_detail"></activity>
 
         <!--收到的赞-->
-        <activity android:name=".activity.message.MyMessageZanActivity" android:label="@string/text_my_zan"></activity>
+        <activity android:name=".module.messagezan.view.MyMessageZanActivity" android:label="@string/text_my_zan"></activity>
 
         <!--收到的评论-->
         <activity android:name=".module.messagecomment.view.MyMessageCommentActivity" android:label="@string/text_my_me"></activity>
