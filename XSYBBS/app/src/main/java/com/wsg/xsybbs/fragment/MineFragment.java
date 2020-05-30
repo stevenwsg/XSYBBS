@@ -23,7 +23,7 @@ import com.wsg.xsybbs.module.feedback.view.FeedBackActivity;
 import com.wsg.xsybbs.activity.user.LoginActivity;
 import com.wsg.xsybbs.activity.user.ModifyPersionalInformationActivity;
 import com.wsg.xsybbs.activity.usercenter.MyMessageActivity;
-import com.wsg.xsybbs.activity.usercenter.MyNoteActivity;
+import com.wsg.xsybbs.module.mynote.view.MyNoteActivity;
 import com.wsg.xsybbs.activity.usercenter.UpDateActivity;
 import com.wsg.xsybbs.bean.User;
 import com.wsg.xsybbs.threadpool.MyThreadPool;

@@ -87,7 +87,7 @@
         <!--关于-->
         <activity android:name=".activity.usercenter.AboutActivity" android:label="@string/tex_about"></activity>
         <!--我的帖子-->
-        <activity android:name=".activity.usercenter.MyNoteActivity" android:label="@string/text_mynote"></activity>
+        <activity android:name=".module.mynote.view.MyNoteActivity" android:label="@string/text_mynote"></activity>
         <!--我的消息界面-->
         <activity android:name=".activity.usercenter.MyMessageActivity" android:label="@string/text_my_message"></activity>
         <!--选择头像界面-->
