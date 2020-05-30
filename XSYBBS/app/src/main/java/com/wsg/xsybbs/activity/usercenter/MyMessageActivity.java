@@ -8,7 +8,7 @@ import android.widget.RelativeLayout;
 import androidx.annotation.Nullable;
 
 import com.wsg.xsybbs.R;
-import com.wsg.xsybbs.activity.message.MyMessageCommentActivity;
+import com.wsg.xsybbs.module.messagecomment.view.MyMessageCommentActivity;
 import com.wsg.xsybbs.activity.message.MyMessageZanActivity;
 import com.wsg.xsybbs.base.BaseActivity;
 

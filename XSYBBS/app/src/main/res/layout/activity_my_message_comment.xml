@@ -13,12 +13,12 @@
         android:textSize="30sp"
         android:layout_height="wrap_content" />
 
-    <ListView
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/comment_lv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-    </ListView>
+    </androidx.recyclerview.widget.RecyclerView>
 
 
 </LinearLayout>

@@ -126,7 +126,7 @@
         <activity android:name=".activity.message.MyMessageZanActivity" android:label="@string/text_my_zan"></activity>
 
         <!--收到的评论-->
-        <activity android:name=".activity.message.MyMessageCommentActivity" android:label="@string/text_my_me"></activity>
+        <activity android:name=".module.messagecomment.view.MyMessageCommentActivity" android:label="@string/text_my_me"></activity>
 
 
 
