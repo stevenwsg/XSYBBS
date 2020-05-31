@@ -81,7 +81,7 @@
         <!--意见反馈-->
         <activity android:name=".module.feedback.view.FeedBackActivity" android:label="@string/back_t"></activity>
         <!--个人详细信息-->
-        <activity android:name=".activity.user.PersionalDealActivity"></activity>
+        <activity android:name=".module.persiondetail.view.PersionalDealActivity"></activity>
         <!--版本更新-->
         <activity android:name=".activity.usercenter.UpDateActivity" android:label="@string/text_update"></activity>
         <!--关于-->

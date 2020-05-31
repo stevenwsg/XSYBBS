@@ -16,7 +16,7 @@ import android.widget.Toast;
 import androidx.annotation.Nullable;
 
 import com.wsg.xsybbs.R;
-import com.wsg.xsybbs.activity.user.PersionalDealActivity;
+import com.wsg.xsybbs.module.persiondetail.view.PersionalDealActivity;
 import com.wsg.xsybbs.adapter.CommentAdapter;
 import com.wsg.xsybbs.base.BaseActivity;
 import com.wsg.xsybbs.bean.Comment;

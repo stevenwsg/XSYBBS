@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.wsg.xsybbs.R
-import com.wsg.xsybbs.activity.user.PersionalDealActivity
+import com.wsg.xsybbs.module.persiondetail.view.PersionalDealActivity
 import com.wsg.xsybbs.bean.Comment
 import me.drakeet.multitype.ItemViewBinder
 
