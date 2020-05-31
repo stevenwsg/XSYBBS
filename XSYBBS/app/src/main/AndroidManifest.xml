@@ -77,7 +77,7 @@
         <!--修改密码页面-->
         <activity android:name=".module.modifypassword.view.ModifyPasswordActivity" android:label="@string/text_editor_password"></activity>
         <!--游客浏览-->
-        <activity android:name=".activity.user.TouristLoginActivity" android:label="@string/tourist_login"></activity>
+        <activity android:name=".module.tourist.view.TouristLoginActivity" android:label="@string/tourist_login"></activity>
         <!--意见反馈-->
         <activity android:name=".module.feedback.view.FeedBackActivity" android:label="@string/back_t"></activity>
         <!--个人详细信息-->

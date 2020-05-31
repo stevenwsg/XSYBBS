@@ -21,6 +21,7 @@ import com.wsg.xsybbs.R;
 import com.wsg.xsybbs.base.BaseActivity;
 import com.wsg.xsybbs.bean.User;
 import com.wsg.xsybbs.module.forgetpassword.view.ForgetPasswordActivity;
+import com.wsg.xsybbs.module.tourist.view.TouristLoginActivity;
 import com.wsg.xsybbs.threadpool.MyThreadPool;
 import com.wsg.xsybbs.util.L;
 import com.wsg.xsybbs.util.SPUtils;

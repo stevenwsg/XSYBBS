@@ -16,10 +16,10 @@
         android:elevation="10dp"/>
 
 
-    <ListView
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/lv_tl_note"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"></ListView>
+        android:layout_height="wrap_content" />
 
 
 </LinearLayout>
