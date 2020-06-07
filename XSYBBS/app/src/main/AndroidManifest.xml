@@ -71,7 +71,7 @@
         <!--登录页面-->
         <activity android:name=".activity.user.LoginActivity" android:label="@string/login"></activity>
         <!--注册界面-->
-        <activity android:name=".activity.user.RegisterActivity" android:label="@string/register"></activity>
+        <activity android:name=".module.register.view.RegisterActivity" android:label="@string/register"></activity>
         <!--忘记密码界面-->
         <activity android:name=".module.forgetpassword.view.ForgetPasswordActivity" android:label="@string/forget_password"></activity>
         <!--修改密码页面-->

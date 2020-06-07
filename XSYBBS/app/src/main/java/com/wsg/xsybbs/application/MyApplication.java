@@ -1,5 +1,6 @@
 package com.wsg.xsybbs.application;
 
+import android.content.Context;
 import android.os.Build;
 import android.os.StrictMode;
 
@@ -21,6 +22,9 @@ import cn.bmob.v3.update.BmobUpdateAgent;
  * function:   全局application的封装
  */
 public class MyApplication extends MultiDexApplication {
+
+    private static MyApplication myApplication;
+
     @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN_MR2)
     @Override
     public void onCreate() {
@@ -56,5 +60,11 @@ public class MyApplication extends MultiDexApplication {
             return;
         }
         LeakCanary.install(this);
+        myApplication = this;
+    }
+
+
+    public  static Context getInstance() {
+        return myApplication;
     }
 }
