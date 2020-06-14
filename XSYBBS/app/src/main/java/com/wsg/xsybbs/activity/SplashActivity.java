@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 import com.wsg.xsybbs.MainActivity;
 import com.wsg.xsybbs.R;
-import com.wsg.xsybbs.activity.user.LoginActivity;
+import com.wsg.xsybbs.module.login.view.LoginActivity;
 import com.wsg.xsybbs.base.BaseActivity;
 import com.wsg.xsybbs.util.L;
 import com.wsg.xsybbs.util.SPUtils;

@@ -20,7 +20,7 @@ import com.wsg.xsybbs.R;
 import com.wsg.xsybbs.module.modifypassword.view.ModifyPasswordActivity;
 import com.wsg.xsybbs.activity.usercenter.AboutActivity;
 import com.wsg.xsybbs.module.feedback.view.FeedBackActivity;
-import com.wsg.xsybbs.activity.user.LoginActivity;
+import com.wsg.xsybbs.module.login.view.LoginActivity  ;
 import com.wsg.xsybbs.activity.user.ModifyPersionalInformationActivity;
 import com.wsg.xsybbs.activity.usercenter.MyMessageActivity;
 import com.wsg.xsybbs.module.mynote.view.MyNoteActivity;
