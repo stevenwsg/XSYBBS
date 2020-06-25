@@ -201,4 +201,4 @@
 ## 2020/05/05
 ### 由于最近在学习MVVM，所以将此项目重构为MVVM架构 
 
-MVVM采用 DataBinding + ViewModel + LiveData 实现
+MVVM改造方案： https://juejin.im/post/5ec0edc5f265da7bc01da522
