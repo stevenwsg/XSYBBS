@@ -21,7 +21,7 @@ import com.wsg.xsybbs.module.modifypassword.view.ModifyPasswordActivity;
 import com.wsg.xsybbs.activity.usercenter.AboutActivity;
 import com.wsg.xsybbs.module.feedback.view.FeedBackActivity;
 import com.wsg.xsybbs.module.login.view.LoginActivity  ;
-import com.wsg.xsybbs.activity.user.ModifyPersionalInformationActivity;
+import com.wsg.xsybbs.module.modifyinfo.view.ModifyUserInfoActivity;
 import com.wsg.xsybbs.activity.usercenter.MyMessageActivity;
 import com.wsg.xsybbs.module.mynote.view.MyNoteActivity;
 import com.wsg.xsybbs.activity.usercenter.UpDateActivity;
@@ -136,10 +136,8 @@ public class MineFragment extends Fragment implements View.OnClickListener {
 
         switch (v.getId()) {
             case R.id.profile_image:
-                startActivity(new Intent(getActivity(), ModifyPersionalInformationActivity.class));
-                break;
             case R.id.edit_user:
-                startActivity(new Intent(getActivity(), ModifyPersionalInformationActivity.class));
+                startActivity(new Intent(getActivity(), ModifyUserInfoActivity.class));
                 break;
             case R.id.tv_sell:
                 startActivity(new Intent(getActivity(), MyNoteActivity.class));

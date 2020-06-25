@@ -93,7 +93,7 @@
         <!--选择头像界面-->
         <activity android:name=".activity.usercenter.ChooseProfileActivity" android:label="@string/text_choose_profile"></activity>
         <!--编辑个人资料界面-->
-        <activity android:name=".activity.user.ModifyPersionalInformationActivity" android:label="@string/edit_information"></activity>
+        <activity android:name=".module.modifyinfo.view.ModifyUserInfoActivity" android:label="@string/edit_information"></activity>
 
         <!--bmob更新activity-->
         <activity
