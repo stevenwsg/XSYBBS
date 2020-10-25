@@ -1,6 +1,38 @@
 package com.wsg.xsybbs.module.notedetail.viewmodel
 
-import androidx.lifecycle.ViewModel
 
-class NoteDetailViewModel: ViewModel() {
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
+import com.wsg.xsybbs.bean.Comment
+import com.wsg.xsybbs.module.notedetail.bean.AddCommentResult
+import com.wsg.xsybbs.module.notedetail.model.NoteDetailModel
+
+class NoteDetailViewModel : ViewModel() {
+
+    private val noteDetailModel = NoteDetailModel()
+
+    // 评论数据
+    var commentLists = MutableLiveData<List<Comment>>()
+
+    // 点赞状态
+    var likeState = MutableLiveData<Boolean>()
+
+    // 发表评论
+    var addCommentResult = MutableLiveData<AddCommentResult>()
+
+    fun getCommentInfo() {
+
+    }
+
+    fun getLikeState() {
+
+    }
+
+    fun updateLikeState(like: Boolean) {
+
+    }
+
+    fun addComment(comment: Comment) {
+
+    }
 }
