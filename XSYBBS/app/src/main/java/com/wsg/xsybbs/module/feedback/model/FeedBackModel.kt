@@ -21,14 +21,23 @@ class FeedBackModel {
         }
     }
 
-    private suspend fun saveFeedBack(feedback: Feedback, liveData: MutableLiveData<FeedBackResultMessage>) = withContext(Dispatchers.IO) {
+    private suspend fun saveFeedBack(
+        feedback: Feedback,
+        liveData: MutableLiveData<FeedBackResultMessage>
+    ) = withContext(Dispatchers.IO) {
         feedback.save(object : SaveListener<String>() {
             override fun done(p0: String?, p1: BmobException?) {
                 if (p1 === null) {
-                    feedBackResultMessage = FeedBackResultMessage(FeedBackResultMessage.CODE_SUCCESS, FeedBackResultMessage.MESSAGE_SUCCESS)
+                    feedBackResultMessage = FeedBackResultMessage(
+                        FeedBackResultMessage.CODE_SUCCESS,
+                        FeedBackResultMessage.MESSAGE_SUCCESS
+                    )
                     liveData.postValue(feedBackResultMessage)
                 } else {
-                    feedBackResultMessage = FeedBackResultMessage(FeedBackResultMessage.CODE_ERROR, FeedBackResultMessage.MESSAGE_ERROR)
+                    feedBackResultMessage = FeedBackResultMessage(
+                        FeedBackResultMessage.CODE_ERROR,
+                        FeedBackResultMessage.MESSAGE_ERROR
+                    )
                     liveData.postValue(feedBackResultMessage)
                 }
             }
