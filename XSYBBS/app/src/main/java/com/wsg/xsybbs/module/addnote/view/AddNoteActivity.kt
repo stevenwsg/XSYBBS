@@ -5,7 +5,7 @@ import android.text.TextUtils
 import android.widget.RadioButton
 import android.widget.Toast
 import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProviders
+import androidx.lifecycle.ViewModelProvider
 import cn.bmob.v3.BmobUser
 import com.wsg.xsybbs.R
 import com.wsg.xsybbs.base.BaseActivity
@@ -42,7 +42,7 @@ class AddNoteActivity : BaseActivity() {
     }
 
     private fun initViewModel() {
-        viewModel = ViewModelProviders.of(this).get(AddNoteViewModel::class.java)
+        viewModel = ViewModelProvider(this).get(AddNoteViewModel::class.java)
     }
 
     private fun initObserval() {

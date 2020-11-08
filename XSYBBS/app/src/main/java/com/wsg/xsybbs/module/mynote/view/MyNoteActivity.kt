@@ -4,7 +4,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProviders
+import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.wsg.xsybbs.R
 import com.wsg.xsybbs.base.BaseActivity
@@ -48,7 +48,7 @@ class MyNoteActivity : BaseActivity() {
     }
 
     private fun initVm() {
-        vm = ViewModelProviders.of(this).get(MyNoteViewModel::class.java)
+        vm = ViewModelProvider(this).get(MyNoteViewModel::class.java)
     }
 
     private fun initData() {

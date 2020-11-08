@@ -5,7 +5,7 @@ import android.text.TextUtils
 import android.view.Gravity
 import android.widget.Toast
 import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProviders
+import androidx.lifecycle.ViewModelProvider
 import com.wsg.xsybbs.R
 import com.wsg.xsybbs.base.BaseActivity
 import com.wsg.xsybbs.bean.User
@@ -62,7 +62,7 @@ class RegisterActivity : BaseActivity() {
     }
 
     private fun initVm() {
-        mVm = ViewModelProviders.of(this).get(RegisterViewModel::class.java)
+        mVm = ViewModelProvider(this).get(RegisterViewModel::class.java)
     }
 
     private fun initObserval() {

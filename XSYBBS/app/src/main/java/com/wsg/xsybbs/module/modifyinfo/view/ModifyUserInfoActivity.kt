@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.text.TextUtils
 import android.widget.Toast
 import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProviders
+import androidx.lifecycle.ViewModelProvider
 import cn.bmob.v3.BmobUser
 import com.bumptech.glide.Glide
 import com.wsg.xsybbs.R
@@ -79,7 +79,7 @@ class ModifyUserInfoActivity : BaseActivity() {
     }
 
     private fun initVm() {
-        mVm = ViewModelProviders.of(this).get(ModifyInfoViewModel::class.java)
+        mVm = ViewModelProvider(this).get(ModifyInfoViewModel::class.java)
     }
 
     private fun initObserve() {

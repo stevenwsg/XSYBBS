@@ -4,7 +4,7 @@ import android.os.Bundle
 import android.text.TextUtils
 import android.widget.Toast
 import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProviders
+import androidx.lifecycle.ViewModelProvider
 import com.wsg.xsybbs.R
 import com.wsg.xsybbs.base.BaseActivity
 import com.wsg.xsybbs.module.feedback.viewmodel.FeedBackViewModel
@@ -41,7 +41,7 @@ class FeedBackActivity : BaseActivity() {
     }
 
     private fun initVM() {
-        mFeedBackVM = ViewModelProviders.of(this).get(FeedBackViewModel::class.java)
+        mFeedBackVM = ViewModelProvider(this).get(FeedBackViewModel::class.java)
     }
 
     private fun initObserval() {

@@ -3,7 +3,7 @@ package com.wsg.xsybbs.module.tourist.view
 import android.os.Bundle
 import android.widget.Toast
 import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProviders
+import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.wsg.xsybbs.R
 import com.wsg.xsybbs.adapter.GlideImageLoader
@@ -41,7 +41,7 @@ class TouristLoginActivity : BaseActivity() {
     }
 
     private fun initVm() {
-        mVm = ViewModelProviders.of(this).get(TouristViewModel::class.java)
+        mVm = ViewModelProvider(this).get(TouristViewModel::class.java)
     }
 
     private fun initObserval() {

@@ -3,7 +3,7 @@ package com.wsg.xsybbs.module.messagecomment.view
 import android.os.Bundle
 import android.view.View
 import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProviders
+import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.wsg.xsybbs.R
 import com.wsg.xsybbs.base.BaseActivity
@@ -36,7 +36,7 @@ class MyMessageCommentActivity : BaseActivity() {
     }
 
     private fun initVm() {
-        mVm = ViewModelProviders.of(this).get(MessageCommentViewModel::class.java)
+        mVm = ViewModelProvider(this).get(MessageCommentViewModel::class.java)
     }
 
     private fun initObserval() {

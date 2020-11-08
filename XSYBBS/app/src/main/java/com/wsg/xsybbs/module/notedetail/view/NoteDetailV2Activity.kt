@@ -1,7 +1,7 @@
 package com.wsg.xsybbs.module.notedetail.view
 
 import android.os.Bundle
-import androidx.lifecycle.ViewModelProviders
+import androidx.lifecycle.ViewModelProvider
 import com.wsg.xsybbs.R
 import com.wsg.xsybbs.base.BaseActivity
 import com.wsg.xsybbs.bean.Comment
@@ -39,7 +39,7 @@ class NoteDetailV2Activity : BaseActivity() {
     }
 
     private fun initViewModel() {
-        viewModel = ViewModelProviders.of(this).get(NoteDetailViewModel::class.java)
+        viewModel = ViewModelProvider(this).get(NoteDetailViewModel::class.java)
     }
 
     private fun initObservable() {

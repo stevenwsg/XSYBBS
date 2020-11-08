@@ -4,7 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProviders
+import androidx.lifecycle.ViewModelProvider
 import com.hyphenate.easeui.EaseConstant
 import com.wsg.xsybbs.R
 import com.wsg.xsybbs.activity.ChatActivity
@@ -50,7 +50,7 @@ class PersionalDealActivity : BaseActivity() {
     }
 
     private fun initVm() {
-        mVm = ViewModelProviders.of(this).get(PersionDetailViewModel::class.java)
+        mVm = ViewModelProvider(this).get(PersionDetailViewModel::class.java)
     }
 
     private fun initObservabl() {
