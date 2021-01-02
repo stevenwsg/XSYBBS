@@ -45,7 +45,7 @@ class TouristLoginActivity : BaseActivity() {
     }
 
     private fun initObserval() {
-        mVm?.mBannes?.observe(this, Observer {
+        mVm?.mBanes?.observe(this, Observer {
             mBannerList.clear()
             for (banne in it) {
                 mBannerList.add(banne.photo)

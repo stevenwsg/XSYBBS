@@ -2,8 +2,13 @@ package com.wsg.xsybbs.module.modifypassword.viewmodel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
+import cn.bmob.v3.exception.BmobException
+import cn.bmob.v3.listener.UpdateListener
+import com.wsg.xsybbs.bean.User
 import com.wsg.xsybbs.module.modifypassword.bean.ModifyPassWordResultMessage
-import com.wsg.xsybbs.module.modifypassword.model.ModifyPassWordModel
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 
 /**
  * Created by wsg
@@ -12,9 +17,26 @@ import com.wsg.xsybbs.module.modifypassword.model.ModifyPassWordModel
  */
 class ModifyPassWordViewModel : ViewModel() {
     var result = MutableLiveData<ModifyPassWordResultMessage>()
-    var model = ModifyPassWordModel()
 
-    fun modifyPassWord(oldPw: String, newPw : String) {
-        model.modifyPassWord(oldPw, newPw, result)
+    fun modifyPassWord(oldPw: String, newPw: String) {
+        viewModelScope.launch(Dispatchers.IO) {
+            User.updateCurrentUserPassword(oldPw, newPw, object : UpdateListener() {
+                var modifyPassWordResultMessage: ModifyPassWordResultMessage? = null
+                override fun done(p0: BmobException?) {
+                    modifyPassWordResultMessage = if (p0 === null) {
+                        ModifyPassWordResultMessage(
+                            ModifyPassWordResultMessage.CODE_SUCCESS,
+                            ModifyPassWordResultMessage.MESSAGE_SUCCESS
+                        )
+                    } else {
+                        ModifyPassWordResultMessage(
+                            ModifyPassWordResultMessage.CODE_ERROR,
+                            ModifyPassWordResultMessage.MESSAGE_ERROR
+                        )
+                    }
+                    result.postValue(modifyPassWordResultMessage)
+                }
+            })
+        }
     }
 }

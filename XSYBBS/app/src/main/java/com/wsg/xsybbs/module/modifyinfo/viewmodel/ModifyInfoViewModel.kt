@@ -2,9 +2,13 @@ package com.wsg.xsybbs.module.modifyinfo.viewmodel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
+import cn.bmob.v3.exception.BmobException
+import cn.bmob.v3.listener.UpdateListener
 import com.wsg.xsybbs.bean.User
 import com.wsg.xsybbs.module.modifyinfo.ModifyInfoResult
-import com.wsg.xsybbs.module.modifyinfo.model.ModifyInfoModel
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 
 /**
  * Created by wsg
@@ -14,9 +18,27 @@ import com.wsg.xsybbs.module.modifyinfo.model.ModifyInfoModel
 class ModifyInfoViewModel : ViewModel() {
 
     val modifyResult = MutableLiveData<ModifyInfoResult>()
-    private val model: ModifyInfoModel = ModifyInfoModel()
 
     fun updateUserInfo(user: User) {
-        model.updateUserInfo(user, modifyResult)
+        viewModelScope.launch(Dispatchers.IO) {
+            user.update(user.objectId, object : UpdateListener() {
+                override fun done(p0: BmobException?) {
+                    var message: ModifyInfoResult?
+                    if (p0 == null) {
+                        message = ModifyInfoResult(
+                            ModifyInfoResult.CODE_SUCCESS,
+                            ModifyInfoResult.MESSAGE_SUCCESS
+                        )
+                        modifyResult.postValue(message)
+                    } else {
+                        message = ModifyInfoResult(
+                            ModifyInfoResult.CODE_ERROR,
+                            ModifyInfoResult.MESSAGE_ERROR
+                        )
+                        modifyResult.postValue(message)
+                    }
+                }
+            })
+        }
     }
 }
