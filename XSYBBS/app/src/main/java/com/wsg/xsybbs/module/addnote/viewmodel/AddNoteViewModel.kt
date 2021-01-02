@@ -2,9 +2,13 @@ package com.wsg.xsybbs.module.addnote.viewmodel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
+import cn.bmob.v3.exception.BmobException
+import cn.bmob.v3.listener.SaveListener
 import com.wsg.xsybbs.bean.Note
 import com.wsg.xsybbs.module.addnote.bean.AddNoteResultMessage
-import com.wsg.xsybbs.module.addnote.model.AddNoteModel
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 
 /**
  * Created by wsg
@@ -14,9 +18,26 @@ import com.wsg.xsybbs.module.addnote.model.AddNoteModel
 class AddNoteViewModel : ViewModel() {
 
     var message = MutableLiveData<AddNoteResultMessage>()
-    var model = AddNoteModel()
 
-    fun saveNote(note : Note) {
-        model.saveNote(note, message)
+    fun saveNote(note: Note) {
+        viewModelScope.launch(Dispatchers.IO) {
+            note.save(object : SaveListener<String>() {
+                override fun done(p0: String?, p1: BmobException?) {
+                    var resultMessage = if (p1 == null) {
+                        AddNoteResultMessage(
+                            AddNoteResultMessage.CODE_SUCCESS,
+                            AddNoteResultMessage.MESSAGE_SUCCESS
+                        )
+                    } else {
+                        AddNoteResultMessage(
+                            AddNoteResultMessage.CODE_ERROR,
+                            AddNoteResultMessage.MESSAGE_ERROR
+                        )
+                    }
+                    message.postValue(resultMessage)
+                }
+
+            })
+        }
     }
 }
