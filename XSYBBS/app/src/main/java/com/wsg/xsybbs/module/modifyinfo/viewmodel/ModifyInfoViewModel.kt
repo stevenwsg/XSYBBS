@@ -1,10 +1,10 @@
 package com.wsg.xsybbs.module.modifyinfo.viewmodel
 
 import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import cn.bmob.v3.exception.BmobException
 import cn.bmob.v3.listener.UpdateListener
+import com.wsg.xsybbs.base.BaseViewModel
 import com.wsg.xsybbs.bean.User
 import com.wsg.xsybbs.module.modifyinfo.ModifyInfoResult
 import kotlinx.coroutines.Dispatchers
@@ -15,7 +15,7 @@ import kotlinx.coroutines.launch
  * on         2020/6/25
  * function:
  */
-class ModifyInfoViewModel : ViewModel() {
+class ModifyInfoViewModel : BaseViewModel() {
 
     val modifyResult = MutableLiveData<ModifyInfoResult>()
 

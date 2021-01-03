@@ -1,13 +1,13 @@
 package com.wsg.xsybbs.module.register.viewmodel
 
 import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import cn.bmob.v3.exception.BmobException
 import cn.bmob.v3.listener.SaveListener
 import com.hyphenate.chat.EMClient
 import com.hyphenate.exceptions.HyphenateException
 import com.wsg.xsybbs.application.MyApplication
+import com.wsg.xsybbs.base.BaseViewModel
 import com.wsg.xsybbs.bean.User
 import com.wsg.xsybbs.module.register.bean.RegisterResultMessage
 import com.wsg.xsybbs.util.SPUtils
@@ -20,7 +20,7 @@ import kotlinx.coroutines.launch
  * on         2020/5/31
  * function:
  */
-class RegisterViewModel : ViewModel() {
+class RegisterViewModel : BaseViewModel() {
     var message = MutableLiveData<RegisterResultMessage>()
     private var mRegisterResultMessage: RegisterResultMessage? = null
 

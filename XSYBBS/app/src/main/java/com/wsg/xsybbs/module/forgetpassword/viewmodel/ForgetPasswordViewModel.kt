@@ -1,10 +1,10 @@
 package com.wsg.xsybbs.module.forgetpassword.viewmodel
 
 import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import cn.bmob.v3.exception.BmobException
 import cn.bmob.v3.listener.UpdateListener
+import com.wsg.xsybbs.base.BaseViewModel
 import com.wsg.xsybbs.bean.User
 import com.wsg.xsybbs.module.forgetpassword.bean.ForgetPasswordResultMessage
 import kotlinx.coroutines.Dispatchers
@@ -15,7 +15,7 @@ import kotlinx.coroutines.launch
  * on         2020/5/17
  * function:
  */
-class ForgetPasswordViewModel : ViewModel() {
+class ForgetPasswordViewModel : BaseViewModel() {
 
     var liveData = MutableLiveData<ForgetPasswordResultMessage>()
     private var message: ForgetPasswordResultMessage? = null

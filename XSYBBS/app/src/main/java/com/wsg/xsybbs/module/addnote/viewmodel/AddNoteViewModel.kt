@@ -1,10 +1,10 @@
 package com.wsg.xsybbs.module.addnote.viewmodel
 
 import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import cn.bmob.v3.exception.BmobException
 import cn.bmob.v3.listener.SaveListener
+import com.wsg.xsybbs.base.BaseViewModel
 import com.wsg.xsybbs.bean.Note
 import com.wsg.xsybbs.module.addnote.bean.AddNoteResultMessage
 import kotlinx.coroutines.Dispatchers
@@ -15,7 +15,7 @@ import kotlinx.coroutines.launch
  * on         2020/5/10
  * function:
  */
-class AddNoteViewModel : ViewModel() {
+class AddNoteViewModel : BaseViewModel() {
 
     var message = MutableLiveData<AddNoteResultMessage>()
 

@@ -1,11 +1,11 @@
 package com.wsg.xsybbs.module.tourist.viewmodel
 
 import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import cn.bmob.v3.BmobQuery
 import cn.bmob.v3.exception.BmobException
 import cn.bmob.v3.listener.FindListener
+import com.wsg.xsybbs.base.BaseViewModel
 import com.wsg.xsybbs.bean.Banne
 import com.wsg.xsybbs.bean.Note
 import com.wsg.xsybbs.module.tourist.bean.TouristRequestMessage
@@ -17,7 +17,7 @@ import kotlinx.coroutines.launch
  * on         2020/5/31
  * function:
  */
-class TouristViewModel : ViewModel() {
+class TouristViewModel : BaseViewModel() {
 
     val mNotes = MutableLiveData<List<Note>>()
     val mBanes = MutableLiveData<List<Banne>>()

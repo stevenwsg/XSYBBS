@@ -1,10 +1,10 @@
 package com.wsg.xsybbs.module.modifypassword.viewmodel
 
 import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import cn.bmob.v3.exception.BmobException
 import cn.bmob.v3.listener.UpdateListener
+import com.wsg.xsybbs.base.BaseViewModel
 import com.wsg.xsybbs.bean.User
 import com.wsg.xsybbs.module.modifypassword.bean.ModifyPassWordResultMessage
 import kotlinx.coroutines.Dispatchers
@@ -15,7 +15,7 @@ import kotlinx.coroutines.launch
  * on         2020/5/10
  * function:  修改密码ViewModel
  */
-class ModifyPassWordViewModel : ViewModel() {
+class ModifyPassWordViewModel : BaseViewModel() {
     var result = MutableLiveData<ModifyPassWordResultMessage>()
 
     fun modifyPassWord(oldPw: String, newPw: String) {

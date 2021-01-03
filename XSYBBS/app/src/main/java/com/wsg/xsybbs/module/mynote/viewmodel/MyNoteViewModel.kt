@@ -1,13 +1,13 @@
 package com.wsg.xsybbs.module.mynote.viewmodel
 
 import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import cn.bmob.v3.BmobQuery
 import cn.bmob.v3.BmobUser
 import cn.bmob.v3.exception.BmobException
 import cn.bmob.v3.listener.FindListener
 import cn.bmob.v3.listener.UpdateListener
+import com.wsg.xsybbs.base.BaseViewModel
 import com.wsg.xsybbs.bean.Note
 import com.wsg.xsybbs.module.mynote.bean.DeleteNoteMessage
 import com.wsg.xsybbs.module.mynote.bean.MyNoteRequestMessage
@@ -19,7 +19,7 @@ import kotlinx.coroutines.launch
  * on         2020/5/24
  * function:
  */
-class MyNoteViewModel : ViewModel() {
+class MyNoteViewModel : BaseViewModel() {
 
     val liveData = MutableLiveData<List<Note>>()
     val message = MutableLiveData<MyNoteRequestMessage>()

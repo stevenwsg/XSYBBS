@@ -2,12 +2,12 @@ package com.wsg.xsybbs.module.notedetail.viewmodel
 
 
 import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
+import com.wsg.xsybbs.base.BaseViewModel
 import com.wsg.xsybbs.bean.Comment
 import com.wsg.xsybbs.module.notedetail.bean.AddCommentResult
 import com.wsg.xsybbs.module.notedetail.model.NoteDetailModel
 
-class NoteDetailViewModel : ViewModel() {
+class NoteDetailViewModel : BaseViewModel() {
 
     private val noteDetailModel = NoteDetailModel()
 

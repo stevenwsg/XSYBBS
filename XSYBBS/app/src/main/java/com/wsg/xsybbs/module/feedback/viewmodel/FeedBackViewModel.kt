@@ -1,10 +1,10 @@
 package com.wsg.xsybbs.module.feedback.viewmodel
 
 import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import cn.bmob.v3.exception.BmobException
 import cn.bmob.v3.listener.SaveListener
+import com.wsg.xsybbs.base.BaseViewModel
 import com.wsg.xsybbs.module.feedback.bean.FeedBackResultMessage
 import com.wsg.xsybbs.module.feedback.bean.Feedback
 import kotlinx.coroutines.Dispatchers
@@ -15,7 +15,7 @@ import kotlinx.coroutines.launch
  * on         2020/5/5
  * function:  反馈MVVM模块改造
  */
-class FeedBackViewModel : ViewModel() {
+class FeedBackViewModel : BaseViewModel() {
 
     var messageLiveData = MutableLiveData<FeedBackResultMessage>()
     private var feedBackResultMessage: FeedBackResultMessage? = null

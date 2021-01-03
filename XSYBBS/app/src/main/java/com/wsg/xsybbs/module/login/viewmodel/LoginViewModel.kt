@@ -1,13 +1,13 @@
 package com.wsg.xsybbs.module.login.viewmodel
 
 import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import cn.bmob.v3.exception.BmobException
 import cn.bmob.v3.listener.SaveListener
 import com.hyphenate.EMCallBack
 import com.hyphenate.chat.EMClient
 import com.wsg.xsybbs.application.MyApplication
+import com.wsg.xsybbs.base.BaseViewModel
 import com.wsg.xsybbs.bean.User
 import com.wsg.xsybbs.module.login.bean.LoginResultMessage
 import com.wsg.xsybbs.util.L
@@ -21,7 +21,7 @@ import kotlinx.coroutines.launch
  * on         2020/6/14
  * function:
  */
-class LoginViewModel : ViewModel() {
+class LoginViewModel : BaseViewModel() {
 
     val message = MutableLiveData<LoginResultMessage>()
     var mLoginMessage: LoginResultMessage? = null

@@ -1,11 +1,11 @@
 package com.wsg.xsybbs.module.searchnote.viewmodel
 
 import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import cn.bmob.v3.BmobQuery
 import cn.bmob.v3.exception.BmobException
 import cn.bmob.v3.listener.FindListener
+import com.wsg.xsybbs.base.BaseViewModel
 import com.wsg.xsybbs.bean.Note
 import com.wsg.xsybbs.module.searchnote.bean.SearchNoteResultMessage
 import kotlinx.coroutines.Dispatchers
@@ -16,7 +16,7 @@ import kotlinx.coroutines.launch
  * on         2020/5/17
  * function:  搜索帖子ViewModel
  */
-class SearchNoteViewModel : ViewModel() {
+class SearchNoteViewModel : BaseViewModel() {
 
     var liveData = MutableLiveData<List<Note>>()
     var message = MutableLiveData<SearchNoteResultMessage>()
