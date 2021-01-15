@@ -1,8 +1,8 @@
 package com.wsg.xsybbs.activity.usercenter
 
 import android.os.Bundle
-import com.wsg.xsybbs.R
 import com.wsg.xsybbs.base.BaseActivity
+import com.wsg.xsybbs.databinding.ActivityChooseProfileBinding
 
 /**
  * Created by wsg
@@ -10,8 +10,12 @@ import com.wsg.xsybbs.base.BaseActivity
  * function:
  */
 class ChooseProfileActivity : BaseActivity() {
+
+    private lateinit var binding: ActivityChooseProfileBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_choose_profile)
+        binding = ActivityChooseProfileBinding.inflate(layoutInflater)
+        setContentView(binding.root)
     }
 }

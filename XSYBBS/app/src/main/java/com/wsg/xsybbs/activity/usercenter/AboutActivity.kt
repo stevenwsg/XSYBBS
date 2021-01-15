@@ -1,8 +1,8 @@
 package com.wsg.xsybbs.activity.usercenter
 
 import android.os.Bundle
-import com.wsg.xsybbs.R
 import com.wsg.xsybbs.base.BaseActivity
+import com.wsg.xsybbs.databinding.ActivityAboutBinding
 
 /*
  *  项目名:  XSYBBS
@@ -13,8 +13,12 @@ import com.wsg.xsybbs.base.BaseActivity
  *  描述:     关于界面
  */
 class AboutActivity : BaseActivity() {
+
+    private lateinit var binding: ActivityAboutBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_about)
+        binding = ActivityAboutBinding.inflate(layoutInflater)
+        setContentView(binding.root)
     }
 }
