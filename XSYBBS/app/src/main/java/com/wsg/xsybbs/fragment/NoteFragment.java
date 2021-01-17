@@ -19,14 +19,13 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.wsg.xsybbs.R;
 import com.wsg.xsybbs.adapter.NoteAdapterV2;
+import com.wsg.xsybbs.bean.BanneData;
 import com.wsg.xsybbs.module.addnote.view.AddNoteActivity;
 import com.wsg.xsybbs.module.searchnote.view.SearchNoteActivity;
-import com.wsg.xsybbs.adapter.GlideImageLoader;
 
 import com.wsg.xsybbs.bean.Banne;
 import com.wsg.xsybbs.bean.Note;
 import com.wsg.xsybbs.util.L;
-import com.youth.banner.Banner;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -48,13 +47,9 @@ public class NoteFragment extends Fragment implements View.OnClickListener {
     private ImageView ivPost;
 
     private RecyclerView rvNote;
-    private Banner banner;
     private SwipeRefreshLayout swipeRefreshLayout;
 
-
-    private List<String> listp = new ArrayList<>();
-
-    private List<Note> listNote = new ArrayList<>();
+    private List<Object> dataList = new ArrayList<>();
 
     private NoteAdapterV2 noteAdapterV2;
 
@@ -90,27 +85,11 @@ public class NoteFragment extends Fragment implements View.OnClickListener {
 
         });
 
-
-        //设置轮播图
-        listp.add("http://202.200.82.150/u/cms/www/201806/27104449b14a.jpg");
-        listp.add("http://202.200.82.150/u/cms/www/201805/16111826e3zf.jpg");
-        listp.add("http://202.200.82.150/u/cms/www/201710/30114208slub.jpg");
-        listp.add("http://202.200.82.150/u/cms/www/201806/26174701kiz0.png");
-
-        banner = (Banner) view.findViewById(R.id.banner);
-        //设置图片加载器
-        banner.setImageLoader(new GlideImageLoader());
-        //设置图片集合
-        banner.setImages(listp);
-
-        //banner设置方法全部调用完毕时最后调用
-        banner.start();
-
         rvNote = view.findViewById(R.id.rv_note);
         rvNote.setLayoutManager(new LinearLayoutManager(getActivity()));
         noteAdapterV2 = new NoteAdapterV2();
         rvNote.setAdapter(noteAdapterV2);
-
+        initData();
         initBanner();
     }
 
@@ -125,15 +104,8 @@ public class NoteFragment extends Fragment implements View.OnClickListener {
             @Override
             public void done(List<Banne> list, BmobException e) {
                 if (e == null) {
-                    listp.clear();
-                    for (int i = 0; i < list.size(); i++) {
-                        listp.add(list.get(i).getPhoto());
-                    }
-
-                    //重新设置图片集合
-                    banner.setImages(listp);
-                    //banner设置方法全部调用完毕时最后调用
-                    banner.start();
+                    dataList.add(0, new BanneData(list));
+                    noteAdapterV2.setItems(dataList);
                 }
             }
         });
@@ -152,15 +124,12 @@ public class NoteFragment extends Fragment implements View.OnClickListener {
                 intent = new Intent(getActivity(), AddNoteActivity.class);
                 startActivity(intent);
                 break;
-
         }
-
     }
 
     @Override
     public void onResume() {
         super.onResume();
-        initData();
     }
 
     //初始化数据
@@ -174,9 +143,9 @@ public class NoteFragment extends Fragment implements View.OnClickListener {
             @Override
             public void done(List<Note> list, BmobException e) {
                 if (e == null) {
-                    listNote.clear();
-                    listNote.addAll(list);
-                    noteAdapterV2.setItems(listNote);
+                    dataList.removeAll(list);
+                    dataList.addAll(list);
+                    noteAdapterV2.setItems(dataList);
                     noteAdapterV2.notifyDataSetChanged();
 
                 } else {
