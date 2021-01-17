@@ -5,17 +5,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-
-    <com.youth.banner.Banner
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/banner"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:padding="5dp"
-        android:translationZ="10dp"
-        android:elevation="10dp"/>
-
-
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/lv_tl_note"
         android:layout_width="match_parent"

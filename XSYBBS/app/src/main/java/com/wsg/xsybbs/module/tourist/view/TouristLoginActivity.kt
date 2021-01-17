@@ -6,8 +6,8 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.wsg.xsybbs.R
-import com.wsg.xsybbs.adapter.GlideImageLoader
 import com.wsg.xsybbs.base.BaseActivity
+import com.wsg.xsybbs.bean.BanneData
 import com.wsg.xsybbs.module.tourist.viewmodel.TouristViewModel
 import es.dmoral.toasty.Toasty
 import kotlinx.android.synthetic.main.activity_tourist_login.*
@@ -21,7 +21,7 @@ class TouristLoginActivity : BaseActivity() {
 
     private var mVm: TouristViewModel? = null
     private var mAdapter: TlNoteAdapter? = null
-    private var mBannerList = ArrayList<String>()
+    private val dataList = ArrayList<Any>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,8 +33,6 @@ class TouristLoginActivity : BaseActivity() {
     }
 
     private fun initView() {
-        // 设置Banner
-        banner.setImageLoader(GlideImageLoader())
         lv_tl_note.layoutManager = LinearLayoutManager(this)
         mAdapter = TlNoteAdapter()
         lv_tl_note.adapter = mAdapter
@@ -46,14 +44,13 @@ class TouristLoginActivity : BaseActivity() {
 
     private fun initObserval() {
         mVm?.mBanes?.observe(this, Observer {
-            mBannerList.clear()
-            for (banne in it) {
-                mBannerList.add(banne.photo)
-            }
-            refreshBanners()
+            dataList.add(0, BanneData(it))
+            mAdapter?.items = dataList
+            mAdapter?.notifyItemInserted(0)
         })
         mVm?.mNotes?.observe(this, Observer {
-            mAdapter?.items = it
+            dataList.addAll(it)
+            mAdapter?.items = dataList
             mAdapter?.notifyDataSetChanged()
         })
         mVm?.message?.observe(this, Observer {
@@ -62,20 +59,7 @@ class TouristLoginActivity : BaseActivity() {
     }
 
     private fun initData() {
-        mBannerList.add("http://202.200.82.150/u/cms/www/201806/27104449b14a.jpg")
-        mBannerList.add("http://202.200.82.150/u/cms/www/201805/16111826e3zf.jpg")
-        mBannerList.add("http://202.200.82.150/u/cms/www/201710/30114208slub.jpg")
-        mBannerList.add("http://202.200.82.150/u/cms/www/201806/26174701kiz0.png")
-        refreshBanners()
-
         mVm?.getNotes()
         mVm?.getBannes()
-    }
-
-    private fun refreshBanners() {
-        //设置图片集合
-        banner.setImages(mBannerList)
-        //banner设置方法全部调用完毕时最后调用
-        banner.start()
     }
 }
