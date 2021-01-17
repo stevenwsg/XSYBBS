@@ -4,7 +4,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="40dp">
@@ -32,11 +32,7 @@
             android:layout_height="30dp" />
     </LinearLayout>
 
-
-
-
         <com.youth.banner.Banner
-            xmlns:app="http://schemas.android.com/apk/res-auto"
             android:id="@+id/banner"
             android:layout_width="match_parent"
             android:layout_height="150dp"
@@ -44,34 +40,17 @@
             android:translationZ="10dp"
             android:elevation="10dp"
             />
-    
-
-
-
-
-
-
 
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:id="@+id/swipe_refresh"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-
-        <ListView
-            android:id="@+id/lv_note"
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_note"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-        </ListView>
-
-
+            android:layout_height="wrap_content"/>
 
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
-
-
-
-
-
 
 </LinearLayout>
