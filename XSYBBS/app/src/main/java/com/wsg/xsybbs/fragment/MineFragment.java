@@ -1,6 +1,5 @@
 package com.wsg.xsybbs.fragment;
 
-import android.app.Fragment;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
@@ -13,6 +12,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
+import androidx.fragment.app.Fragment;
 
 import com.hyphenate.chat.EMClient;
 import com.wsg.xsybbs.MainActivity;

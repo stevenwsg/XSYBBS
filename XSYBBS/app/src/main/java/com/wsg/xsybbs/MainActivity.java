@@ -1,8 +1,6 @@
 package com.wsg.xsybbs;
 
-import android.app.Fragment;
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -10,6 +8,10 @@ import android.view.WindowManager;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import com.hyphenate.chat.EMClient;
 import com.hyphenate.chat.EMConversation;
@@ -77,7 +79,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
 
         //默认显示第一个
         noteFragment = new NoteFragment();
-        fm = this.getFragmentManager();
+        fm = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fm.beginTransaction();
         fragmentTransaction.replace(R.id.content_layout, noteFragment);
         fragmentTransaction.commit();
