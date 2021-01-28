@@ -14,6 +14,8 @@ import com.wsg.xsybbs.module.messagezan.view.MyMessageZanActivity
  */
 class MyMessageActivity : BaseActivity() {
 
+    // VP2改造
+
     private lateinit var binding: ActivityMyMessageBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
