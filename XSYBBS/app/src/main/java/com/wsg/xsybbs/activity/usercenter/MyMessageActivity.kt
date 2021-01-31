@@ -1,11 +1,9 @@
 package com.wsg.xsybbs.activity.usercenter
 
-import android.content.Intent
 import android.os.Bundle
+import com.google.android.material.tabs.TabLayoutMediator
 import com.wsg.xsybbs.base.BaseActivity
 import com.wsg.xsybbs.databinding.ActivityMyMessageBinding
-import com.wsg.xsybbs.module.messagecomment.view.MyMessageCommentActivity
-import com.wsg.xsybbs.module.messagezan.view.MyMessageZanActivity
 
 /**
  * Created by wsg
@@ -14,9 +12,11 @@ import com.wsg.xsybbs.module.messagezan.view.MyMessageZanActivity
  */
 class MyMessageActivity : BaseActivity() {
 
-    // VP2改造
-
     private lateinit var binding: ActivityMyMessageBinding
+
+    // VP2改造
+    private var adapter: MyMessageAdapter? = null
+    private val titles = arrayOf("我收到的赞", "我收到的评论")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,16 +26,12 @@ class MyMessageActivity : BaseActivity() {
     }
 
     private fun intiView() {
-        binding.apply {
-            rlZan.setOnClickListener {
-                val i = Intent(this@MyMessageActivity, MyMessageZanActivity::class.java)
-                startActivity(i)
-            }
+        adapter = MyMessageAdapter(this)
+        binding.vp2.adapter = adapter
 
-            rlComment.setOnClickListener {
-                val i = Intent(this@MyMessageActivity, MyMessageCommentActivity::class.java)
-                startActivity(i)
-            }
-        }
+        TabLayoutMediator(binding.tabLayout, binding.vp2) { tab, position ->
+            //  为Tab设置Text
+            tab.text = titles[position]
+        }.attach()
     }
 }
