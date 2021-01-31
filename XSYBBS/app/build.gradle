@@ -64,7 +64,7 @@ dependencies {
     //其中latest.release指代最新Bugly SDK版本号，也可以指定明确的版本号，例如2.2.0
     //Bmob文件存储
     //Bmob
-    compile 'cn.bmob.android:bmob-sdk:3.6.1'
+    implementation 'cn.bmob.android:bmob-sdk:3.6.1'
     //Toasty  美化的toast
     compile 'com.github.GrenderG:Toasty:1.4.2'
     //首页banner轮播图
@@ -75,17 +75,10 @@ dependencies {
     compile 'me.weyye.hipermission:library:1.0.7'
     compile project(':easeui')
 
-
-
-
-
-
-    // 2019/1/5集成leakcanary检测内存泄漏
-    //因编译缓慢 所以将其注销掉
-    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.6.3'
-    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.6.3'
-    testCompile 'com.squareup.leakcanary:leakcanary-support-fragment:1.6.3'
-
+    // leakcanary
+    debugImplementation ('com.squareup.leakcanary:leakcanary-android:2.6') {
+        exclude module: 'okio'
+    }
     // 2020/5/5 引入MVVM
     implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
     implementation "androidx.core:core-ktx:+"
