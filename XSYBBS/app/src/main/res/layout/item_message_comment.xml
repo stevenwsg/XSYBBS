@@ -1,47 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    android:paddingLeft="20dp"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="20dp"
+    android:orientation="vertical"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="5dp">
 
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
 
         <TextView
             android:id="@+id/item_message_comment_tvname"
             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="蓝莲花"
             android:textColor="@color/colorPrimary"
-            android:textSize="24sp"
-            android:layout_height="wrap_content" />
+            android:textSize="24sp" />
 
 
         <TextView
-            android:paddingLeft="20dp"
             android:layout_width="wrap_content"
-            android:text="：评论了你"
-            android:textSize="20sp"
-            android:layout_height="wrap_content" />
-
-
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="评论了你 :"
+            android:textSize="20sp" />
     </LinearLayout>
 
     <TextView
-        android:paddingTop="20dp"
         android:id="@+id/item_message_comment_tvcontent"
         android:layout_width="match_parent"
-        android:textSize="30sp"
-        android:textColor="@color/colorPrimary"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:paddingBottom="10dp"
         android:text="生活不止眼前的苟且，还有永远到不了的远方"
-        android:layout_height="wrap_content" />
-    
+        android:textColor="#999999"
+        android:textSize="26sp" />
 
-
-
-
-</LinearLayout>
+</androidx.cardview.widget.CardView>
