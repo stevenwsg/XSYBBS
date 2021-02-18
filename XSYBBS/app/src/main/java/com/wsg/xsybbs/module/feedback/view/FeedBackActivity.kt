@@ -30,6 +30,7 @@ class FeedBackActivity : BaseActivity() {
     }
 
     private fun initView() {
+        topBar.setTitle(resources.getString(R.string.back_t))
         bt_back.setOnClickListener {
             if (!TextUtils.isEmpty(et_back.text.toString())) {
                 mFeedBackVM?.getFeedBackMessage(et_back.text.toString())

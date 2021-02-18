@@ -79,7 +79,7 @@
         <!--游客浏览-->
         <activity android:name=".module.tourist.view.TouristLoginActivity" android:label="@string/tourist_login"></activity>
         <!--意见反馈-->
-        <activity android:name=".module.feedback.view.FeedBackActivity" android:label="@string/back_t"></activity>
+        <activity android:name=".module.feedback.view.FeedBackActivity" android:theme="@style/ActivityTheme"/>
         <!--个人详细信息-->
         <activity android:name=".module.persiondetail.view.PersionalDealActivity"></activity>
         <!--版本更新-->
