@@ -40,6 +40,8 @@ class ForgetPasswordActivity : BaseActivity() {
                 Toasty.info(this, getString(R.string.text_tost_empty), Toast.LENGTH_SHORT, true).show()
             }
         }
+
+        topBar.setTitle(getString(R.string.forget_password))
     }
 
     private fun initObserval() {

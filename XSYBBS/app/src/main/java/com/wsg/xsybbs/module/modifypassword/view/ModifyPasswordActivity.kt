@@ -32,6 +32,7 @@ class ModifyPasswordActivity : BaseActivity() {
 
     private fun initView() {
         btn_update_password.setOnClickListener { modifyPassWord() }
+        topBar.setTitle(getString(R.string.text_editor_password))
     }
 
     private fun initViewModel() {

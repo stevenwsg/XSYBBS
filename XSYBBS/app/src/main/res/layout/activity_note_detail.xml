@@ -3,11 +3,15 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:paddingLeft="20dp">
+    android:orientation="vertical">
+
+    <com.wsg.xsybbs.view.DefaultTopBar
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
     <LinearLayout
-
+        android:paddingLeft="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -79,6 +83,7 @@
     </LinearLayout>
 
     <TextView
+        android:paddingLeft="20dp"
         android:id="@+id/note_detail_content"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -145,6 +150,7 @@
 
 
     <LinearLayout
+        android:paddingLeft="20dp"
         android:orientation="horizontal"
         android:id="@+id/linearLayout_note_detail"
         android:layout_width="match_parent"
@@ -171,6 +177,7 @@
 
 
     <ListView
+        android:paddingLeft="20dp"
         android:paddingTop="20dp"
         android:id="@+id/lv_note_detail"
         android:layout_width="match_parent"

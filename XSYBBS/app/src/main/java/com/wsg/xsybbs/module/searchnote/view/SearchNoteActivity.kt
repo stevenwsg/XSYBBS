@@ -32,6 +32,7 @@ class SearchNoteActivity : BaseActivity() {
     }
 
     private fun initView() {
+        topBar.setTitle(getString(R.string.test_search_note))
         rv_searchnote.layoutManager = LinearLayoutManager(this);
         adapter = NoteAdapter();
         rv_searchnote.adapter = adapter

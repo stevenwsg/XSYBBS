@@ -63,6 +63,7 @@ class PersionalDealActivity : BaseActivity() {
                 show_profile.setImageResource(R.mipmap.logo)
             }
             show_name.text = it.username
+            topBar.setTitle(it.username)
             if (it.isSex) {
                 show_sex.setImageResource(R.drawable.male)
             } else {

@@ -25,6 +25,7 @@ import com.wsg.xsybbs.bean.User;
 import com.wsg.xsybbs.bean.Zan;
 import com.wsg.xsybbs.util.L;
 import com.wsg.xsybbs.util.UtilTools;
+import com.wsg.xsybbs.view.DefaultTopBar;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -59,6 +60,7 @@ public class NoteDetailActivity extends BaseActivity implements View.OnClickList
     private EditText editText;
     private Button button;
     private ListView lvnotedetail;
+    private DefaultTopBar defaultTopBar;
 
     private Note note;
     private List<Comment> mlist=new ArrayList<>();
@@ -109,6 +111,8 @@ public class NoteDetailActivity extends BaseActivity implements View.OnClickList
         editText=(EditText)findViewById(R.id.et_note_detail);
         button=(Button)findViewById(R.id.bt_note_detail);
 
+        defaultTopBar = (DefaultTopBar) findViewById(R.id.topBar);
+        defaultTopBar.setTitle(getString(R.string.test_note_detail));
 
 
 

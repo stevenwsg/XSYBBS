@@ -2,6 +2,7 @@ package com.wsg.xsybbs.activity.usercenter
 
 import android.os.Bundle
 import com.google.android.material.tabs.TabLayoutMediator
+import com.wsg.xsybbs.R
 import com.wsg.xsybbs.base.BaseActivity
 import com.wsg.xsybbs.databinding.ActivityMyMessageBinding
 
@@ -26,6 +27,9 @@ class MyMessageActivity : BaseActivity() {
     }
 
     private fun intiView() {
+        binding.apply {
+            topBar.setTitle(getString(R.string.text_my_message))
+        }
         adapter = MyMessageAdapter(this)
         binding.vp2.adapter = adapter
 

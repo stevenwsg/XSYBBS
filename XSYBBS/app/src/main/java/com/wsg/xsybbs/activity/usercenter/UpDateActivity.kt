@@ -3,6 +3,7 @@ package com.wsg.xsybbs.activity.usercenter
 import android.os.Bundle
 import android.widget.Toast
 import cn.bmob.v3.update.BmobUpdateAgent
+import com.wsg.xsybbs.R
 import com.wsg.xsybbs.base.BaseActivity
 import com.wsg.xsybbs.databinding.ActivityUpdateBinding
 import com.wsg.xsybbs.util.UtilTools
@@ -27,6 +28,7 @@ class UpDateActivity : BaseActivity() {
     //初始化控件
     private fun initView() {
         binding.apply {
+            topBar.setTitle(getString(R.string.text_update))
             updateTv.text = "目前版本" + UtilTools.getVersion(this@UpDateActivity)
             updateBt.setOnClickListener {
                 //检查更新

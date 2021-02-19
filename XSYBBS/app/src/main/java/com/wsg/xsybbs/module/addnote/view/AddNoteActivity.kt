@@ -36,6 +36,7 @@ class AddNoteActivity : BaseActivity() {
 
     private fun initView() {
         type = "吐槽"
+        topBar.setTitle(getString(R.string.text_add_note))
         radioGroup.setOnCheckedChangeListener { group, checkedId ->
             type = findViewById<RadioButton>(checkedId).getText().toString()
         }

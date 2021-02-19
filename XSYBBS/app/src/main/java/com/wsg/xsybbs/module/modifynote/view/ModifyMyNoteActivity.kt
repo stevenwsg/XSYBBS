@@ -45,6 +45,7 @@ class ModifyMyNoteActivity : BaseActivity() {
     }
 
     private fun initView() {
+        topBar.setTitle(getString(R.string.text_modify_my_note))
         modify_radioGroup.setOnCheckedChangeListener { group, checkedId ->
             note?.setTypeid((findViewById<RadioButton>(checkedId)).text.toString())
         }

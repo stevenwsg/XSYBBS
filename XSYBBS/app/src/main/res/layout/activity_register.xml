@@ -3,95 +3,106 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="10dp">
+    android:orientation="vertical">
 
-
-    <EditText
-        android:id="@+id/et_user"
+    <com.wsg.xsybbs.view.DefaultTopBar
+        android:id="@+id/topBar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/user_name"/>
+        android:layout_height="wrap_content"/>
 
-    <EditText
-        android:id="@+id/et_age"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="number"
-        android:hint="@string/text_age"/>
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
 
-    <EditText
-        android:id="@+id/et_desc"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/text_desc"
-        android:lines="2"/>
+        <EditText
+            android:id="@+id/et_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/user_name"/>
 
-    <RadioGroup
-        android:id="@+id/mRadioGroup"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/et_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="@string/text_age"/>
 
+        <EditText
+            android:id="@+id/et_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/text_desc"
+            android:lines="2"/>
+
+        <RadioGroup
+            android:id="@+id/mRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/sex"
+                android:textSize="20sp"
+                android:layout_height="match_parent" />
+
+            <RadioButton
+                android:id="@+id/rb_boy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/text_boy"/>
+
+            <RadioButton
+                android:id="@+id/rb_girl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="@string/text_girl_f"/>
+
+        </RadioGroup>
+
+
+        <EditText
+            android:id="@+id/et_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:password="true"/>
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/make_sure_password"
+            android:password="true" />
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/text_email"/>
 
         <TextView
-            android:layout_width="wrap_content"
-            android:text="@string/sex"
-            android:textSize="20sp"
-            android:layout_height="match_parent" />
-
-        <RadioButton
-            android:id="@+id/rb_boy"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:checked="true"
-            android:text="@string/text_boy"/>
+            android:text="@string/make_sure_email"
+            android:textColor="@color/colorAccent"
+            android:textSize="15sp"/>
 
-        <RadioButton
-            android:id="@+id/rb_girl"
-            android:layout_width="wrap_content"
+
+        <Button
+            android:id="@+id/btnRegistered"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:text="@string/text_girl_f"/>
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_bg"
+            android:text="@string/register"
+            android:textColor="@android:color/white"/>
 
-    </RadioGroup>
-
-
-    <EditText
-        android:id="@+id/et_pass"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/password"
-        android:password="true"/>
-
-    <EditText
-        android:id="@+id/et_password"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/make_sure_password"
-        android:password="true" />
-
-    <EditText
-        android:id="@+id/et_email"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/text_email"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/make_sure_email"
-        android:textColor="@color/colorAccent"
-        android:textSize="15sp"/>
-
-
-    <Button
-        android:id="@+id/btnRegistered"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/button_bg"
-        android:text="@string/register"
-        android:textColor="@android:color/white"/>
+    </LinearLayout>
 
 </LinearLayout>

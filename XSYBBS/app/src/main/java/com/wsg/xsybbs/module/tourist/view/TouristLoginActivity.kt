@@ -36,6 +36,7 @@ class TouristLoginActivity : BaseActivity() {
         lv_tl_note.layoutManager = LinearLayoutManager(this)
         mAdapter = TlNoteAdapter()
         lv_tl_note.adapter = mAdapter
+        topBar.setTitle(getString(R.string.tourist_login))
     }
 
     private fun initVm() {

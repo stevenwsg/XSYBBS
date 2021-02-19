@@ -59,6 +59,8 @@ class RegisterActivity : BaseActivity() {
                 Toasty.info(this, getString(R.string.text_tost_empty), Toast.LENGTH_SHORT, true).show()
             }
         }
+
+        topBar.setTitle(getString(R.string.register))
     }
 
     private fun initVm() {

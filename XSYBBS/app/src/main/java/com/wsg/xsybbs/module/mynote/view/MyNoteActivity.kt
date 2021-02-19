@@ -36,6 +36,7 @@ class MyNoteActivity : BaseActivity() {
 
     private fun initView() {
         tv_mynote.setText("正在加载，请稍等...")
+        topBar.setTitle(getString(R.string.text_mynote))
         rv_my_note.layoutManager = LinearLayoutManager(this)
         adapter = MyNoteAdapter(object : MyNoteItemViewBinder.DeleteNoteListener {
             override fun onDelete(deleteNote: Note) {

@@ -71,29 +71,29 @@
         <!--登录页面-->
         <activity android:name=".module.login.view.LoginActivity" android:label="@string/login"></activity>
         <!--注册界面-->
-        <activity android:name=".module.register.view.RegisterActivity" android:label="@string/register"></activity>
+        <activity android:name=".module.register.view.RegisterActivity" android:theme="@style/ActivityTheme"/>
         <!--忘记密码界面-->
-        <activity android:name=".module.forgetpassword.view.ForgetPasswordActivity" android:label="@string/forget_password"></activity>
+        <activity android:name=".module.forgetpassword.view.ForgetPasswordActivity" android:theme="@style/ActivityTheme"/>
         <!--修改密码页面-->
-        <activity android:name=".module.modifypassword.view.ModifyPasswordActivity" android:label="@string/text_editor_password"></activity>
+        <activity android:name=".module.modifypassword.view.ModifyPasswordActivity" android:theme="@style/ActivityTheme"/>
         <!--游客浏览-->
-        <activity android:name=".module.tourist.view.TouristLoginActivity" android:label="@string/tourist_login"></activity>
+        <activity android:name=".module.tourist.view.TouristLoginActivity" android:theme="@style/ActivityTheme"/>
         <!--意见反馈-->
         <activity android:name=".module.feedback.view.FeedBackActivity" android:theme="@style/ActivityTheme"/>
         <!--个人详细信息-->
-        <activity android:name=".module.persiondetail.view.PersionalDealActivity"></activity>
+        <activity android:name=".module.persiondetail.view.PersionalDealActivity" android:theme="@style/ActivityTheme"/>
         <!--版本更新-->
-        <activity android:name=".activity.usercenter.UpDateActivity" android:label="@string/text_update"></activity>
+        <activity android:name=".activity.usercenter.UpDateActivity" android:theme="@style/ActivityTheme"/>
         <!--关于-->
         <activity android:name=".activity.usercenter.AboutActivity" android:label="@string/tex_about"></activity>
         <!--我的帖子-->
-        <activity android:name=".module.mynote.view.MyNoteActivity" android:label="@string/text_mynote"></activity>
+        <activity android:name=".module.mynote.view.MyNoteActivity" android:theme="@style/ActivityTheme"/>
         <!--我的消息界面-->
-        <activity android:name=".activity.usercenter.MyMessageActivity" android:label="@string/text_my_message"></activity>
+        <activity android:name=".activity.usercenter.MyMessageActivity" android:theme="@style/ActivityTheme"/>
         <!--选择头像界面-->
         <activity android:name=".activity.usercenter.ChooseProfileActivity" android:label="@string/text_choose_profile"></activity>
         <!--编辑个人资料界面-->
-        <activity android:name=".module.modifyinfo.view.ModifyUserInfoActivity" android:label="@string/edit_information"></activity>
+        <activity android:name=".module.modifyinfo.view.ModifyUserInfoActivity" android:theme="@style/ActivityTheme"/>
 
         <!--bmob更新activity-->
         <activity
@@ -108,19 +108,19 @@
         </activity>
 
         <!--聊天跳转界面-->
-        <activity android:name=".activity.ChatActivity"></activity>
+        <activity android:name=".activity.ChatActivity" android:theme="@style/ActivityTheme" />
 
 
         <!-- EaseUI中发送图片后查看以及发送地理位置activit注册   -->
         <activity android:name="com.hyphenate.easeui.ui.EaseBaiduMapActivity"/>
         <!--添加帖子-->
-        <activity android:name=".module.addnote.view.AddNoteActivity" android:label="@string/text_add_note"></activity>
+        <activity android:name=".module.addnote.view.AddNoteActivity" android:theme="@style/ActivityTheme"/>
         <!--搜索帖子-->
-        <activity android:name=".module.searchnote.view.SearchNoteActivity" android:label="@string/test_search_note"></activity>
+        <activity android:name=".module.searchnote.view.SearchNoteActivity" android:theme="@style/ActivityTheme"/>
         <!--修改帖子-->
-        <activity android:name=".module.modifynote.view.ModifyMyNoteActivity" android:label="@string/text_modify_my_note"></activity>
+        <activity android:name=".module.modifynote.view.ModifyMyNoteActivity" android:theme="@style/ActivityTheme"/>
         <!--帖子详情-->
-        <activity android:name=".activity.note.NoteDetailActivity" android:label="@string/test_note_detail"></activity>
+        <activity android:name=".activity.note.NoteDetailActivity" android:theme="@style/ActivityTheme"/>
 
         <!--Bmob自动更新兼容到 Android 7.0-->
         <provider

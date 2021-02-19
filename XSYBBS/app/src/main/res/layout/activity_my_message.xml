@@ -5,11 +5,17 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <com.wsg.xsybbs.view.DefaultTopBar
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabLayout"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        app:tabIndicatorFullWidth="false" />
+        app:tabIndicatorFullWidth="false"
+        app:tabIndicatorColor="@color/holo_red_light"/>
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/vp2"

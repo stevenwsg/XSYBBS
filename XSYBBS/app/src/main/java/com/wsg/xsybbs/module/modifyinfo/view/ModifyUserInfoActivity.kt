@@ -38,6 +38,7 @@ class ModifyUserInfoActivity : BaseActivity() {
     }
 
     private fun initView() {
+        topBar.setTitle(getString(R.string.edit_information))
         mUser = BmobUser.getCurrentUser(User::class.java)
         et_username.setText(mUser?.username)
         et_sex.setText(if (mUser!!.isSex) getString(R.string.text_boy) else getString(R.string.text_girl_f))
