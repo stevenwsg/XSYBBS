@@ -75,6 +75,8 @@ dependencies {
     compile 'me.weyye.hipermission:library:1.0.7'
     compile project(':easeui')
 
+    implementation project(':flutter')
+
     // leakcanary
     debugImplementation ('com.squareup.leakcanary:leakcanary-android:2.6') {
         exclude module: 'okio'

@@ -1,1 +1,7 @@
 include ':app', ':easeui'
+
+setBinding(new Binding([gradle: this]))
+evaluate(new File(
+        settingsDir,
+        '../flutter_bbs/.android/include_flutter.groovy'
+))
