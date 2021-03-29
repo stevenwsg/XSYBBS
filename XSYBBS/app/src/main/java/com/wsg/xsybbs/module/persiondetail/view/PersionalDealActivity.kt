@@ -81,6 +81,8 @@ class PersionalDealActivity : BaseActivity() {
     }
 
     private fun initData() {
-        mVm?.getUserInfo(intent.getStringExtra("id"))
+        intent.getStringExtra("id")?.let {
+            mVm?.getUserInfo(it)
+        }
     }
 }

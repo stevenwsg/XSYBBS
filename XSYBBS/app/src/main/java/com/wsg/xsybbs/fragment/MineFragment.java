@@ -17,6 +17,7 @@ import androidx.fragment.app.Fragment;
 import com.hyphenate.chat.EMClient;
 import com.wsg.xsybbs.MainActivity;
 import com.wsg.xsybbs.R;
+import com.wsg.xsybbs.flutter.MomentDetailActivity;
 import com.wsg.xsybbs.module.modifypassword.view.ModifyPasswordActivity;
 import com.wsg.xsybbs.activity.usercenter.AboutActivity;
 import com.wsg.xsybbs.module.feedback.view.FeedBackActivity;
@@ -146,7 +147,7 @@ public class MineFragment extends Fragment implements View.OnClickListener {
                 startActivity(new Intent(getActivity(), MyMessageActivity.class));
                 break;
             case R.id.tv_about:
-                startActivity(new Intent(getActivity(), AboutActivity.class));
+                startActivity(new Intent(getActivity(), MomentDetailActivity.class));
                 break;
             case R.id.tv_back:
                 startActivity(new Intent(getActivity(), FeedBackActivity.class));

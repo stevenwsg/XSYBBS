@@ -4,10 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/XSYBBS.iml" filepath="$PROJECT_DIR$/.idea/modules/XSYBBS.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/XSYBBS.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/XSYBBS.app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1882378551/XSYBBS.data_plugin.iml" filepath="$PROJECT_DIR$/.idea/modules/1882378551/XSYBBS.data_plugin.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/easeui/XSYBBS.easeui.iml" filepath="$PROJECT_DIR$/.idea/modules/easeui/XSYBBS.easeui.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/1104392503/XSYBBS.flutter.iml" filepath="$PROJECT_DIR$/.idea/modules/1104392503/XSYBBS.flutter.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1512500673/XSYBBS.shared_preferences.iml" filepath="$PROJECT_DIR$/.idea/modules/1512500673/XSYBBS.shared_preferences.iml" />
     </modules>
   </component>
 </project>

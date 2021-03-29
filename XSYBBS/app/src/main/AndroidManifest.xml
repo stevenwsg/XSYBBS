@@ -122,6 +122,14 @@
         <!--帖子详情-->
         <activity android:name=".activity.note.NoteDetailActivity" android:theme="@style/ActivityTheme"/>
 
+        <activity
+            android:name=".flutter.MomentDetailActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+            android:hardwareAccelerated="true"
+            android:windowSoftInputMode="adjustResize">
+        </activity>
+
+
         <!--Bmob自动更新兼容到 Android 7.0-->
         <provider
             android:name="androidx.core.content.FileProvider"

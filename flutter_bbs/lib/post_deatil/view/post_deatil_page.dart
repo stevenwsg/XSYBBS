@@ -10,7 +10,16 @@ class PostDetailPage extends StatefulWidget {
 class PostDetailState extends State {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    throw UnimplementedError();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("帖子详情"),
+      ),
+      body: Center(
+        child: Text(
+          "帖子详情",
+          style: TextStyle(fontSize: 20, color: Colors.blueAccent),
+        ),
+      ),
+    );
   }
 }
