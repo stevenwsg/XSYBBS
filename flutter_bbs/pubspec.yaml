@@ -28,6 +28,9 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
 
+  # Bmob
+  data_plugin: ^0.0.18
+
 
 
 dev_dependencies:
