@@ -80,7 +80,7 @@ class NoteItemViewBinder : ItemViewBinder<Note, NoteItemViewBinder.NoteHolder>()
             intent.action = Intent.ACTION_RUN
             intent.putExtra(
                 FlutterRoutes.ROUTE,
-                "${FlutterRoutes.MOMENT}?${FlutterRoutes.KEY_NOTE_ID} = ${note.objectId}"
+                "${FlutterRoutes.MOMENT}?${FlutterRoutes.KEY_NOTE_ID}=${note.objectId}"
             )
             viewHolder.containerView?.context?.let {
                 it.startActivity(intent)
