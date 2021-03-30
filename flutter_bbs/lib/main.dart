@@ -1,6 +1,7 @@
 import 'package:data_plugin/bmob/bmob.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bbs/post_deatil/utils/constant.dart';
+import 'package:flutter_bbs/post_deatil/utils/routes.dart';
 import 'package:flutter_bbs/post_deatil/view/post_deatil_page.dart';
 
 void main() => runApp(MyApp());
@@ -14,11 +15,18 @@ class MyApp extends StatelessWidget {
     Bmob.init(
         "https://api2.bmob.cn", Constant.BMOB_APP_ID, Constant.BMOB_API_KEY);
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: PostDetailPage(),
-    );
+        title: 'Flutter Demo',
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
+        ),
+        routes: {
+          Routes.MOMENT: (BuildContext context) => PostDetailPage(null),
+        },
+        onGenerateRoute: (settings) {
+          Uri uri = Uri.parse(settings.name);
+          Map<String, String> params = uri.queryParameters;
+          return MaterialPageRoute(
+              builder: (context) => PostDetailPage(params));
+        });
   }
 }

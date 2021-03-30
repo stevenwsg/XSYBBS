@@ -10,6 +10,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.wsg.xsybbs.R
 import com.wsg.xsybbs.activity.note.NoteDetailActivity
 import com.wsg.xsybbs.bean.Note
+import com.wsg.xsybbs.flutter.MomentDetailActivity
+import com.wsg.xsybbs.util.FlutterRoutes
 import com.wsg.xsybbs.util.UtilTools
 import de.hdodenhof.circleimageview.CircleImageView
 import me.drakeet.multitype.ItemViewBinder
@@ -54,7 +56,11 @@ class NoteItemViewBinder : ItemViewBinder<Note, NoteItemViewBinder.NoteHolder>()
 
     override fun onBindViewHolder(viewHolder: NoteHolder, note: Note) {
         if (note.getImage() != null) {
-            UtilTools.getImage(viewHolder.note_profile?.context, viewHolder.note_profile, note.getImage())
+            UtilTools.getImage(
+                viewHolder.note_profile?.context,
+                viewHolder.note_profile,
+                note.getImage()
+            )
         } else {
             viewHolder.note_profile?.setImageResource(R.mipmap.logo)
         }
@@ -66,9 +72,19 @@ class NoteItemViewBinder : ItemViewBinder<Note, NoteItemViewBinder.NoteHolder>()
         viewHolder.replaycount?.text = note.replaycount.toString()
 
         viewHolder.containerView?.setOnClickListener {
-            val intent = Intent(viewHolder.containerView?.context, NoteDetailActivity::class.java)
-            intent.putExtra("note", note)
-            viewHolder.containerView?.context?.startActivity(intent)
+//            val intent = Intent(viewHolder.containerView?.context, NoteDetailActivity::class.java)
+//            intent.putExtra("note", note)
+//            viewHolder.containerView?.context?.startActivity(intent)
+
+            val intent = Intent(viewHolder.containerView?.context, MomentDetailActivity::class.java)
+            intent.action = Intent.ACTION_RUN
+            intent.putExtra(
+                FlutterRoutes.ROUTE,
+                "${FlutterRoutes.MOMENT}?${FlutterRoutes.KEY_NOTE_ID} = ${note.objectId}"
+            )
+            viewHolder.containerView?.context?.let {
+                it.startActivity(intent)
+            }
         }
     }
 

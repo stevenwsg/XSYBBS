@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 
 class PostDetailPage extends StatefulWidget {
+  final Map<String, String> _map;
+
+  PostDetailPage(this._map);
+
   @override
   State<StatefulWidget> createState() {
     return PostDetailState();

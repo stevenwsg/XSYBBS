@@ -28,6 +28,7 @@ import com.wsg.xsybbs.module.mynote.view.MyNoteActivity;
 import com.wsg.xsybbs.activity.usercenter.UpDateActivity;
 import com.wsg.xsybbs.bean.User;
 import com.wsg.xsybbs.threadpool.MyThreadPool;
+import com.wsg.xsybbs.util.FlutterRoutes;
 import com.wsg.xsybbs.util.SPUtils;
 import com.wsg.xsybbs.util.StaticClass;
 import com.wsg.xsybbs.util.UtilTools;
@@ -147,7 +148,7 @@ public class MineFragment extends Fragment implements View.OnClickListener {
                 startActivity(new Intent(getActivity(), MyMessageActivity.class));
                 break;
             case R.id.tv_about:
-                startActivity(new Intent(getActivity(), MomentDetailActivity.class));
+                startActivity(new Intent(getActivity(), AboutActivity.class));
                 break;
             case R.id.tv_back:
                 startActivity(new Intent(getActivity(), FeedBackActivity.class));
