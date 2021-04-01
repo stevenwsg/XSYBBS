@@ -8,11 +8,11 @@ class CommentTitleWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(
-        left: 16,
-        top: 16,
+      margin: EdgeInsets.only(left: 20, top: 20, bottom: 10),
+      child: Text(
+        "评论  $commentNum",
+        style: TextStyle(fontSize: 18),
       ),
-      child: Text("评论  $commentNum"),
     );
   }
 }
