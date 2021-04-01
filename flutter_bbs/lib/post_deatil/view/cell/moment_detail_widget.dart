@@ -1,10 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bbs/post_deatil/model/bean/note.dart';
+import 'package:toast/toast.dart';
 
 class MomentDetailWidget extends StatelessWidget {
   final Note note;
+  final Function(String content) addComment;
 
-  MomentDetailWidget(this.note);
+  MomentDetailWidget(this.note, this.addComment);
+
+  final TextEditingController _controller = TextEditingController();
+  final FocusNode _commentFocus = FocusNode();
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +21,7 @@ class MomentDetailWidget extends StatelessWidget {
           _buildHeaderWidget(),
           _buildContentWidget(),
           _buildIconWidget(),
-          _buildReplayWidget(),
+          _buildReplayWidget(context),
         ],
       ),
     );
@@ -125,7 +130,7 @@ class MomentDetailWidget extends StatelessWidget {
     );
   }
 
-  Widget _buildReplayWidget() {
+  Widget _buildReplayWidget(BuildContext context) {
     return Container(
       margin: EdgeInsets.only(
         top: 20,
@@ -145,11 +150,22 @@ class MomentDetailWidget extends StatelessWidget {
               ),
               filled: true,
             ),
+            controller: _controller,
+            focusNode: _commentFocus,
           )),
           Container(
             margin: EdgeInsets.only(left: 20),
             child: OutlinedButton(
-              onPressed: () {},
+              onPressed: () {
+                String content = _controller.text;
+                if (content.trim().isEmpty) {
+                  Toast.show("评论内容不能为空", context, gravity: Toast.CENTER);
+                  return;
+                }
+                addComment(content);
+                _controller.clear();
+                _commentFocus.unfocus();
+              },
               child: Text("评论"),
             ),
           )

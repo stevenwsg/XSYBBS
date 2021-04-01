@@ -33,6 +33,7 @@ dependencies:
 
   build_runner: ^1.9.0
 
+  toast: ^0.1.5
 
 
 dev_dependencies:

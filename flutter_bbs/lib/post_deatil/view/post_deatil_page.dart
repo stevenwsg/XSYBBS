@@ -73,7 +73,18 @@ class PostDetailState extends State<PostDetailPage> {
 
   Widget _buildListViewCell(Object object) {
     if (object is Note) {
-      return MomentDetailWidget(object);
+      return MomentDetailWidget(object, (String content) {
+        NetWorkRepo.addComment(context, _noteId, content, (comment) {
+          setState(() {
+            if (items[items.length - 1] is CommentEmptyBean) {
+              items.removeAt(items.length - 1);
+              items.add(comment);
+            } else {
+              items.add(comment);
+            }
+          });
+        });
+      });
     } else if (object is Comment) {
       return CommentDetailWidget(object);
     } else if (object is DividerBean) {

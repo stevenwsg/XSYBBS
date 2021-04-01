@@ -41,7 +41,7 @@ class Note extends BmobObject {
 
   @override
   Map getParams() {
-    toJson();
+    return toJson();
   }
 
   @override

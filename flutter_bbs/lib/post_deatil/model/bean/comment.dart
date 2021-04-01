@@ -9,6 +9,8 @@ class Comment extends BmobObject {
   String userid;
   String username;
 
+  Comment();
+
   Comment.fromJsonMap(Map<String, dynamic> map)
       : content = map["content"],
         createdAt = map["createdAt"],
@@ -32,7 +34,7 @@ class Comment extends BmobObject {
 
   @override
   Map getParams() {
-    toJson();
+    return toJson();
   }
 
   @override
