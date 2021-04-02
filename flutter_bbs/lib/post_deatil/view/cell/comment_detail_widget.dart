@@ -17,13 +17,12 @@ class CommentDetailWidget extends StatelessWidget {
               comment.username + " : ",
               style: TextStyle(fontSize: 16, color: Colors.blue),
             ),
-            Expanded(
-                child: Text(
+            Text(
               comment.content,
               style: TextStyle(fontSize: 16),
               maxLines: 1,
               overflow: TextOverflow.ellipsis,
-            )),
+            )
           ],
         ));
   }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bbs/post_deatil/model/bean/note.dart';
+import 'package:flutter_bbs/post_deatil/utils/momet_bridge.dart';
 import 'package:toast/toast.dart';
 
 class MomentDetailWidget extends StatelessWidget {
@@ -33,12 +34,17 @@ class MomentDetailWidget extends StatelessWidget {
       children: [
         Container(
           margin: EdgeInsets.only(right: 10),
-          child: ClipOval(
-            child: Image.asset(
-              "images/logo.webp",
-              width: 80,
-              height: 80,
+          child: GestureDetector(
+            child: ClipOval(
+              child: Image.asset(
+                "images/logo.webp",
+                width: 80,
+                height: 80,
+              ),
             ),
+            onTap: () {
+              MomentBridge.jumpUserProfile(note.userid);
+            },
           ),
         ),
         Expanded(
