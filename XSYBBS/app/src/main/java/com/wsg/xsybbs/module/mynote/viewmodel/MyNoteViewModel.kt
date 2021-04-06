@@ -9,6 +9,7 @@ import cn.bmob.v3.listener.FindListener
 import cn.bmob.v3.listener.UpdateListener
 import com.wsg.xsybbs.base.BaseViewModel
 import com.wsg.xsybbs.bean.Note
+import com.wsg.xsybbs.bean.User
 import com.wsg.xsybbs.module.mynote.bean.DeleteNoteMessage
 import com.wsg.xsybbs.module.mynote.bean.MyNoteRequestMessage
 import kotlinx.coroutines.Dispatchers
@@ -27,7 +28,7 @@ class MyNoteViewModel : BaseViewModel() {
 
     fun getMyNoteData() {
         val query = BmobQuery<Note>()
-        query.addWhereEqualTo("userid", BmobUser.getCurrentUser().objectId)
+        query.addWhereEqualTo("userid", BmobUser.getCurrentUser(User::class.java).objectId)
         query.setLimit(50)
         //按照时间降序
         query.order("-createdAt")

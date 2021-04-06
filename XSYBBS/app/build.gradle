@@ -4,6 +4,8 @@ apply plugin: 'kotlin-android'
 
 android {
 
+
+    useLibrary 'org.apache.http.legacy'
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
@@ -27,7 +29,7 @@ android {
 
         ndk {
             // 设置支持的SO库架构
-            abiFilters 'armeabi','x86', 'armeabi-v7a', 'arm64-v8a', 'x86_64'
+            abiFilters 'armeabi', 'x86', 'armeabi-v7a', 'arm64-v8a', 'x86_64'
         }
 
         multiDexEnabled true
@@ -70,7 +72,14 @@ dependencies {
     //其中latest.release指代最新Bugly SDK版本号，也可以指定明确的版本号，例如2.2.0
     //Bmob文件存储
     //Bmob
-    implementation 'cn.bmob.android:bmob-sdk:3.6.1'
+    dependencies {
+        implementation 'cn.bmob.android:bmob-sdk:3.7.8'
+        implementation "io.reactivex.rxjava2:rxjava:2.2.8"
+        implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+        implementation 'com.squareup.okhttp3:okhttp:3.14.1'
+        implementation 'com.squareup.okio:okio:2.2.2'
+        implementation 'com.google.code.gson:gson:2.8.5'
+    }
     //Toasty  美化的toast
     compile 'com.github.GrenderG:Toasty:1.4.2'
     //首页banner轮播图
@@ -84,9 +93,7 @@ dependencies {
     implementation project(':flutter')
 
     // leakcanary
-    debugImplementation ('com.squareup.leakcanary:leakcanary-android:2.6') {
-        exclude module: 'okio'
-    }
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.7'
     // 2020/5/5 引入MVVM
     implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
     implementation "androidx.core:core-ktx:+"

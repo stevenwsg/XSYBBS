@@ -8,6 +8,7 @@ import cn.bmob.v3.exception.BmobException
 import cn.bmob.v3.listener.FindListener
 import com.wsg.xsybbs.base.BaseViewModel
 import com.wsg.xsybbs.bean.Note
+import com.wsg.xsybbs.bean.User
 import com.wsg.xsybbs.bean.Zan
 import com.wsg.xsybbs.module.messagezan.bean.MessageZanMessage
 import kotlinx.coroutines.Dispatchers
@@ -27,7 +28,7 @@ class MessageZanViewModel : BaseViewModel() {
     fun getZanInfo() {
         viewModelScope.launch(Dispatchers.IO) {
             val query = BmobQuery<Note>()
-            query.addWhereEqualTo("userid", BmobUser.getCurrentUser().objectId)
+            query.addWhereEqualTo("userid", BmobUser.getCurrentUser(User::class.java).objectId)
             query.setLimit(50)
             query.findObjects(object : FindListener<Note>() {
                 override fun done(p0: MutableList<Note>?, p1: BmobException?) {

@@ -181,7 +181,7 @@ public class MineFragment extends Fragment implements View.OnClickListener {
 
         //注销bmob
         User.logOut();   //清除缓存用户对象
-        BmobUser currentUser = BmobUser.getCurrentUser(); // 现在的currentUser是null了
+        BmobUser currentUser = BmobUser.getCurrentUser(User.class); // 现在的currentUser是null了
         //注销环信
         EMClient.getInstance().logout(true);
 

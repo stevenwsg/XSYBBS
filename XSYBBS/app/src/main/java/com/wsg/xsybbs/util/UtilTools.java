@@ -85,7 +85,7 @@ public class UtilTools {
     public static void saveImageToBmob(String s) {
         final User user = new User();
         user.setImage(s);
-        final BmobUser bmobUser = BmobUser.getCurrentUser();
+        final BmobUser bmobUser = BmobUser.getCurrentUser(User.class);
 
         MyThreadPool.execute(new Runnable() {
             @Override
