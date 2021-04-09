@@ -45,6 +45,8 @@ import es.dmoral.toasty.Toasty;
  * on         2018/7/8.
  * function: 帖子详情界面
  */
+// 目前帖子详情页已经使用了Flutter重写
+@Deprecated
 public class NoteDetailActivity extends BaseActivity implements View.OnClickListener, CommentAdapter.Callback {
 
     private CircleImageView note_profile;

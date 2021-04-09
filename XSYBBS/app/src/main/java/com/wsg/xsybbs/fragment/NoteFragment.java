@@ -89,15 +89,15 @@ public class NoteFragment extends Fragment implements View.OnClickListener {
         rvNote.setLayoutManager(new LinearLayoutManager(getActivity()));
         noteAdapterV2 = new NoteAdapterV2();
         rvNote.setAdapter(noteAdapterV2);
-        initData();
         initBanner();
+        initData();
     }
 
 
     //初始化banner
     private void initBanner() {
         BmobQuery<Banne> query = new BmobQuery<Banne>();
-        query.setLimit(10);
+        query.setLimit(5);
         //按时间降序
         query.order("-createdAt");
         query.findObjects(new FindListener<Banne>() {
@@ -106,6 +106,7 @@ public class NoteFragment extends Fragment implements View.OnClickListener {
                 if (e == null) {
                     dataList.add(0, new BanneData(list));
                     noteAdapterV2.setItems(dataList);
+                    noteAdapterV2.notifyItemInserted(0);
                 }
             }
         });
@@ -136,14 +137,16 @@ public class NoteFragment extends Fragment implements View.OnClickListener {
     private void initData() {
         //获取数据
         BmobQuery<Note> query = new BmobQuery<Note>();
-        query.setLimit(50);
+        query.setLimit(10);
         //按时间降序
-        query.order("-top");
+        query.order("-updatedAt");
         query.findObjects(new FindListener<Note>() {
             @Override
             public void done(List<Note> list, BmobException e) {
                 if (e == null) {
-                    dataList.removeAll(list);
+                    for (int i = 1; i < dataList.size(); i++) {
+                        dataList.remove(i);
+                    }
                     dataList.addAll(list);
                     noteAdapterV2.setItems(dataList);
                     noteAdapterV2.notifyDataSetChanged();

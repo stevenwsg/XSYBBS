@@ -8,7 +8,6 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.wsg.xsybbs.R
-import com.wsg.xsybbs.activity.note.NoteDetailActivity
 import com.wsg.xsybbs.bean.Note
 import com.wsg.xsybbs.flutter.MomentDetailActivity
 import com.wsg.xsybbs.util.FlutterRoutes
