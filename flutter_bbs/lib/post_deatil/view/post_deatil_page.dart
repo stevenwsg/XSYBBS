@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_bbs/post_deatil/model/bean/comment.dart';
 import 'package:flutter_bbs/post_deatil/model/bean/comment_empty_bean.dart';
 import 'package:flutter_bbs/post_deatil/model/bean/comment_title_bean.dart';
@@ -58,7 +59,9 @@ class PostDetailState extends State<PostDetailPage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          leading: BackButton(onPressed: () {}),
+          leading: BackButton(onPressed: () {
+            SystemNavigator.pop();
+          }),
           title: Text("帖子详情"),
           centerTitle: true,
         ),

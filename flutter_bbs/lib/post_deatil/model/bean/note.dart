@@ -2,6 +2,7 @@ import 'package:data_plugin/bmob/table/bmob_object.dart';
 
 class Note extends BmobObject {
   String content;
+  String image;
   String createdAt;
   String objectId;
   int replaycount;
@@ -14,6 +15,7 @@ class Note extends BmobObject {
 
   Note.fromJsonMap(Map<String, dynamic> map)
       : content = map["content"],
+        image = map["image"],
         createdAt = map["createdAt"],
         objectId = map["objectId"],
         replaycount = map["replaycount"],
@@ -27,6 +29,7 @@ class Note extends BmobObject {
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = new Map<String, dynamic>();
     data['content'] = content;
+    data["image"] = image;
     data['createdAt'] = createdAt;
     data['objectId'] = objectId;
     data['replaycount'] = replaycount;
@@ -46,6 +49,6 @@ class Note extends BmobObject {
 
   @override
   String toString() {
-    return 'Note{content: $content, createdAt: $createdAt, objectId: $objectId, replaycount: $replaycount, title: $title, top: $top, typeid: $typeid, updatedAt: $updatedAt, userid: $userid, zancount: $zancount}';
+    return 'Note{content: $content, image: $image, createdAt: $createdAt, objectId: $objectId, replaycount: $replaycount, title: $title, top: $top, typeid: $typeid, updatedAt: $updatedAt, userid: $userid, zancount: $zancount}';
   }
 }

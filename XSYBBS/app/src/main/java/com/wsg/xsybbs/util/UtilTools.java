@@ -57,7 +57,7 @@ public class UtilTools {
         bitmap.compress(Bitmap.CompressFormat.PNG, 80, byStream);
         //第二步：利用Base64将我们的字节数组输出流转换成String
         byte[] byteArray = byStream.toByteArray();
-        String imgString = new String(Base64.encodeToString(byteArray, Base64.DEFAULT));
+        String imgString = new String(Base64.encodeToString(byteArray, Base64.NO_WRAP));
         //第三步：将String保存shareUtils
         SPUtils.putString(mContext, "image_title", imgString);
 

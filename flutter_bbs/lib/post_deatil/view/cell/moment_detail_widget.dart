@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bbs/post_deatil/model/bean/note.dart';
 import 'package:flutter_bbs/post_deatil/utils/momet_bridge.dart';
+import 'package:flutter_bbs/post_deatil/utils/utils.dart';
 import 'package:toast/toast.dart';
 
 class MomentDetailWidget extends StatelessWidget {
@@ -36,11 +37,7 @@ class MomentDetailWidget extends StatelessWidget {
           margin: EdgeInsets.only(right: 10),
           child: GestureDetector(
             child: ClipOval(
-              child: Image.asset(
-                "images/logo.webp",
-                width: 80,
-                height: 80,
-              ),
+              child: _buildUserProfile(),
             ),
             onTap: () {
               MomentBridge.jumpUserProfile(note.userid);
@@ -78,6 +75,22 @@ class MomentDetailWidget extends StatelessWidget {
         )),
       ],
     );
+  }
+
+  Widget _buildUserProfile() {
+    if (note.image?.isEmpty ?? true) {
+      return Image.asset(
+        "images/logo.webp",
+        width: 80,
+        height: 80,
+      );
+    } else {
+      return Image.memory(
+        Utils.getProfile(note.image),
+        width: 80,
+        height: 80,
+      );
+    }
   }
 
   Widget _buildContentWidget() {
