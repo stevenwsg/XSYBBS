@@ -203,7 +203,7 @@
 
 MVVM改造方案： https://juejin.im/post/5ec0edc5f265da7bc01da522
 
-# MVVM改造 
+# Flutter改造 
 ## 2021/03/23
 ### 由于工作中使用到了Flutter， 所以给项目引入Flutter，并重写社区详情页
 
