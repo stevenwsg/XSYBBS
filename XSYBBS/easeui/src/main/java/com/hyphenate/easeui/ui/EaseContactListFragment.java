@@ -323,6 +323,13 @@ public class EaseContactListFragment extends EaseBaseFragment {
      */
     public void setContactsMap(Map<String, EaseUser> contactsMap){
         this.contactsMap = contactsMap;
+
+        listView.post(new Runnable() {
+            @Override
+            public void run() {
+                setUpView();
+            }
+        });
     }
     
     public interface EaseContactListItemClickListener {
