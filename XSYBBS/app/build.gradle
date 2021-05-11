@@ -59,6 +59,7 @@ android {
 
 dependencies {
     implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+    implementation 'androidx.asynclayoutinflater:asynclayoutinflater:1.0.0'
     compile fileTree(include: ['*.jar'], dir: 'libs')
     androidTestCompile('androidx.test.espresso:espresso-core:3.1.0', {
         exclude group: 'com.android.support', module: 'support-annotations'

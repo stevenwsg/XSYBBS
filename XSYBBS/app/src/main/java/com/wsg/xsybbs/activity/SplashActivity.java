@@ -6,8 +6,13 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.asynclayoutinflater.view.AsyncLayoutInflater;
 import androidx.core.content.res.ResourcesCompat;
+
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.wsg.xsybbs.MainActivity;
@@ -70,9 +75,10 @@ public class SplashActivity extends BaseActivity{
             return;
         }
 
-        setContentView(R.layout.activity_splash);
-        initView();
-        
+        new AsyncLayoutInflater(this).inflate(R.layout.activity_splash, null, (view, resid, parent) -> {
+            setContentView(view);
+            initView();
+        });
     }
 
     private void initView() {
