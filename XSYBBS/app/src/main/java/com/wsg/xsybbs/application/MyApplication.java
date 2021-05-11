@@ -47,11 +47,6 @@ public class MyApplication extends MultiDexApplication {
         options.setAcceptInvitationAlways(true);
         EaseUI.getInstance().init(this, options);
 
-        //7.0+
-        StrictMode.VmPolicy.Builder builder = new StrictMode.VmPolicy.Builder();
-        StrictMode.setVmPolicy(builder.build());
-        builder.detectFileUriExposure();
-
         myApplication = this;
     }
 
