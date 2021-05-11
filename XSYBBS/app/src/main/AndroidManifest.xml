@@ -59,7 +59,7 @@
 
 
         <!--闪屏页-->
-        <activity android:name=".activity.SplashActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".activity.SplashActivity" android:theme="@style/SplashActivityTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

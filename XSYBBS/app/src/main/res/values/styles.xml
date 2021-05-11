@@ -11,6 +11,10 @@
     <style name="ActivityTheme" parent="Theme.AppCompat.Light.NoActionBar">
     </style>
 
+    <style name="SplashActivityTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@mipmap/splash_bg</item>
+    </style>
+
 
     <!--自定义Dialog-->
     <style name="pop_anim_style">
