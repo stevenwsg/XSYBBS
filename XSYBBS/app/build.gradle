@@ -37,8 +37,8 @@ android {
     buildTypes {
         release {
             //如果编译速度慢，可以将下面两行注释掉
-//            minifyEnabled true
-//            shrinkResources true
+            minifyEnabled true
+            shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
 
