@@ -1,5 +1,7 @@
 package com.wsg.xsybbs.module.mine.view
 
+import com.wsg.xsybbs.bean.User
+import com.wsg.xsybbs.module.mine.model.UserSettingInfo
 import me.drakeet.multitype.MultiTypeAdapter
 
 /**
@@ -9,6 +11,7 @@ import me.drakeet.multitype.MultiTypeAdapter
 class MineAdapter : MultiTypeAdapter() {
 
     init {
-
+        register(User::class.java, UserInfoItemViewBinder())
+        register(UserSettingInfo::class.java, UserSettingItemViewBinder())
     }
 }

@@ -5,9 +5,9 @@ package com.wsg.xsybbs.module.mine.model
  */
 enum class UserSetting {
     MY_NOTE,
-    MY_MESSAGE,
     MODIFY_PASSWORD,
     FEED_BACK,
+    ABOUT,
     UPDATE,
     UNREGISTER,
     Exit

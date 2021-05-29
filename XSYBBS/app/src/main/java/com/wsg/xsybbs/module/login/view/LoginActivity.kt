@@ -73,6 +73,7 @@ class LoginActivity : BaseActivity() {
                     dialog?.dismiss()
                     val intent = Intent(this, MainActivity::class.java)
                     startActivity(intent)
+                    finish()
                 }
                 LoginResultMessage.CODE_LOGIN_FAIL -> {
                     dialog?.dismiss()

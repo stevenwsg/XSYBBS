@@ -41,6 +41,7 @@ import de.hdodenhof.circleimageview.CircleImageView;
  * on         2018/6/28.
  * function: 个人中心Fragment
  */
+@Deprecated
 public class MineFragment extends Fragment implements View.OnClickListener {
 
     //圆形头像
