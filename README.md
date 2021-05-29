@@ -1,9 +1,7 @@
 # XSYBBS 
 ## 介绍
 
-<img src="https://i.loli.net/2021/05/29/kxEpP1nyOBJA829.png" width = "200" height = "300" alt="" align=center />
-
-<img src="https://i.loli.net/2021/05/29/kxEpP1nyOBJA829.png"  width = "200" height = "300" alt="" align=center />
+![App部分界面](https://i.loli.net/2021/05/29/ACSulfscwebIvTr.jpg)
 
 
 详细介绍：https://blog.csdn.net/qq_29375837/article/details/82657976
