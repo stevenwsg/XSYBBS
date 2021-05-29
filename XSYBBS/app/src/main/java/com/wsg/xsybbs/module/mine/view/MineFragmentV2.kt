@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import cn.bmob.v3.BmobUser
 import com.wsg.xsybbs.R
+import com.wsg.xsybbs.bean.User
 import com.wsg.xsybbs.module.mine.model.UserSettingCollection
 
 /**
@@ -45,7 +46,7 @@ class MineFragmentV2 : Fragment() {
 
     private fun initData() {
         val list = mutableListOf<Any>()
-//        list.add(BmobUser.getCurrentUser())
+        list.add(BmobUser.getCurrentUser(User::class.java))
         list.addAll(UserSettingCollection.getUserSettingCollection())
         mineAdapter.items = list
         mRecyclerView.adapter = mineAdapter

@@ -1,6 +1,6 @@
 package com.wsg.xsybbs.module.mine.view
 
-import cn.bmob.v3.BmobUser
+import com.wsg.xsybbs.bean.User
 import com.wsg.xsybbs.module.mine.model.UserSettingInfo
 import me.drakeet.multitype.MultiTypeAdapter
 
@@ -11,7 +11,7 @@ import me.drakeet.multitype.MultiTypeAdapter
 class MineAdapter : MultiTypeAdapter() {
 
     init {
-//        register(BmobUser::class.java, UserInfoItemViewBinder)
+        register(User::class.java, UserInfoItemViewBinder())
         register(UserSettingInfo::class.java, UserSettingItemViewBinder())
     }
 }
