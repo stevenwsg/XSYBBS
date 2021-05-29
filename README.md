@@ -1,26 +1,18 @@
 # XSYBBS 
-注： Kotlin版本请查看Kotlin分支
-## 校园BBS+校园论坛 2018/7/20
+## 介绍
+
+<img src="https://i.loli.net/2021/05/29/kxEpP1nyOBJA829.png" width = "200" height = "300" alt="" align=center />
+
+<img src="https://i.loli.net/2021/05/29/kxEpP1nyOBJA829.png"  width = "200" height = "300" alt="" align=center />
 
 
+详细介绍：https://blog.csdn.net/qq_29375837/article/details/82657976
 
+体验地址：https://download.csdn.net/download/qq_29375837/10580988
 
+MVVM改造： https://juejin.im/post/5ec0edc5f265da7bc01da522
 
-图片效果的话，大家可以看看这篇博客 ，https://blog.csdn.net/qq_29375837/article/details/82657976
-
-
-我把apk下载地址放这块，大家需要的话可以体验体验https://download.csdn.net/download/qq_29375837/10580988
-
-
-为期一个月的在校实习结束了，7个人一组，组内其他6个人都考研，也不会做Android，我一个人撸完了，说多了都是泪
-
-
-开发上全是体力劳动，并没有用到高深的技术
-
-
-主要是业务逻辑处理比较麻烦，发帖，评论，点赞，取消点赞等
-
-
+Flutter改造： https://juejin.cn/post/6946172602310213645
 
 ## 实现功能：
 
@@ -188,23 +180,3 @@
 
 如果对大家有帮助的话，可以star或者fork一下  (✺ω✺)
 
-
-
-
-
-# 毕业设计 
-## 2018/12/27
-### 由于要去实习，所以毕设就选了这个曾经做过的项目进行修改，从而节省时间。
-
-
-# MVVM改造 
-## 2020/05/05
-### 由于最近在学习MVVM，所以将此项目重构为MVVM架构 
-
-MVVM改造方案： https://juejin.im/post/5ec0edc5f265da7bc01da522
-
-# Flutter改造 
-## 2021/03/23
-### 由于工作中使用到了Flutter， 所以给项目引入Flutter，并重写社区详情页
-
-Flutter改造方案： https://juejin.cn/post/6946172602310213645
