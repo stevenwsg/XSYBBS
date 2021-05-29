@@ -15,7 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         app:tabIndicatorFullWidth="false"
-        app:tabIndicatorColor="@color/holo_red_light"/>
+        app:tabIndicatorColor="@color/red"/>
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/vp2"

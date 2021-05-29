@@ -14,7 +14,6 @@
             <option value="$USER_HOME$/Library/Flutter/flutter/.pub-cache/hosted/pub.flutter-io.cn/shared_preferences-0.5.12+4/android" />
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/easeui" />
             <option value="$PROJECT_DIR$/../flutter_bbs/.android/Flutter" />
           </set>
         </option>
@@ -22,5 +21,6 @@
         <option name="useQualifiedModuleNames" value="true" />
       </GradleProjectSettings>
     </option>
+    <option name="offlineMode" value="true" />
   </component>
 </project>

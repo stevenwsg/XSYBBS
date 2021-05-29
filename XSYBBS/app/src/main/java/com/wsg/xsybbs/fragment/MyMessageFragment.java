@@ -1,10 +1,21 @@
 package com.wsg.xsybbs.fragment;
 
+import android.content.Intent;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
-import android.os.AsyncTask;
-
-import com.hyphenate.easeui.ui.EaseConversationListFragment;
+import com.hyphenate.chat.EMConversation;
+import com.hyphenate.easeui.constants.EaseConstant;
+import com.hyphenate.easeui.modules.conversation.EaseConversationListFragment;
+import com.hyphenate.easeui.modules.conversation.model.EaseConversationInfo;
+import com.hyphenate.easeui.modules.conversation.model.EaseConversationSetStyle;
+import com.hyphenate.easeui.utils.EaseCommonUtils;
+import com.hyphenate.easeui.widget.EaseImageView;
+import com.wsg.xsybbs.activity.ChatActivity;
 
 
 /**
@@ -14,57 +25,43 @@ import com.hyphenate.easeui.ui.EaseConversationListFragment;
  */
 public class MyMessageFragment extends EaseConversationListFragment {
 
-    private MyTask myTask;
+    private final String TAG = getClass().getSimpleName();
 
 
     @Override
-    protected void initView() {
-        super.initView();
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
 
-        ////搜索框默认不能输入，防止键盘弹出，影响交互
-        query.setEnabled(false);
-
-
-//        hideTitleBar();
-        initData();
+        //设置头像尺寸
+        conversationListLayout.setAvatarSize(EaseCommonUtils.dip2px(mContext, 50));
+        //设置头像样式：0为默认，1为圆形，2为方形(设置方形时，需要配合设置avatarRadius，默认的avatarRadius为50dp)
+        conversationListLayout.setAvatarShapeType(EaseImageView.ShapeType.RECTANGLE);
+        //设置圆角半径
+        conversationListLayout.setAvatarRadius((int) EaseCommonUtils.dip2px(mContext, 5));
+        //设置是否隐藏未读消息数，默认为不隐藏
+        conversationListLayout.hideUnreadDot(false);
+        //设置未读消息数展示位置，默认为左侧
+        conversationListLayout.showUnreadDotPosition(EaseConversationSetStyle.UnreadDotPosition.LEFT);
     }
-
-
-    private void initData() {
-        myTask=new MyTask();
-        myTask.execute();
-    }
-
-
-    class MyTask extends AsyncTask<Void, Void, Void> {
-        @Override
-        protected Void doInBackground(Void... voids) {
-
-            // run in a second
-            final long timeInterval = 10000;
-            while (true) {
-                // ------- code for task to run
-                conversationListView.refresh();
-                // ------- ends here
-                try {
-                    Thread.sleep(timeInterval);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-                return null;
-            }
-        }
-    }
-
 
     @Override
-    public void onDestroy() {
+    public void onItemClick(View view, int position) {
+        super.onItemClick(view, position);
+        EaseConversationInfo info = conversationListLayout.getItem(position);
+        EMConversation conversation = (EMConversation) info.getInfo();
 
-        //如果异步任务不为空 并且状态是 运行时  ，就把他取消这个加载任务
-        if(myTask !=null && myTask.getStatus() != AsyncTask.Status.FINISHED){
-            myTask.cancel(true);
+        Intent intent = new Intent(getContext(), ChatActivity.class);
+        intent.putExtra(EaseConstant.EXTRA_CONVERSATION_ID, conversation.conversationId());
+        intent.putExtra(EaseConstant.EXTRA_CHAT_TYPE, EaseConstant.CHATTYPE_SINGLE);
+        startActivity(intent);
 
-        }
-        super.onDestroy();
+        Log.d(TAG, "start chat id:" + conversation.conversationId());
+
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        conversationListLayout.loadDefaultData();
     }
 }

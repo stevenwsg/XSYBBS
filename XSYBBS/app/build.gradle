@@ -20,7 +20,7 @@ android {
 
     defaultConfig {
         applicationId "com.wsg.xsybbs"
-        minSdkVersion 16
+        minSdkVersion 19
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
@@ -88,7 +88,6 @@ dependencies {
     compile 'me.thewyp:avatar:1.0.4'
     //6.0+权限申请
     compile 'me.weyye.hipermission:library:1.0.7'
-    compile project(':easeui')
 
     implementation project(':flutter')
 
@@ -108,6 +107,10 @@ dependencies {
 
     implementation "androidx.viewpager2:viewpager2:1.0.0"
     implementation 'com.google.android.material:material:1.3.0-rc01'
+
+    // 环信
+    implementation 'io.hyphenate:ease-im-kit:3.8.1'
+    implementation 'io.hyphenate:hyphenate-chat:3.8.1'
 }
 repositories {
     mavenCentral()

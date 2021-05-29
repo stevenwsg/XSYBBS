@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.hyphenate.easeui.EaseConstant
+import com.hyphenate.easeui.constants.EaseConstant
 import com.wsg.xsybbs.R
 import com.wsg.xsybbs.activity.ChatActivity
 import com.wsg.xsybbs.base.BaseActivity
@@ -43,7 +43,7 @@ class PersionalDealActivity : BaseActivity() {
 
         btn_send_message.setOnClickListener {
             val chat = Intent(this, ChatActivity::class.java)
-            chat.putExtra(EaseConstant.EXTRA_USER_ID, mUser?.username) //对方账号
+            chat.putExtra(EaseConstant.EXTRA_CONVERSATION_ID, mUser?.username) //对方账号
             chat.putExtra(EaseConstant.EXTRA_CHAT_TYPE, EaseConstant.CHATTYPE_SINGLE) //单聊模式
             startActivity(chat)
         }

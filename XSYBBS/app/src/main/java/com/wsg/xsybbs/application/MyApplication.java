@@ -2,14 +2,13 @@ package com.wsg.xsybbs.application;
 
 import android.content.Context;
 import android.os.Build;
-import android.os.StrictMode;
 
 import androidx.annotation.RequiresApi;
 import androidx.multidex.MultiDexApplication;
 
 import com.hyphenate.chat.EMOptions;
-import com.hyphenate.easeui.EaseUI;
 
+import com.hyphenate.easeui.EaseIM;
 import com.tencent.bugly.crashreport.CrashReport;
 import com.wsg.xsybbs.util.StaticClass;
 import cn.bmob.v3.Bmob;
@@ -45,7 +44,8 @@ public class MyApplication extends MultiDexApplication {
         EMOptions options = new EMOptions();
        // 默认添加好友时，是不需要验证的，改成需要验证
         options.setAcceptInvitationAlways(true);
-        EaseUI.getInstance().init(this, options);
+        options.setAutoAcceptGroupInvitation(true);
+        EaseIM.getInstance().init(this, options);
 
         myApplication = this;
     }

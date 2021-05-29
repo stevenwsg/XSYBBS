@@ -58,7 +58,7 @@ class ModifyUserInfoActivity : BaseActivity() {
                     .setText("打开相机", "从相册中选取", "取消")
                     .show { uri -> //uri为图片路径
                         Glide.with(this).load(File(uri))
-                                .asBitmap().into(modify_profile_image)
+                                .into(modify_profile_image)
                     }
         }
 
