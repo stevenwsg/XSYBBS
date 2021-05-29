@@ -2,7 +2,7 @@ package com.wsg.xsybbs.activity
 
 import android.os.Bundle
 import android.view.Window
-import com.hyphenate.easeui.ui.EaseChatFragment
+import com.hyphenate.easeui.modules.chat.EaseChatFragment
 import com.wsg.xsybbs.R
 import com.wsg.xsybbs.base.BaseActivity
 
