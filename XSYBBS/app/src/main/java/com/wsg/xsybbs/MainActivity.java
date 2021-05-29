@@ -20,6 +20,7 @@ import com.wsg.xsybbs.fragment.FriendsFragment;
 import com.wsg.xsybbs.fragment.MyMessageFragment;
 import com.wsg.xsybbs.fragment.MineFragment;
 import com.wsg.xsybbs.fragment.NoteFragment;
+import com.wsg.xsybbs.module.mine.view.MineFragmentV2;
 
 import java.util.HashMap;
 import java.util.List;
@@ -39,7 +40,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     public NoteFragment noteFragment;
     public FriendsFragment contactListFragment ;
     public MyMessageFragment myMessageFragment;
-    public MineFragment mineFragment;
+    public MineFragmentV2 mineFragment;
     private Fragment mCurrent;
     //RelativeLatout
     private RelativeLayout mNoteLayout;
@@ -201,7 +202,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
 
 
                 if (mineFragment== null) {
-                    mineFragment = new MineFragment();
+                    mineFragment = new MineFragmentV2();
                     fragmentTransaction.add(R.id.content_layout, mineFragment);
                 } else {
                     fragmentTransaction.show(mineFragment);
