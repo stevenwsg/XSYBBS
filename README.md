@@ -1,7 +1,7 @@
 # XSYBBS 
 ## 介绍
 
-![App部分界面](https://i.loli.net/2021/05/29/ACSulfscwebIvTr.jpg)
+![App部分界面](https://img-blog.csdnimg.cn/20210529173158116.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI5Mzc1ODM3,size_16,color_FFFFFF,t_70#pic_center)
 
 
 详细介绍：https://blog.csdn.net/qq_29375837/article/details/82657976
