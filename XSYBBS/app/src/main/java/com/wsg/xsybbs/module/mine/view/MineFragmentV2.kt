@@ -46,7 +46,9 @@ class MineFragmentV2 : Fragment() {
 
     private fun initData() {
         val list = mutableListOf<Any>()
-        list.add(BmobUser.getCurrentUser(User::class.java))
+        BmobUser.getCurrentUser(User::class.java)?.let {
+            list.add(it)
+        }
         list.addAll(UserSettingCollection.getUserSettingCollection())
         mineAdapter.items = list
         mRecyclerView.adapter = mineAdapter
