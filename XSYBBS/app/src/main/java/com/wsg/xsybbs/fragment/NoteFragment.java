@@ -153,8 +153,9 @@ public class NoteFragment extends Fragment implements View.OnClickListener {
 
                 } else {
                     L.d(e.toString() + e.getErrorCode() + e.getMessage());
-                    Toasty.error(getActivity(), "请求数据失败，请检查网络", Toast.LENGTH_LONG).show();
-
+                    if (getActivity() != null) {
+                        Toasty.error(getActivity(), "请求数据失败，请检查网络", Toast.LENGTH_LONG).show();
+                    }
                 }
             }
         });
