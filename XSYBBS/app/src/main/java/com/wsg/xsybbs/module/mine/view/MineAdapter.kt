@@ -11,7 +11,7 @@ import me.drakeet.multitype.MultiTypeAdapter
 class MineAdapter : MultiTypeAdapter() {
 
     init {
-        register(User::class.java, UserInfoItemViewBinder())
+//        register(User::class.java, UserInfoItemViewBinder())
         register(UserSettingInfo::class.java, UserSettingItemViewBinder())
     }
 }

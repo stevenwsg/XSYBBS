@@ -19,6 +19,7 @@ import me.drakeet.multitype.ItemViewBinder
  * Create by wangshengguo on 2021/5/11.
  * 用户信息Item
  */
+@Deprecated("用户信息不放在Rv中")
 class UserInfoItemViewBinder : ItemViewBinder<User, UserInfoItemViewBinder.UserInfoHolder>() {
     class UserInfoHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var profileImage: CircleImageView? = null

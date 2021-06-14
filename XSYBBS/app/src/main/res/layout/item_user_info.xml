@@ -5,7 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="200dp"
     android:alpha="0.8"
-    android:background="@mipmap/splash_bg">
+    android:background="@mipmap/splash_bg"
+    app:layout_scrollFlags="scroll|enterAlways"
+    android:id="@+id/header">
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/profile_image"
