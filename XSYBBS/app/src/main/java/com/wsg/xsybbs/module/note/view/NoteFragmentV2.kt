@@ -1,5 +1,6 @@
 package com.wsg.xsybbs.module.note.view
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -14,7 +15,9 @@ import com.wsg.xsybbs.base.BaseFragment
 import com.wsg.xsybbs.bean.Banne
 import com.wsg.xsybbs.bean.Type
 import com.wsg.xsybbs.databinding.FragmentNoteV2Binding
+import com.wsg.xsybbs.module.addnote.view.AddNoteActivity
 import com.wsg.xsybbs.module.note.vm.NoteViewModel
+import com.wsg.xsybbs.module.searchnote.view.SearchNoteActivity
 
 /**
  * Create by wangshengguo on 2021/6/14.
@@ -42,11 +45,20 @@ class NoteFragmentV2 : BaseFragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
+        initView()
         initVm()
         initObserver()
         viewModel?.getBannes()
         viewModel?.getTypeList()
+    }
+
+    private fun initView() {
+        binding.addNote.setOnClickListener {
+            startActivity(Intent(activity, AddNoteActivity::class.java))
+        }
+        binding.searchNote.setOnClickListener {
+            startActivity(Intent(activity, SearchNoteActivity::class.java))
+        }
     }
 
     private fun initVm() {
