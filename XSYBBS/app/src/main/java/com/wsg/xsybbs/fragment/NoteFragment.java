@@ -40,6 +40,7 @@ import es.dmoral.toasty.Toasty;
  * on         2018/6/28.
  * function:  贴吧Fragment
  */
+@Deprecated
 public class NoteFragment extends Fragment implements View.OnClickListener {
 
     private EditText etSearch;

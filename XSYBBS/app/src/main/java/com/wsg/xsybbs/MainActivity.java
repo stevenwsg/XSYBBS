@@ -21,6 +21,7 @@ import com.wsg.xsybbs.fragment.MyMessageFragment;
 import com.wsg.xsybbs.fragment.MineFragment;
 import com.wsg.xsybbs.fragment.NoteFragment;
 import com.wsg.xsybbs.module.mine.view.MineFragmentV2;
+import com.wsg.xsybbs.module.note.view.NoteFragmentV2;
 
 import java.util.HashMap;
 import java.util.List;
@@ -37,7 +38,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     private FragmentManager fm;
 
 
-    public NoteFragment noteFragment;
+    public NoteFragmentV2 noteFragment;
     public FriendsFragment contactListFragment ;
     public MyMessageFragment myMessageFragment;
     public MineFragmentV2 mineFragment;
@@ -72,7 +73,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
 
 
         //默认显示第一个
-        noteFragment = new NoteFragment();
+        noteFragment = new NoteFragmentV2();
         fm = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fm.beginTransaction();
         fragmentTransaction.replace(R.id.content_layout, noteFragment);
@@ -138,7 +139,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
 
 
                 if (noteFragment == null) {
-                    noteFragment = new NoteFragment();
+                    noteFragment = new NoteFragmentV2();
                     fragmentTransaction.add(R.id.content_layout, noteFragment);
                 } else {
                     fragmentTransaction.show(noteFragment);
