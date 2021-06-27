@@ -32,46 +32,10 @@
         android:textSize="20sp"
         android:layout_height="wrap_content" />
 
-
-    <LinearLayout
-        android:id="@+id/newnote_linear"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/typeRv"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:orientation="horizontal">
-
-        <RadioGroup
-            android:id="@+id/radioGroup"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <RadioButton
-                android:id="@+id/btntocao"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="吐槽"
-                android:checked="true"/>
-
-            <RadioButton
-                android:id="@+id/btnlife"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="生活"/>
-
-            <RadioButton
-                android:id="@+id/btnstudy"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="学习"/>
-
-            <RadioButton
-                android:id="@+id/btnlove"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="情感"/>
-
-        </RadioGroup>
-    </LinearLayout>
+        android:layout_height="40dp"/>
 
 
     <Button

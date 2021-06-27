@@ -6,11 +6,16 @@ import android.widget.RadioButton
 import android.widget.Toast
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import cn.bmob.v3.BmobUser
+import com.google.gson.TypeAdapter
 import com.wsg.xsybbs.R
 import com.wsg.xsybbs.base.BaseActivity
 import com.wsg.xsybbs.bean.Note
 import com.wsg.xsybbs.bean.User
+import com.wsg.xsybbs.manager.TypeManager
+import com.wsg.xsybbs.module.addnote.bean.TypeWrap
 import com.wsg.xsybbs.module.addnote.viewmodel.AddNoteViewModel
 import es.dmoral.toasty.Toasty
 import kotlinx.android.synthetic.main.activity_new_note.*
@@ -22,8 +27,9 @@ import kotlinx.android.synthetic.main.activity_new_note.*
  */
 class AddNoteActivity : BaseActivity() {
 
-    private var viewModel : AddNoteViewModel? = null
-    private var type : String? = null
+    private var viewModel: AddNoteViewModel? = null
+    private var type: String? = null
+    private var typeAdapter: NoteTypeAdapter? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -35,11 +41,11 @@ class AddNoteActivity : BaseActivity() {
     }
 
     private fun initView() {
-        type = "吐槽"
         topBar.setTitle(getString(R.string.text_add_note))
-        radioGroup.setOnCheckedChangeListener { group, checkedId ->
-            type = findViewById<RadioButton>(checkedId).getText().toString()
-        }
+        typeRv.layoutManager = LinearLayoutManager(this, RecyclerView.HORIZONTAL, false)
+        typeAdapter = NoteTypeAdapter()
+        typeAdapter?.items = TypeManager.typeList.map { TypeWrap(it) }
+        typeRv.adapter = typeAdapter
     }
 
     private fun initViewModel() {
@@ -62,7 +68,7 @@ class AddNoteActivity : BaseActivity() {
             val note = Note()
             note.userid = BmobUser.getCurrentUser(User::class.java).objectId
             note.image = BmobUser.getCurrentUser(User::class.java).image
-            note.typeid = type
+            note.typeid = typeAdapter?.getCheckType()
             note.top = 0
             note.title = newnote_title.text.toString()
             note.content = newnote_content.text.toString()

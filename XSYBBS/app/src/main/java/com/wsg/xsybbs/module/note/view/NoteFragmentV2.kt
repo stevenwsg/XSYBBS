@@ -15,6 +15,7 @@ import com.wsg.xsybbs.base.BaseFragment
 import com.wsg.xsybbs.bean.Banne
 import com.wsg.xsybbs.bean.Type
 import com.wsg.xsybbs.databinding.FragmentNoteV2Binding
+import com.wsg.xsybbs.manager.TypeManager
 import com.wsg.xsybbs.module.addnote.view.AddNoteActivity
 import com.wsg.xsybbs.module.note.vm.NoteViewModel
 import com.wsg.xsybbs.module.searchnote.view.SearchNoteActivity
@@ -84,6 +85,7 @@ class NoteFragmentV2 : BaseFragment() {
             typeList.observe(viewLifecycleOwner, object : Observer<List<Type>> {
                 override fun onChanged(t: List<Type>?) {
                     t?.let { it ->
+                        TypeManager.typeList = it
                         noteVpAdapter =
                             NoteVPAdapter(context as BaseActivity, it.map { it.content })
                         binding.vp2Note.adapter = noteVpAdapter

@@ -50,14 +50,14 @@ class NoteViewModel : BaseViewModel() {
             withContext(Dispatchers.IO) {
                 val query = BmobQuery<Type>()
                 query.setLimit(5)
-                query.order("-createdAt")
+                query.order("createdAt")
                 query.findObjects(object : FindListener<Type>() {
                     override fun done(p0: MutableList<Type>?, p1: BmobException?) {
                         if (p1 == null) {
                             Log.d(TAG, "getType suc, size: ${p0?.size}")
                             typeList.postValue(p0)
                         } else {
-                            Log.e(TAG, "getTypeList error: ${p1}")
+                            Log.e(TAG, "getTypeList error: $p1")
                         }
                     }
 
