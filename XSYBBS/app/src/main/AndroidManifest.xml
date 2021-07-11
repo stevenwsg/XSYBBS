@@ -145,6 +145,11 @@
             android:authorities="com.wsg.xsybbs.BmobContentProvider">
         </provider>
 
+        <provider
+            android:name="com.wsg.xsybbs.FileProvider"
+            android:authorities="com.wsg.xsybbs"
+            />
+
 
 
 
