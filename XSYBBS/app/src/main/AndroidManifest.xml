@@ -111,7 +111,7 @@
 
 
         <!-- EaseUI中发送图片后查看以及发送地理位置activit注册   -->
-        <activity android:name="com.hyphenate.easeui.ui.EaseBaiduMapActivity"/>
+        <activity android:name="com.hyphenate.easeui.ui.EaseBaiduMapActivity" android:theme="@style/BaiMapTheme"/>
         <!--添加帖子-->
         <activity android:name=".module.addnote.view.AddNoteActivity" android:theme="@style/ActivityTheme"/>
         <!--搜索帖子-->
