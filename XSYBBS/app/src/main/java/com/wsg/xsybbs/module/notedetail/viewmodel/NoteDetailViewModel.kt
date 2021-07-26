@@ -5,11 +5,8 @@ import androidx.lifecycle.MutableLiveData
 import com.wsg.xsybbs.base.BaseViewModel
 import com.wsg.xsybbs.bean.Comment
 import com.wsg.xsybbs.module.notedetail.bean.AddCommentResult
-import com.wsg.xsybbs.module.notedetail.model.NoteDetailModel
 
 class NoteDetailViewModel : BaseViewModel() {
-
-    private val noteDetailModel = NoteDetailModel()
 
     // 评论数据
     var commentLists = MutableLiveData<List<Comment>>()

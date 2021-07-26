@@ -20,7 +20,7 @@ import me.drakeet.multitype.ItemViewBinder
  * on         2020/5/24
  * function:
  */
-class NoteItemViewBinder : ItemViewBinder<Note, NoteItemViewBinder.NoteHolder>() {
+open class NoteItemViewBinder : ItemViewBinder<Note, NoteItemViewBinder.NoteHolder>() {
 
     class NoteHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
