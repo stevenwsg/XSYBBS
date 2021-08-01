@@ -9,6 +9,7 @@ import com.wsg.xsybbs.base.BaseActivity
 import com.wsg.xsybbs.bean.Comment
 import com.wsg.xsybbs.bean.Note
 import com.wsg.xsybbs.databinding.ActivityNoteDetailV2Binding
+import com.wsg.xsybbs.module.notedetail.view.adapter.NoteDetailAdapter
 import com.wsg.xsybbs.module.notedetail.viewmodel.NoteDetailViewModel
 
 /**
