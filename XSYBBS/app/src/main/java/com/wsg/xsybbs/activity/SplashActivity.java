@@ -9,27 +9,26 @@ import android.os.Message;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.asynclayoutinflater.view.AsyncLayoutInflater;
-import androidx.core.content.res.ResourcesCompat;
 
-import android.view.View;
-import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.permissionx.guolindev.PermissionX;
+import com.permissionx.guolindev.callback.ExplainReasonCallback;
+import com.permissionx.guolindev.callback.ForwardToSettingsCallback;
+import com.permissionx.guolindev.request.ExplainScope;
+import com.permissionx.guolindev.request.ForwardScope;
 import com.wsg.xsybbs.MainActivity;
 import com.wsg.xsybbs.R;
 import com.wsg.xsybbs.module.login.view.LoginActivity;
 import com.wsg.xsybbs.base.BaseActivity;
-import com.wsg.xsybbs.util.L;
 import com.wsg.xsybbs.util.SPUtils;
 import com.wsg.xsybbs.util.StaticClass;
 import com.wsg.xsybbs.util.UtilTools;
 
-import java.util.ArrayList;
-import java.util.List;
+import org.jetbrains.annotations.NotNull;
 
-import me.weyye.hipermission.HiPermission;
-import me.weyye.hipermission.PermissionCallback;
-import me.weyye.hipermission.PermissionItem;
+import java.util.List;
 
 import static com.wsg.xsybbs.util.StaticClass.SHARE_IS_LOGIN;
 
@@ -38,25 +37,23 @@ import static com.wsg.xsybbs.util.StaticClass.SHARE_IS_LOGIN;
  * Created by wsg
  * on         2018/6/28.
  * function:    闪屏页
- *
  */
 
-public class SplashActivity extends BaseActivity{
+public class SplashActivity extends BaseActivity {
 
     private TextView textView;
 
 
-    private Handler handler=new Handler(){
+    private Handler handler = new Handler() {
         @Override
         public void handleMessage(Message msg) {
             super.handleMessage(msg);
-            switch (msg.what){
+            switch (msg.what) {
                 case StaticClass.HANDLER_SPLASH:
-                    if(isFirst()){
-                        startActivity(new Intent(SplashActivity.this,LoginActivity.class));
-                    }
-                    else{
-                        startActivity(new Intent(SplashActivity.this,MainActivity.class));
+                    if (isFirst()) {
+                        startActivity(new Intent(SplashActivity.this, LoginActivity.class));
+                    } else {
+                        startActivity(new Intent(SplashActivity.this, MainActivity.class));
                     }
             }
             finish();
@@ -79,76 +76,39 @@ public class SplashActivity extends BaseActivity{
             setContentView(view);
             initView();
         });
+
+        // 动态申请权限
+        PermissionX.init(this)
+                .permissions(Manifest.permission.READ_PHONE_STATE,
+                        Manifest.permission.RECORD_AUDIO,
+                        Manifest.permission.CAMERA,
+                        Manifest.permission.ACCESS_FINE_LOCATION,
+                        Manifest.permission.READ_EXTERNAL_STORAGE,
+                        Manifest.permission.WRITE_EXTERNAL_STORAGE)
+                .explainReasonBeforeRequest()
+                .onExplainRequestReason((scope, deniedList) -> scope.showRequestReasonDialog(deniedList, "即将重新申请的权限是程序必须依赖的权限", "我已明白"))
+                .onForwardToSettings((scope, deniedList) -> scope.showForwardToSettingsDialog(deniedList, "您需要去应用程序设置当中手动开启权限", "我已明白"))
+                .request((allGranted, grantedList, deniedList) -> {
+                    if (allGranted) {
+                        handler.sendEmptyMessageDelayed(StaticClass.HANDLER_SPLASH, 2000);
+                    } else {
+                        Toast.makeText(this, "您拒绝了APP所需要的权限", Toast.LENGTH_SHORT).show();
+                    }
+                });
     }
 
     private void initView() {
-
         //设置字体
-        textView=(TextView)findViewById(R.id.splash_tv);
-        UtilTools.setFont(this,textView);
-
-
-
-
-
-        //动态申请权限
-
-        /**
-         * 请求所有必要的权限----原理就是获取清单文件中申请的权限
-         */
-
-
-        List<PermissionItem> permissionItems = new ArrayList<PermissionItem>();
-        permissionItems.add(new PermissionItem(Manifest.permission.READ_PHONE_STATE, "读取手机状态", R.drawable.permission_ic_phone));
-        permissionItems.add(new PermissionItem(Manifest.permission.RECORD_AUDIO, "录音", R.drawable.permission_ic_micro_phone));
-
-        permissionItems.add(new PermissionItem(Manifest.permission.CAMERA, "照相机", R.drawable.permission_ic_camera));
-        permissionItems.add(new PermissionItem(Manifest.permission.ACCESS_FINE_LOCATION, "位置", R.drawable.permission_ic_location));
-
-        permissionItems.add(new PermissionItem(Manifest.permission.READ_EXTERNAL_STORAGE, "读取文件", R.drawable.permission_ic_storage));
-        permissionItems.add(new PermissionItem(Manifest.permission.WRITE_EXTERNAL_STORAGE, "写入文件", R.drawable.permission_ic_storage));
-
-        HiPermission.create(SplashActivity.this)
-                .title("亲爱的用户")
-                .permissions(permissionItems)
-                .filterColor(ResourcesCompat.getColor(getResources(), R.color.colorPrimary, getTheme()))//图标的颜色
-                .animStyle(R.style.PermissionAnimScale)//设置动画
-                .msg("此应用需要获取以下权限")
-                .style(R.style.PermissionBlueStyle)
-                .checkMutiPermission(new PermissionCallback() {
-                    @Override
-                    public void onClose() {
-                        L.d("close");
-
-                    }
-
-                    @Override
-                    public void onFinish() {
-                        //"所有权限申请完成"
-                        handler.sendEmptyMessageDelayed(StaticClass.HANDLER_SPLASH,2000);
-                    }
-
-                    @Override
-                    public void onDeny(String permission, int position) {
-                        //"onDeny"
-                    }
-
-                    @Override
-                    public void onGuarantee(String permission, int position) {
-                        // "onGuarantee"
-                    }
-                });
-
-
-
+        textView = (TextView) findViewById(R.id.splash_tv);
+        UtilTools.setFont(this, textView);
     }
 
     //判断程序是否第一次运行
     private boolean isFirst() {
-        boolean isFirst = SPUtils.getBoolean(this,SHARE_IS_LOGIN,true);
-        if(isFirst){
+        boolean isFirst = SPUtils.getBoolean(this, SHARE_IS_LOGIN, true);
+        if (isFirst) {
             return true;
-        }else {
+        } else {
             return false;
         }
 

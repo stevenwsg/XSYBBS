@@ -34,17 +34,4 @@
         <item name="android:windowNoTitle">true</item>
     </style>
 
-    <style name="PermissionBlueStyle">
-        <item name="PermissionTitleColor">@color/colorPrimaryDark</item>
-        <item name="PermissionMsgColor">@color/colorPrimary</item>
-        <item name="PermissionItemTextColor">@color/colorPrimary</item>
-        <item name="PermissionButtonBackground">@drawable/button_bg</item>
-        <item name="PermissionBackround">@drawable/shape_bg_white</item>
-        <item name="PermissionButtonTextColor">@android:color/white</item>
-    </style>
-
-
-
-
-
 </resources>
