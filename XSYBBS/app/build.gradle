@@ -79,7 +79,7 @@ dependencies {
     //其中latest.release指代最新Bugly SDK版本号，也可以指定明确的版本号，例如2.2.0
     //Bmob文件存储
     //Bmob
-    implementation 'io.github.bmob:android-sdk:3.8.4'
+    implementation 'io.github.bmob:android-sdk:3.8.11'
     implementation "io.reactivex.rxjava2:rxjava:2.2.8"
     implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
     implementation 'com.squareup.okhttp3:okhttp:4.8.1'
