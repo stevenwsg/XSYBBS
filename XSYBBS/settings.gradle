@@ -6,3 +6,4 @@ evaluate(new File(
         '../flutter_bbs/.android/include_flutter.groovy'
 ))
 include ':base'
+include ':common'
