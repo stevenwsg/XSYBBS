@@ -11,7 +11,7 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
 
-    compileSdkVersion 30
+    compileSdkVersion 31
     buildToolsVersion '29.0.3'
 
     packagingOptions {
@@ -20,8 +20,8 @@ android {
 
     defaultConfig {
         applicationId "com.wsg.xsybbs"
-        minSdkVersion 19
-        targetSdkVersion 30
+        minSdkVersion 21
+        targetSdkVersion 31
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -66,6 +66,7 @@ android {
 dependencies {
     implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
     implementation 'androidx.asynclayoutinflater:asynclayoutinflater:1.0.0'
+    api project(path: ':base')
     compile fileTree(include: ['*.jar'], dir: 'libs')
     androidTestCompile('androidx.test.espresso:espresso-core:3.1.0', {
         exclude group: 'com.android.support', module: 'support-annotations'

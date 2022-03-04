@@ -50,17 +50,19 @@
         android:name=".application.MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/logo"
-        android:label="@string/app_name"
+        android:label="@string/app_name_x"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:usesCleartextTraffic="true"
+        tools:replace="android:name,android:label,android:icon, android:theme,android:allowBackup"
         android:theme="@style/AppTheme">
 
 
 
 
         <!--闪屏页-->
-        <activity android:name=".activity.SplashActivity" android:theme="@style/SplashActivityTheme">
+        <activity android:name=".activity.SplashActivity" android:theme="@style/SplashActivityTheme"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -69,66 +71,67 @@
 
 
         <!--登录页面-->
-        <activity android:name=".module.login.view.LoginActivity" android:label="@string/login"></activity>
+        <activity android:name=".module.login.view.LoginActivity" android:label="@string/login" android:exported="true"></activity>
         <!--注册界面-->
-        <activity android:name=".module.register.view.RegisterActivity" android:theme="@style/ActivityTheme"/>
+        <activity android:name=".module.register.view.RegisterActivity" android:theme="@style/ActivityTheme" android:exported="true"/>
         <!--忘记密码界面-->
-        <activity android:name=".module.forgetpassword.view.ForgetPasswordActivity" android:theme="@style/ActivityTheme"/>
+        <activity android:name=".module.forgetpassword.view.ForgetPasswordActivity" android:theme="@style/ActivityTheme" android:exported="true"/>
         <!--修改密码页面-->
-        <activity android:name=".module.modifypassword.view.ModifyPasswordActivity" android:theme="@style/ActivityTheme"/>
+        <activity android:name=".module.modifypassword.view.ModifyPasswordActivity" android:theme="@style/ActivityTheme" android:exported="true"/>
         <!--游客浏览-->
-        <activity android:name=".module.tourist.view.TouristLoginActivity" android:theme="@style/ActivityTheme"/>
+        <activity android:name=".module.tourist.view.TouristLoginActivity" android:theme="@style/ActivityTheme" android:exported="true"/>
         <!--意见反馈-->
-        <activity android:name=".module.feedback.view.FeedBackActivity" android:theme="@style/ActivityTheme"/>
+        <activity android:name=".module.feedback.view.FeedBackActivity" android:theme="@style/ActivityTheme" android:exported="true"/>
         <!--个人详细信息-->
-        <activity android:name=".module.persiondetail.view.PersionalDealActivity" android:theme="@style/ActivityTheme"/>
+        <activity android:name=".module.persiondetail.view.PersionalDealActivity" android:theme="@style/ActivityTheme" android:exported="true"/>
         <!--版本更新-->
-        <activity android:name=".activity.usercenter.UpDateActivity" android:theme="@style/ActivityTheme"/>
+        <activity android:name=".activity.usercenter.UpDateActivity" android:theme="@style/ActivityTheme" android:exported="true"/>
         <!--关于-->
-        <activity android:name=".activity.usercenter.AboutActivity" android:label="@string/tex_about"></activity>
+        <activity android:name=".activity.usercenter.AboutActivity" android:label="@string/tex_about" android:exported="true"></activity>
         <!--我的帖子-->
-        <activity android:name=".module.mynote.view.MyNoteActivity" android:theme="@style/ActivityTheme"/>
+        <activity android:name=".module.mynote.view.MyNoteActivity" android:theme="@style/ActivityTheme" android:exported="true"/>
         <!--我的消息界面-->
-        <activity android:name=".activity.usercenter.MyMessageActivity" android:theme="@style/ActivityTheme"/>
+        <activity android:name=".activity.usercenter.MyMessageActivity" android:theme="@style/ActivityTheme" android:exported="true"/>
         <!--选择头像界面-->
-        <activity android:name=".activity.usercenter.ChooseProfileActivity" android:label="@string/text_choose_profile"></activity>
+        <activity android:name=".activity.usercenter.ChooseProfileActivity" android:label="@string/text_choose_profile" android:exported="true"></activity>
         <!--编辑个人资料界面-->
-        <activity android:name=".module.modifyinfo.view.ModifyUserInfoActivity" android:theme="@style/ActivityTheme"/>
+        <activity android:name=".module.modifyinfo.view.ModifyUserInfoActivity" android:theme="@style/ActivityTheme" android:exported="true"/>
 
         <!--bmob更新activity-->
         <activity
             android:name="cn.bmob.v3.update.UpdateDialogActivity"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" android:exported="true" >
         </activity>
 
 
 
         <!--主界面-->
-        <activity android:name=".MainActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:launchMode="singleTask">
+        <activity android:name=".MainActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:launchMode="singleTask" android:exported="true">
         </activity>
 
         <!--聊天跳转界面-->
-        <activity android:name=".activity.ChatActivity" android:theme="@style/ActivityTheme" />
+        <activity android:name=".activity.ChatActivity" android:theme="@style/ActivityTheme" android:exported="true" />
 
 
         <!-- EaseUI中发送图片后查看以及发送地理位置activit注册   -->
-        <activity android:name="com.hyphenate.easeui.ui.EaseBaiduMapActivity" android:theme="@style/BaiMapTheme"/>
+        <activity android:name="com.hyphenate.easeui.ui.EaseBaiduMapActivity" android:theme="@style/BaiMapTheme" android:exported="true"/>
         <!--添加帖子-->
-        <activity android:name=".module.addnote.view.AddNoteActivity" android:theme="@style/ActivityTheme"/>
+        <activity android:name=".module.addnote.view.AddNoteActivity" android:theme="@style/ActivityTheme" android:exported="true"/>
         <!--搜索帖子-->
-        <activity android:name=".module.searchnote.view.SearchNoteActivity" android:theme="@style/ActivityTheme"/>
+        <activity android:name=".module.searchnote.view.SearchNoteActivity" android:theme="@style/ActivityTheme" android:exported="true"/>
         <!--修改帖子-->
-        <activity android:name=".module.modifynote.view.ModifyMyNoteActivity" android:theme="@style/ActivityTheme"/>
+        <activity android:name=".module.modifynote.view.ModifyMyNoteActivity" android:theme="@style/ActivityTheme" android:exported="true"/>
         <!--帖子详情-->
-        <activity android:name=".activity.note.NoteDetailActivity" android:theme="@style/ActivityTheme"/>
+        <activity android:name=".activity.note.NoteDetailActivity" android:theme="@style/ActivityTheme" android:exported="true"/>
 
-        <activity android:name=".module.notedetail.view.NoteDetailV2Activity" android:theme="@style/ActivityTheme"/>
+        <activity android:name=".module.notedetail.view.NoteDetailV2Activity" android:theme="@style/ActivityTheme" android:exported="true"/>
 
         <activity
             android:name=".flutter.MomentDetailActivity"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
             android:hardwareAccelerated="true"
-            android:windowSoftInputMode="adjustResize">
+            android:windowSoftInputMode="adjustResize"
+            android:exported="true">
         </activity>
 
 
@@ -145,12 +148,14 @@
 
         <provider
             android:name="cn.bmob.v3.util.BmobContentProvider"
-            android:authorities="com.wsg.xsybbs.BmobContentProvider">
+            android:authorities="com.wsg.xsybbs.BmobContentProvider"
+            android:exported="true">
         </provider>
 
         <provider
             android:name="com.wsg.xsybbs.FileProvider"
             android:authorities="com.wsg.xsybbs"
+            android:exported="true"
             />
 
 
@@ -165,7 +170,7 @@
             android:exported="true"
             />
         <!-- 声明SDK所需的receiver -->
-        <receiver android:name="com.hyphenate.chat.EMMonitorReceiver">
+        <receiver android:name="com.hyphenate.chat.EMMonitorReceiver" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.PACKAGE_REMOVED"/>
                 <data android:scheme="package"/>
@@ -181,16 +186,16 @@
 
         <activity
             android:name="com.hyphenate.easeui.ui.EaseShowBigImageActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait" android:exported="true"/>
 
         <activity
             android:name="com.hyphenate.easeui.ui.EaseShowNormalFileActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait" android:exported="true"/>
 
         <activity
             android:name="com.hyphenate.easeui.ui.EaseShowVideoActivity"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateAlwaysHidden" />
+            android:windowSoftInputMode="stateAlwaysHidden" android:exported="true"/>
 
 
         <service android:name="com.baidu.location.f" android:enabled="true" android:process=":remote">

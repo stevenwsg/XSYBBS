@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.wsg.xsybbs.base.BaseFragment
+import com.wsg.base.BaseFragment
 import com.wsg.xsybbs.databinding.ActivityMyMessageCommentBinding
 import com.wsg.xsybbs.module.messagecomment.viewmodel.MessageCommentViewModel
 

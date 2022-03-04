@@ -8,8 +8,8 @@ import android.view.ViewGroup
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.wsg.base.BaseFragment
 import com.wsg.xsybbs.adapter.NoteAdapterV2
-import com.wsg.xsybbs.base.BaseFragment
 import com.wsg.xsybbs.databinding.FragmentSubNoteBinding
 import com.wsg.xsybbs.module.note.vm.SubNoteViewModel
 
@@ -43,7 +43,8 @@ class SubNoteFragment : BaseFragment() {
         noteType = arguments?.getString(TAG)
         Log.d(TAG, "note type is: $noteType")
 
-        binding.subNoteRv.layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
+        binding.subNoteRv.layoutManager =
+            LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
         noteAdapter = NoteAdapterV2()
         binding.subNoteRv.adapter = noteAdapter
 
