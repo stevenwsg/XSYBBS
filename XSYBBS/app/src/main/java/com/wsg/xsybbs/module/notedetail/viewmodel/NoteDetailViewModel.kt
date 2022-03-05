@@ -2,7 +2,7 @@ package com.wsg.xsybbs.module.notedetail.viewmodel
 
 
 import androidx.lifecycle.MutableLiveData
-import com.wsg.xsybbs.base.BaseViewModel
+import com.wsg.base.BaseViewModel
 import com.wsg.xsybbs.bean.Comment
 import com.wsg.xsybbs.module.notedetail.bean.AddCommentResult
 

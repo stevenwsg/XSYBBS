@@ -1,10 +1,12 @@
-package com.wsg.xsybbs.base
+package com.wsg.base
 
 import android.util.Log
 import androidx.lifecycle.ViewModel
 
 /**
- * Create by wangshengguo on 2021/1/3.
+ * Create on 2022/3/5.
+ *
+ * @author wangshengguo.
  */
 open class BaseViewModel : ViewModel() {
 

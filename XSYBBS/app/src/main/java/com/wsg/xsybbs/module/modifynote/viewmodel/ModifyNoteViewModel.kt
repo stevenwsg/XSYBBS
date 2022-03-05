@@ -4,7 +4,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
 import cn.bmob.v3.exception.BmobException
 import cn.bmob.v3.listener.UpdateListener
-import com.wsg.xsybbs.base.BaseViewModel
+import com.wsg.base.BaseViewModel
 import com.wsg.xsybbs.bean.Note
 import com.wsg.xsybbs.module.modifynote.bean.ModifyNoteResultMessage
 import kotlinx.coroutines.Dispatchers

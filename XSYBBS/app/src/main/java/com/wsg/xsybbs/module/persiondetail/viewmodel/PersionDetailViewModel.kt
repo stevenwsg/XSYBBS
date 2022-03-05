@@ -6,7 +6,7 @@ import cn.bmob.v3.BmobQuery
 import cn.bmob.v3.exception.BmobException
 import cn.bmob.v3.listener.QueryListener
 import com.hyphenate.chat.EMClient
-import com.wsg.xsybbs.base.BaseViewModel
+import com.wsg.base.BaseViewModel
 import com.wsg.xsybbs.bean.User
 import com.wsg.xsybbs.module.persiondetail.bean.AddFriendRequestMessage
 import com.wsg.xsybbs.module.persiondetail.bean.PersionDetailRequestMessage

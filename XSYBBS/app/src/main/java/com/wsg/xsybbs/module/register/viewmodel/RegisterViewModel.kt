@@ -6,8 +6,8 @@ import cn.bmob.v3.exception.BmobException
 import cn.bmob.v3.listener.SaveListener
 import com.hyphenate.chat.EMClient
 import com.hyphenate.exceptions.HyphenateException
+import com.wsg.base.BaseViewModel
 import com.wsg.xsybbs.application.MyApplication
-import com.wsg.xsybbs.base.BaseViewModel
 import com.wsg.xsybbs.bean.User
 import com.wsg.xsybbs.module.register.bean.RegisterResultMessage
 import com.wsg.xsybbs.util.SPUtils

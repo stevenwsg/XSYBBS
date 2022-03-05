@@ -7,7 +7,7 @@ import cn.bmob.v3.BmobUser
 import cn.bmob.v3.exception.BmobException
 import cn.bmob.v3.listener.FindListener
 import cn.bmob.v3.listener.UpdateListener
-import com.wsg.xsybbs.base.BaseViewModel
+import com.wsg.base.BaseViewModel
 import com.wsg.xsybbs.bean.Note
 import com.wsg.xsybbs.bean.User
 import com.wsg.xsybbs.module.mynote.bean.DeleteNoteMessage

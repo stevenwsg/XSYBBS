@@ -6,7 +6,7 @@ import cn.bmob.v3.BmobQuery
 import cn.bmob.v3.BmobUser
 import cn.bmob.v3.exception.BmobException
 import cn.bmob.v3.listener.FindListener
-import com.wsg.xsybbs.base.BaseViewModel
+import com.wsg.base.BaseViewModel
 import com.wsg.xsybbs.bean.Comment
 import com.wsg.xsybbs.bean.Note
 import com.wsg.xsybbs.bean.User
