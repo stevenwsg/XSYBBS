@@ -1,0 +1,38 @@
+ext {
+    //表示是作为module还是application
+    isModule = false
+    //applicationId版本好sdkVersion统一管理
+    android = [
+            compileSdkVersion        : 31,
+            buildToolsVersion        : '29.0.3',
+            applicationId            : "com.wsg.xsybbs",
+            minSdkVersion            : 21,
+            targetSdkVersion         : 31,
+            versionCode              : 1,
+            versionName              : "1.0",
+            testInstrumentationRunner: "android.support.test.runner.AndroidJUnitRunner",
+            consumerProguardFiles    : "consumer-rules.pro"
+    ]
+
+    //版本号
+    def APPCOMPAT_VERSION = "1.4.1"
+    def MATERIAL_VERSION = "1.5.0"
+    def JUNIT_VERSION = "4.13.2"
+    def CONSTRAINT_LAYOUT_VERSION = "1.1.3"
+
+    def MULTITYPE_VERSION = '3.5.0'
+    def PERMISSION_X_VERSION = '1.5.1'
+    def MULTIDX_VERSION = '1.0.3'
+
+    //三方库统一管理
+    dependencies = [
+            appcompat     : 'androidx.appcompat:appcompat:' + APPCOMPAT_VERSION,
+            material      : 'com.google.android.material:material:' + MATERIAL_VERSION,
+            juint         : 'junit:junit:' + JUNIT_VERSION,
+            constraintLayout: 'com.android.support.constraint:constraint-layout:' + CONSTRAINT_LAYOUT_VERSION,
+
+            multitype     : 'me.drakeet.multitype:multitype:' + MULTITYPE_VERSION,
+            permissionx   : 'com.guolindev.permissionx:permissionx:' + PERMISSION_X_VERSION,
+            multidex      : 'com.android.support:multidex:' + MULTIDX_VERSION
+    ]
+}

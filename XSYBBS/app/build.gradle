@@ -11,20 +11,20 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
 
-    compileSdkVersion 31
-    buildToolsVersion '29.0.3'
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
 
     packagingOptions {
         exclude 'META-INF/rxjava.properties'
     }
 
     defaultConfig {
-        applicationId "com.wsg.xsybbs"
-        minSdkVersion 21
-        targetSdkVersion 31
-        versionCode 1
-        versionName "1.0"
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        applicationId rootProject.ext.android.applicationId
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode  rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+        testInstrumentationRunner rootProject.ext.android.testInstrumentationRunner
         //useJack=true
 
         ndk {
@@ -103,7 +103,7 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 
     // multidex
-    implementation 'com.android.support:multidex:1.0.3'
+    implementation rootProject.ext.dependencies.multitype
 
     implementation "androidx.viewpager2:viewpager2:1.0.0"
 
