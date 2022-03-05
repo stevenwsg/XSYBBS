@@ -5,8 +5,8 @@ import android.text.TextUtils
 import android.widget.Toast
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import com.wsg.base.BaseActivity
 import com.wsg.xsybbs.R
-import com.wsg.xsybbs.base.BaseActivity
 import com.wsg.xsybbs.module.feedback.viewmodel.FeedBackViewModel
 import es.dmoral.toasty.Toasty
 import kotlinx.android.synthetic.main.activity_feedback.*

@@ -15,10 +15,10 @@ import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 
+import com.wsg.base.BaseActivity;
 import com.wsg.xsybbs.R;
 import com.wsg.xsybbs.module.persiondetail.view.PersionalDealActivity;
 import com.wsg.xsybbs.adapter.CommentAdapter;
-import com.wsg.xsybbs.base.BaseActivity;
 import com.wsg.xsybbs.bean.Comment;
 import com.wsg.xsybbs.bean.Note;
 import com.wsg.xsybbs.bean.User;

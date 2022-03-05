@@ -5,7 +5,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.wsg.xsybbs.base.BaseActivity
+import com.wsg.base.BaseActivity
 import com.wsg.xsybbs.bean.Comment
 import com.wsg.xsybbs.bean.Note
 import com.wsg.xsybbs.databinding.ActivityNoteDetailV2Binding

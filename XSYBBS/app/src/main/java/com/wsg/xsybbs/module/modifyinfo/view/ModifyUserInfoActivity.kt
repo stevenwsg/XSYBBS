@@ -8,8 +8,8 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import cn.bmob.v3.BmobUser
 import com.bumptech.glide.Glide
+import com.wsg.base.BaseActivity
 import com.wsg.xsybbs.R
-import com.wsg.xsybbs.base.BaseActivity
 import com.wsg.xsybbs.bean.User
 import com.wsg.xsybbs.module.modifyinfo.ModifyInfoResult
 import com.wsg.xsybbs.module.modifyinfo.viewmodel.ModifyInfoViewModel

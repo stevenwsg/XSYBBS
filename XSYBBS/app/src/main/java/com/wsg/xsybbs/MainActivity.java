@@ -15,7 +15,7 @@ import androidx.fragment.app.FragmentTransaction;
 import com.hyphenate.chat.EMClient;
 import com.hyphenate.easeui.domain.EaseUser;
 import com.hyphenate.exceptions.HyphenateException;
-import com.wsg.xsybbs.base.BaseActivity;
+import com.wsg.base.BaseActivity;
 import com.wsg.xsybbs.fragment.FriendsFragment;
 import com.wsg.xsybbs.fragment.MyMessageFragment;
 import com.wsg.xsybbs.fragment.MineFragment;

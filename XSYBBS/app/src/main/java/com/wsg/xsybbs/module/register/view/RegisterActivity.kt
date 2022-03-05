@@ -6,8 +6,8 @@ import android.view.Gravity
 import android.widget.Toast
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import com.wsg.base.BaseActivity
 import com.wsg.xsybbs.R
-import com.wsg.xsybbs.base.BaseActivity
 import com.wsg.xsybbs.bean.User
 import com.wsg.xsybbs.module.register.viewmodel.RegisterViewModel
 import com.wsg.xsybbs.view.CustomDialog

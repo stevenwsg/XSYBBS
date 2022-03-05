@@ -9,9 +9,9 @@ import android.view.ViewGroup
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.google.android.material.tabs.TabLayoutMediator
+import com.wsg.base.BaseActivity
 import com.wsg.base.BaseFragment
 import com.wsg.xsybbs.adapter.GlideImageLoader
-import com.wsg.xsybbs.base.BaseActivity
 import com.wsg.xsybbs.bean.Banne
 import com.wsg.xsybbs.bean.Type
 import com.wsg.xsybbs.databinding.FragmentNoteV2Binding

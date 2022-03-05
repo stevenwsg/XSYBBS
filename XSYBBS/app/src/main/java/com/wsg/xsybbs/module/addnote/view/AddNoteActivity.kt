@@ -10,8 +10,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import cn.bmob.v3.BmobUser
 import com.google.gson.TypeAdapter
+import com.wsg.base.BaseActivity
 import com.wsg.xsybbs.R
-import com.wsg.xsybbs.base.BaseActivity
 import com.wsg.xsybbs.bean.Note
 import com.wsg.xsybbs.bean.User
 import com.wsg.xsybbs.manager.TypeManager

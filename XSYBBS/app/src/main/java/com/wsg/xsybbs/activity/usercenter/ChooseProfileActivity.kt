@@ -1,7 +1,7 @@
 package com.wsg.xsybbs.activity.usercenter
 
 import android.os.Bundle
-import com.wsg.xsybbs.base.BaseActivity
+import com.wsg.base.BaseActivity
 import com.wsg.xsybbs.databinding.ActivityChooseProfileBinding
 
 /**

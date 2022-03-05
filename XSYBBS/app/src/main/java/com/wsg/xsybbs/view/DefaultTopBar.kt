@@ -7,8 +7,8 @@ import android.view.View
 import android.widget.ImageView
 import android.widget.RelativeLayout
 import android.widget.TextView
+import com.wsg.base.BaseActivity
 import com.wsg.xsybbs.R
-import com.wsg.xsybbs.base.BaseActivity
 
 /**
  * Create by wangshengguo on 2021/2/5.

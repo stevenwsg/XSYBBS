@@ -5,8 +5,8 @@ import android.widget.Toast
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.wsg.base.BaseActivity
 import com.wsg.xsybbs.R
-import com.wsg.xsybbs.base.BaseActivity
 import com.wsg.xsybbs.bean.BanneData
 import com.wsg.xsybbs.module.tourist.viewmodel.TouristViewModel
 import es.dmoral.toasty.Toasty

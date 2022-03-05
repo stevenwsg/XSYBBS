@@ -2,8 +2,8 @@ package com.wsg.xsybbs.activity.usercenter
 
 import android.os.Bundle
 import com.google.android.material.tabs.TabLayoutMediator
+import com.wsg.base.BaseActivity
 import com.wsg.xsybbs.R
-import com.wsg.xsybbs.base.BaseActivity
 import com.wsg.xsybbs.databinding.ActivityMyMessageBinding
 
 /**

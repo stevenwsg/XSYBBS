@@ -3,8 +3,8 @@ package com.wsg.xsybbs.activity
 import android.os.Bundle
 import android.view.Window
 import com.hyphenate.easeui.modules.chat.EaseChatFragment
+import com.wsg.base.BaseActivity
 import com.wsg.xsybbs.R
-import com.wsg.xsybbs.base.BaseActivity
 
 /**
  * Created by wsg
