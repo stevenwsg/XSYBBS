@@ -103,7 +103,7 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 
     // multidex
-    implementation rootProject.ext.dependencies.multitype
+    implementation rootProject.ext.dependencies.multidex
 
     implementation "androidx.viewpager2:viewpager2:1.0.0"
 
