@@ -16,6 +16,7 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/base" />
             <option value="$PROJECT_DIR$/common" />
+            <option value="$PROJECT_DIR$/im" />
             <option value="$PROJECT_DIR$/../flutter_bbs/.android/Flutter" />
           </set>
         </option>

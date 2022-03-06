@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/XSYBBS.common.iml" filepath="$PROJECT_DIR$/.idea/modules/common/XSYBBS.common.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/1882378551/XSYBBS.data_plugin.iml" filepath="$PROJECT_DIR$/.idea/modules/1882378551/XSYBBS.data_plugin.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/1104392503/XSYBBS.flutter.iml" filepath="$PROJECT_DIR$/.idea/modules/1104392503/XSYBBS.flutter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/im/XSYBBS.im.iml" filepath="$PROJECT_DIR$/.idea/modules/im/XSYBBS.im.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/1512500673/XSYBBS.shared_preferences.iml" filepath="$PROJECT_DIR$/.idea/modules/1512500673/XSYBBS.shared_preferences.iml" />
     </modules>
   </component>
