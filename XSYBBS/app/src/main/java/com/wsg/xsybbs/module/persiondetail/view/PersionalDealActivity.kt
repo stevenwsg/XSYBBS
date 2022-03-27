@@ -7,8 +7,8 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.hyphenate.easeui.constants.EaseConstant
 import com.wsg.base.BaseActivity
+import com.wsg.im.activity.ChatActivity
 import com.wsg.xsybbs.R
-import com.wsg.xsybbs.activity.ChatActivity
 import com.wsg.xsybbs.bean.User
 import com.wsg.xsybbs.module.persiondetail.viewmodel.PersionDetailViewModel
 import com.wsg.xsybbs.util.UtilTools

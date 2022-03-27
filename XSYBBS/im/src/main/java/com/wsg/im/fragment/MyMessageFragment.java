@@ -1,4 +1,4 @@
-package com.wsg.xsybbs.fragment;
+package com.wsg.im.fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,7 +15,7 @@ import com.hyphenate.easeui.modules.conversation.model.EaseConversationInfo;
 import com.hyphenate.easeui.modules.conversation.model.EaseConversationSetStyle;
 import com.hyphenate.easeui.utils.EaseCommonUtils;
 import com.hyphenate.easeui.widget.EaseImageView;
-import com.wsg.xsybbs.activity.ChatActivity;
+import com.wsg.im.activity.ChatActivity;
 
 
 /**

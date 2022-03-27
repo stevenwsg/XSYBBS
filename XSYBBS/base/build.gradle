@@ -47,4 +47,7 @@ dependencies {
 
     // permissionx
     api rootProject.ext.dependencies.permissionx
+
+    //Toasty  美化的toast
+    api 'com.github.GrenderG:Toasty:1.4.2'
 }

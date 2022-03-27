@@ -1,4 +1,4 @@
-package com.wsg.xsybbs.fragment;
+package com.wsg.im.fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,9 +14,9 @@ import com.hyphenate.easeui.domain.EaseUser;
 import com.hyphenate.easeui.interfaces.OnItemLongClickListener;
 import com.hyphenate.easeui.modules.contact.EaseContactListFragment;
 import com.hyphenate.exceptions.HyphenateException;
-import com.wsg.xsybbs.R;
-import com.wsg.xsybbs.activity.ChatActivity;
-import com.wsg.xsybbs.view.CustomDialog;
+import com.wsg.base.view.CustomDialog;
+import com.wsg.im.R;
+import com.wsg.im.activity.ChatActivity;
 
 import es.dmoral.toasty.Toasty;
 
@@ -81,24 +81,22 @@ public class FriendsFragment extends EaseContactListFragment implements View.OnC
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()) {
-            case R.id.btn_delete:
-                try {
-                    EMClient.getInstance().contactManager().deleteContact(easeUser.getUsername());
-                    Toasty.success(getActivity(), "删除好友成功", Toast.LENGTH_SHORT).show();
+        int id = v.getId();
+        if (id == R.id.btn_delete) {
+            try {
+                EMClient.getInstance().contactManager().deleteContact(easeUser.getUsername());
+                Toasty.success(getActivity(), "删除好友成功", Toast.LENGTH_SHORT).show();
 
-                    contactLayout.loadDefaultData();
-                } catch (HyphenateException e) {
-                    e.printStackTrace();
-                    Toasty.error(getActivity(), "删除好友失败", Toast.LENGTH_SHORT).show();
-                }
-
-                mDialog.dismiss();
                 contactLayout.loadDefaultData();
-                break;
-            case R.id.btn_delete_cancle:
-                mDialog.dismiss();
-                break;
+            } catch (HyphenateException e) {
+                e.printStackTrace();
+                Toasty.error(getActivity(), "删除好友失败", Toast.LENGTH_SHORT).show();
+            }
+
+            mDialog.dismiss();
+            contactLayout.loadDefaultData();
+        } else if (id == R.id.btn_delete_cancle) {
+            mDialog.dismiss();
         }
     }
 }

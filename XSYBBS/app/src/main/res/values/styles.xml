@@ -19,16 +19,6 @@
         <item name="android:windowBackground">@mipmap/splash_bg</item>
     </style>
 
-    <style name="BaiMapTheme" parent="Theme.AppCompat.Light.NoActionBar">
-    </style>
-
-
-    <!--自定义Dialog-->
-    <style name="pop_anim_style">
-        <item name="android:windowEnterAnimation">@anim/pop_in</item>
-        <item name="android:windowExitAnimation">@anim/pop_out</item>
-    </style>
-
     <style name="Theme_dialog" parent="@android:style/Theme.Dialog">
         <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:windowNoTitle">true</item>

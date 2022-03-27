@@ -37,4 +37,10 @@ dependencies {
     testImplementation rootProject.ext.dependencies.juint
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    // 环信
+    api 'io.hyphenate:ease-im-kit:3.9.0'
+    api 'io.hyphenate:hyphenate-chat:3.9.0'
+
+    implementation project(path: ':base')
 }

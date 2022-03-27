@@ -1,10 +1,10 @@
-package com.wsg.xsybbs.activity
+package com.wsg.im.activity
 
 import android.os.Bundle
 import android.view.Window
 import com.hyphenate.easeui.modules.chat.EaseChatFragment
 import com.wsg.base.BaseActivity
-import com.wsg.xsybbs.R
+import com.wsg.im.R
 
 /**
  * Created by wsg

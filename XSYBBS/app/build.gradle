@@ -66,8 +66,8 @@ android {
 dependencies {
     implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
     implementation 'androidx.asynclayoutinflater:asynclayoutinflater:1.0.0'
-    api project(path: ':base')
-    api project(path: ':im')
+    implementation project(path: ':base')
+    implementation project(path: ':im')
     compile fileTree(include: ['*.jar'], dir: 'libs')
     androidTestCompile('androidx.test.espresso:espresso-core:3.1.0', {
         exclude group: 'com.android.support', module: 'support-annotations'
@@ -88,8 +88,6 @@ dependencies {
     implementation 'com.squareup.okio:okio:2.2.2'
     implementation 'com.google.code.gson:gson:2.8.5'
 
-    //Toasty  美化的toast
-    compile 'com.github.GrenderG:Toasty:1.4.2'
     //首页banner轮播图
     compile 'com.youth.banner:banner:1.4.10'
     //图片选择器
@@ -107,10 +105,6 @@ dependencies {
     implementation rootProject.ext.dependencies.multidex
 
     implementation "androidx.viewpager2:viewpager2:1.0.0"
-
-    // 环信
-    implementation 'io.hyphenate:ease-im-kit:3.9.0'
-    implementation 'io.hyphenate:hyphenate-chat:3.9.0'
 }
 repositories {
     mavenCentral()
